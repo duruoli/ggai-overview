@@ -1,0 +1,41 @@
+sample_order,dataset_id,source_index,source_excel_row,question
+1,HSQA_2125,2125,2125,What does a vulvodynia flare up feel like?
+2,HSQA_1045,1045,1045,Is cystic fibrosis usually fatal?
+3,HSQA_2782,2782,2782,What is the most common cause of septic shock?
+4,HSQA_1063,1063,1063,Is dyspraxia a developmental disability?
+5,HSQA_2914,2914,2914,What qualifies someone as bulimic?
+6,HSQA_2446,2446,2446,What is distorted self-image?
+7,HSQA_0406,406,406,How can you tell if someone has borderline personality disorder?
+8,HSQA_2432,2432,2432,What is COPD life expectancy?
+9,HSQA_3069,3069,3069,Who is at high risk for nasopharyngeal cancer?
+10,HSQA_0484,484,484,How do I know if I have pulled or torn my hamstring?
+11,HSQA_0552,552,552,How do you catch ringworm?
+12,HSQA_1390,1390,1390,What are 5 factors that affect body image?
+13,HSQA_0332,332,332,Does SAD come from seasonal affective disorder?
+14,HSQA_2089,2089,2089,What do the cancerous moles look like?
+15,HSQA_1046,1046,1046,Is dandruff a fungus?
+16,HSQA_2808,2808,2808,What is the most common treatment for atrial fibrillation?
+17,HSQA_2420,2420,2420,What is carbuncle caused by?
+18,HSQA_2005,2005,2005,What causes polyps in nose?
+19,HSQA_0440,440,440,How do I deal with a persistent erection?
+20,HSQA_0954,954,954,Is a popliteal cyst the same as a Baker\'s cyst?
+21,HSQA_0442,442,442,How do I fix my drooping face?
+22,HSQA_2423,2423,2423,What is causing shivering?
+23,HSQA_2797,2797,2797,What is the most common organ to prolapse?
+24,HSQA_2116,2116,2116,What does a narcoleptic episode feel like?
+25,HSQA_2779,2779,2779,What is the most common cause of otitis media?
+26,HSQA_2447,2447,2447,What is dizziness lightheadedness a symptom of?
+27,HSQA_1648,1648,1648,What are the 7 types of headaches?
+28,HSQA_0508,508,508,How do I make my priapism go down?
+29,HSQA_2598,2598,2598,What is the difference between a stroke and a TIA transient ischemic attack?
+30,HSQA_2398,2398,2398,What is an example of avoidance?
+31,HSQA_0674,674,674,How do you know if you have prostatitis?
+32,HSQA_2424,2424,2424,What is cerebral palsy life expectancy?
+33,HSQA_0235,235,235,Can you survive a sepsis infection?
+34,HSQA_2948,2948,2948,What triggers hidradenitis suppurativa?
+35,HSQA_2801,2801,2801,What is the most common reason for hematuria?
+36,HSQA_2283,2283,2283,What happens if gestational diabetes is controlled?
+37,HSQA_1402,1402,1402,What are 5 symptoms of Tourette\'s?
+38,HSQA_1519,1519,1519,What are the 3 types of coronary heart disease?
+39,HSQA_0559,559,559,How do you clear up sinusitis?
+40,HSQA_1417,1417,1417,What are different types of tremors?

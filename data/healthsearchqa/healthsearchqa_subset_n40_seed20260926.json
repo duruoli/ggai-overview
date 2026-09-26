@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "dataset": "HealthSearchQA",
+    "source_article": "https://doi.org/10.1038/s41586-023-06291-2",
+    "source_download": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-023-06291-2/MediaObjects/41586_2023_6291_MOESM6_ESM.xlsx",
+    "source_file": "healthsearchqa_official.xlsx",
+    "source_sheet": "All HealthSearchQA Questions",
+    "source_sha256": "a89f6639ee76717e2a1ea25bbe25c8c69cf396681be76fd8145da7e9c8917e1e",
+    "nonempty_question_count": 3173,
+    "unique_question_count": 3156,
+    "exact_duplicate_count_removed": 17,
+    "sample_size": 40,
+    "random_seed": 20260926,
+    "sampling_method": "Exact-trim deduplication followed by Mulberry32-seeded Fisher-Yates shuffle; first n records selected; listed off-domain records replaced in place by the next eligible records.",
+    "excluded_dataset_ids": [
+      "HSQA_1548"
+    ],
+    "selection_sha256": "914e70399d84730f254a26fcf56b8c107b16cce6c23148b78c9b92d5ff407b53"
+  },
+  "questions": [
+    {
+      "sample_order": 1,
+      "dataset_id": "HSQA_2125",
+      "source_index": 2125,
+      "source_excel_row": 2125,
+      "question": "What does a vulvodynia flare up feel like?"
+    },
+    {
+      "sample_order": 2,
+      "dataset_id": "HSQA_1045",
+      "source_index": 1045,
+      "source_excel_row": 1045,
+      "question": "Is cystic fibrosis usually fatal?"
+    },
+    {
+      "sample_order": 3,
+      "dataset_id": "HSQA_2782",
+      "source_index": 2782,
+      "source_excel_row": 2782,
+      "question": "What is the most common cause of septic shock?"
+    },
+    {
+      "sample_order": 4,
+      "dataset_id": "HSQA_1063",
+      "source_index": 1063,
+      "source_excel_row": 1063,
+      "question": "Is dyspraxia a developmental disability?"
+    },
+    {
+      "sample_order": 5,
+      "dataset_id": "HSQA_2914",
+      "source_index": 2914,
+      "source_excel_row": 2914,
+      "question": "What qualifies someone as bulimic?"
+    },
+    {
+      "sample_order": 6,
+      "dataset_id": "HSQA_2446",
+      "source_index": 2446,
+      "source_excel_row": 2446,
+      "question": "What is distorted self-image?"
+    },
+    {
+      "sample_order": 7,
+      "dataset_id": "HSQA_0406",
+      "source_index": 406,
+      "source_excel_row": 406,
+      "question": "How can you tell if someone has borderline personality disorder?"
+    },
+    {
+      "sample_order": 8,
+      "dataset_id": "HSQA_2432",
+      "source_index": 2432,
+      "source_excel_row": 2432,
+      "question": "What is COPD life expectancy?"
+    },
+    {
+      "sample_order": 9,
+      "dataset_id": "HSQA_3069",
+      "source_index": 3069,
+      "source_excel_row": 3069,
+      "question": "Who is at high risk for nasopharyngeal cancer?"
+    },
+    {
+      "sample_order": 10,
+      "dataset_id": "HSQA_0484",
+      "source_index": 484,
+      "source_excel_row": 484,
+      "question": "How do I know if I have pulled or torn my hamstring?"
+    },
+    {
+      "sample_order": 11,
+      "dataset_id": "HSQA_0552",
+      "source_index": 552,
+      "source_excel_row": 552,
+      "question": "How do you catch ringworm?"
+    },
+    {
+      "sample_order": 12,
+      "dataset_id": "HSQA_1390",
+      "source_index": 1390,
+      "source_excel_row": 1390,
+      "question": "What are 5 factors that affect body image?"
+    },
+    {
+      "sample_order": 13,
+      "dataset_id": "HSQA_0332",
+      "source_index": 332,
+      "source_excel_row": 332,
+      "question": "Does SAD come from seasonal affective disorder?"
+    },
+    {
+      "sample_order": 14,
+      "dataset_id": "HSQA_2089",
+      "source_index": 2089,
+      "source_excel_row": 2089,
+      "question": "What do the cancerous moles look like?"
+    },
+    {
+      "sample_order": 15,
+      "dataset_id": "HSQA_1046",
+      "source_index": 1046,
+      "source_excel_row": 1046,
+      "question": "Is dandruff a fungus?"
+    },
+    {
+      "sample_order": 16,
+      "dataset_id": "HSQA_2808",
+      "source_index": 2808,
+      "source_excel_row": 2808,
+      "question": "What is the most common treatment for atrial fibrillation?"
+    },
+    {
+      "sample_order": 17,
+      "dataset_id": "HSQA_2420",
+      "source_index": 2420,
+      "source_excel_row": 2420,
+      "question": "What is carbuncle caused by?"
+    },
+    {
+      "sample_order": 18,
+      "dataset_id": "HSQA_2005",
+      "source_index": 2005,
+      "source_excel_row": 2005,
+      "question": "What causes polyps in nose?"
+    },
+    {
+      "sample_order": 19,
+      "dataset_id": "HSQA_0440",
+      "source_index": 440,
+      "source_excel_row": 440,
+      "question": "How do I deal with a persistent erection?"
+    },
+    {
+      "sample_order": 20,
+      "dataset_id": "HSQA_0954",
+      "source_index": 954,
+      "source_excel_row": 954,
+      "question": "Is a popliteal cyst the same as a Baker\\'s cyst?"
+    },
+    {
+      "sample_order": 21,
+      "dataset_id": "HSQA_0442",
+      "source_index": 442,
+      "source_excel_row": 442,
+      "question": "How do I fix my drooping face?"
+    },
+    {
+      "sample_order": 22,
+      "dataset_id": "HSQA_2423",
+      "source_index": 2423,
+      "source_excel_row": 2423,
+      "question": "What is causing shivering?"
+    },
+    {
+      "sample_order": 23,
+      "dataset_id": "HSQA_2797",
+      "source_index": 2797,
+      "source_excel_row": 2797,
+      "question": "What is the most common organ to prolapse?"
+    },
+    {
+      "sample_order": 24,
+      "dataset_id": "HSQA_2116",
+      "source_index": 2116,
+      "source_excel_row": 2116,
+      "question": "What does a narcoleptic episode feel like?"
+    },
+    {
+      "sample_order": 25,
+      "dataset_id": "HSQA_2779",
+      "source_index": 2779,
+      "source_excel_row": 2779,
+      "question": "What is the most common cause of otitis media?"
+    },
+    {
+      "sample_order": 26,
+      "dataset_id": "HSQA_2447",
+      "source_index": 2447,
+      "source_excel_row": 2447,
+      "question": "What is dizziness lightheadedness a symptom of?"
+    },
+    {
+      "sample_order": 27,
+      "dataset_id": "HSQA_1648",
+      "source_index": 1648,
+      "source_excel_row": 1648,
+      "question": "What are the 7 types of headaches?"
+    },
+    {
+      "sample_order": 28,
+      "dataset_id": "HSQA_0508",
+      "source_index": 508,
+      "source_excel_row": 508,
+      "question": "How do I make my priapism go down?"
+    },
+    {
+      "sample_order": 29,
+      "dataset_id": "HSQA_2598",
+      "source_index": 2598,
+      "source_excel_row": 2598,
+      "question": "What is the difference between a stroke and a TIA transient ischemic attack?"
+    },
+    {
+      "sample_order": 30,
+      "dataset_id": "HSQA_2398",
+      "source_index": 2398,
+      "source_excel_row": 2398,
+      "question": "What is an example of avoidance?"
+    },
+    {
+      "sample_order": 31,
+      "dataset_id": "HSQA_0674",
+      "source_index": 674,
+      "source_excel_row": 674,
+      "question": "How do you know if you have prostatitis?"
+    },
+    {
+      "sample_order": 32,
+      "dataset_id": "HSQA_2424",
+      "source_index": 2424,
+      "source_excel_row": 2424,
+      "question": "What is cerebral palsy life expectancy?"
+    },
+    {
+      "sample_order": 33,
+      "dataset_id": "HSQA_0235",
+      "source_index": 235,
+      "source_excel_row": 235,
+      "question": "Can you survive a sepsis infection?"
+    },
+    {
+      "sample_order": 34,
+      "dataset_id": "HSQA_2948",
+      "source_index": 2948,
+      "source_excel_row": 2948,
+      "question": "What triggers hidradenitis suppurativa?"
+    },
+    {
+      "sample_order": 35,
+      "dataset_id": "HSQA_2801",
+      "source_index": 2801,
+      "source_excel_row": 2801,
+      "question": "What is the most common reason for hematuria?"
+    },
+    {
+      "sample_order": 36,
+      "dataset_id": "HSQA_2283",
+      "source_index": 2283,
+      "source_excel_row": 2283,
+      "question": "What happens if gestational diabetes is controlled?"
+    },
+    {
+      "sample_order": 37,
+      "dataset_id": "HSQA_1402",
+      "source_index": 1402,
+      "source_excel_row": 1402,
+      "question": "What are 5 symptoms of Tourette\\'s?"
+    },
+    {
+      "sample_order": 38,
+      "dataset_id": "HSQA_1519",
+      "source_index": 1519,
+      "source_excel_row": 1519,
+      "question": "What are the 3 types of coronary heart disease?"
+    },
+    {
+      "sample_order": 39,
+      "dataset_id": "HSQA_0559",
+      "source_index": 559,
+      "source_excel_row": 559,
+      "question": "How do you clear up sinusitis?"
+    },
+    {
+      "sample_order": 40,
+      "dataset_id": "HSQA_1417",
+      "source_index": 1417,
+      "source_excel_row": 1417,
+      "question": "What are different types of tremors?"
+    }
+  ]
+}
