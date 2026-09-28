@@ -231,7 +231,39 @@ cache, and updates the retrieval JSON in place. Failed quality checks do not rep
 successful retrieval. An abstract-only PMC recovery is included in the import queue so it can be
 upgraded to manually downloaded full text.
 
-## 6. Run tests
+## 6. Score understandability and actionability
+
+Score the main AI Overview text against the response-level, simplified PEMAT-informed rubric
+in `PILOT_EVALUATION_METRICS.md`:
+
+```bash
+python scripts/evaluate_communication.py \
+  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/communication_evaluation.json \
+  --env-file .openrouter_env \
+  --model openai/gpt-5-mini
+```
+
+The LLM receives only the question and parsed `main_text`. It returns a yes/no/N/A judgment,
+reason, and optional exact answer quote for each of five understandability and three
+actionability items. The prompt asks it to judge from the perspective of an ordinary reader
+with no medical knowledge, without filling in unexplained terms or missing steps from its own
+knowledge. The script checks the quotes and N/A rules, then calculates the scores
+deterministically. Actionability is N/A when the question does not reasonably call for an action;
+the care-seeking item may also be N/A independently. Answers without an AI Overview are retained
+as `not_present` and excluded from quality scores. The JSON retains item-level judgments,
+question ID, run number, model, token use, and response-level summary statistics.
+
+Use `--limit N` for a short integration run or `--run 1` for one repeated run. If a run is
+interrupted, use `--resume` with the same input, output, model, and run filter; successful
+judgments are kept and errors are retried. The script refuses to overwrite an existing output
+unless `--resume` is specified. `--workers` controls concurrent API requests (default 4).
+
+These scores measure text communication features, not medical accuracy, safety, or measured
+patient comprehension. The abbreviated rubric is adapted from PEMAT and is not the original
+PEMAT instrument.
+
+## 7. Run tests
 
 ```bash
 python -m unittest discover -s scripts -p 'test_*.py'
