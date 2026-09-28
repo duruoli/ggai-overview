@@ -1,0 +1,16 @@
+__pycache__/
+.env.example
+*.pyc
+*.pyo.env
+.openai_env
+.openrouter_env
+.anthropic_env
+.tinker_env
+
+outputs/
+# macOS metadata
+._*
+**/._*
+
+# Local Claude settings and secrets
+.claude/settings.local.json
