@@ -1,0 +1,3291 @@
+{
+  "schema_version": "0.1.0",
+  "created_at": "2026-09-28T04:30:06.280813+00:00",
+  "completed_at": "2026-09-28T04:33:43.008517+00:00",
+  "source_sha256": "6b4a19583272451825d2eddea7412e7d7028afb2abb486fb8fe0f6800fd97181",
+  "source_capture": "outputs/healthsearchqa_pilot/healthsearchqa_aio_capture_2026-09-26 (1).json",
+  "model": "openai/gpt-5-mini",
+  "provider": "openrouter",
+  "run_filter": 1,
+  "instructions_sha256": "bc50f642cb8c25f894bdd1c8db46f61009b062b64547f34d7fd5c417cff62845",
+  "method": "LLM item-level simplified PEMAT-informed text rubric; deterministic score calculation",
+  "records": [
+    {
+      "dataset_id": "HSQA_2125",
+      "sample_order": 1,
+      "run": 1,
+      "question": "What does a vulvodynia flare up feel like?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a description of what a flare-up feels like (symptoms), not for actions to take or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Directly answers the question by describing sensations associated with a vulvodynia flare-up.",
+            "quote": "A vulvodynia flare-up feels like intense, persistent burning, stinging, rawness, or sharp knife-like pain in the external female genital area."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Primarily uses everyday language and vivid sensory descriptors rather than technical jargon.",
+            "quote": "burning, stinging, rawness, or sharp knife-like pain"
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Explains the location in plain language and clarifies a specific term ('vestibule').",
+            "quote": "around the vaginal opening (the vestibule)"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Presents information in a clear order: overall feeling, specific sensations, localization, triggers, and appearance.",
+            "quote": "Generalized vs. Localized: Pain can affect the entire vulva or concentrate strictly around the vaginal opening (the vestibule)."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused without distracting repetition or excessive detail.",
+            "quote": "Normal Skin: During a flare-up, the tissue often looks entirely normal with no visible signs of infection, redness, or broken skin, which can make the invisible nature of the pain especially frustrating."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "The question requests a symptom description, so action items are not applicable.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "The question requests a symptom description, so actionable guidance is not applicable.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "The question requests a symptom description, so care-seeking guidance is not applicable.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569806-ZefcIv36RJad21OPPnkV",
+      "usage": {
+        "completion_tokens": 1402,
+        "prompt_tokens": 923,
+        "total_tokens": 2325,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 832,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00303475,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00303475,
+          "upstream_inference_prompt_cost": 0.00023075,
+          "upstream_inference_completions_cost": 0.002804
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1045",
+      "sample_order": 2,
+      "run": 1,
+      "question": "Is cystic fibrosis usually fatal?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks a factual/prognosis question ('Is cystic fibrosis usually fatal?'), not what to do, how to recognize a problem, or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "no",
+            "reason": "The answer starts 'Yes, people can die...' but does not clearly say whether cystic fibrosis is usually fatal or clarify the typical prognosis.",
+            "quote": "Yes, people can die from cystic fibrosis, as it is a serious, life-threatening genetic condition."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Mostly uses common words and short explanations rather than technical jargon.",
+            "quote": "Thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Key medical terms used (e.g., 'Respiratory Failure') are explained in plain language when introduced.",
+            "quote": "Respiratory Failure: This is the most common cause of death. Thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: a direct statement followed by causes, complications, advances in care, and a note on median age.",
+            "quote": "Respiratory Failure: This is the most common cause of death."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused; no obvious distracting repetition or unnecessary detail.",
+            "quote": "If you'd like, I can share more details on:\n\nModern treatments and modulator therapies\nTypical symptoms and early signs\nHow life expectancy has changed recently"
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about prognosis rather than what actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about prognosis rather than what actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about prognosis rather than when or where to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569806-wvmpq55YKEgzmOHAAXfr",
+      "usage": {
+        "completion_tokens": 2192,
+        "prompt_tokens": 821,
+        "total_tokens": 3013,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1600,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00458925,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00458925,
+          "upstream_inference_prompt_cost": 0.00020525,
+          "upstream_inference_completions_cost": 0.004384
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2782",
+      "sample_order": 3,
+      "run": 1,
+      "question": "What is the most common cause of septic shock?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for the most common cause (a factual cause), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer states the most common cause directly in the first sentence.",
+            "quote": "Bacterial infections are the most common cause of septic shock, usually starting as infections in the lungs (like pneumonia), the abdomen, or the urinary tract."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Mostly everyday language and familiar examples (lungs, pneumonia, urinary tract) are used.",
+            "quote": "Lungs: Pneumonia is the single most frequent origin."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Key medical terms from the question and answer are not explained (for example, 'septic shock' is not defined).",
+            "quote": "septic shock"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized by infection site, then by organism type, then resources and follow-up questions — a clear logical order.",
+            "quote": "Abdomen: Infections of the appendix, liver, gallbladder, or bowel."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise list format without unnecessary repetition; keeps details focused.",
+            "quote": "Fungi/Viruses: Less frequently, fungal infections (such as Candida ) or viral infections can trigger the condition."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about cause rather than actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about cause rather than actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about cause rather than when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569806-wVCmIBbvSceEUKGUj9lA",
+      "usage": {
+        "completion_tokens": 1644,
+        "prompt_tokens": 854,
+        "total_tokens": 2498,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1152,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0035015,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0035015,
+          "upstream_inference_prompt_cost": 0.0002135,
+          "upstream_inference_completions_cost": 0.003288
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1063",
+      "sample_order": 4,
+      "run": 1,
+      "question": "Is dyspraxia a developmental disability?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks whether dyspraxia is a developmental disability (a classification), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a direct yes and states the classification clearly.",
+            "quote": "Yes, dyspraxia is classified as a neurodevelopmental condition, also known as developmental coordination disorder (DCD)."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The response uses mostly everyday language and short explanations rather than dense jargon.",
+            "quote": "It is a lifelong brain-based condition affecting fine and gross motor skills, physical coordination, and motor planning."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Some key terms are explained, but an abbreviation (DSM-5) is used without a plain-language explanation.",
+            "quote": "The American Psychiatric Association categorizes DCD as a motor disorder under neurodevelopmental disorders in the DSM-5."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear, logical order (definition, lifespan impact, cognition, classification, legal status, resources).",
+            "quote": "Definition: It is a lifelong brain-based condition affecting fine and gross motor skills, physical coordination, and motor planning."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and does not repeat information or include irrelevant detail.",
+            "quote": "Yes, dyspraxia is classified as a neurodevelopmental condition, also known as developmental coordination disorder (DCD)."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable for a definitional/classification question.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable for a definitional/classification question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable for a definitional/classification question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569806-PjT9mFXEjp2KGIF1bVB0",
+      "usage": {
+        "completion_tokens": 1617,
+        "prompt_tokens": 845,
+        "total_tokens": 2462,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1088,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00344525,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00344525,
+          "upstream_inference_prompt_cost": 0.00021125,
+          "upstream_inference_completions_cost": 0.003234
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2914",
+      "sample_order": 5,
+      "run": 1,
+      "question": "What qualifies someone as bulimic?",
+      "aio_present": false,
+      "status": "not_present",
+      "communication": null
+    },
+    {
+      "dataset_id": "HSQA_2446",
+      "sample_order": 6,
+      "run": 1,
+      "question": "What is distorted self-image?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a definition/explanation, not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer gives a direct definition of distorted self-image.",
+            "quote": "A distorted self-image means perceiving yourself and your abilities inaccurately, so that your internal self-view does not match reality or how others see you."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses plain, everyday language rather than technical jargon.",
+            "quote": "perceiving yourself and your abilities inaccurately"
+          },
+          "u3": {
+            "label": "na",
+            "reason": "There are no medical terms or abbreviations that need explaining.",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is short and presented as a clear definition followed by a brief elaboration.",
+            "quote": "Inaccurate Perception: Your mental picture of yourself is warped, focusing heavily on perceived flaws while ignoring strengths or objective facts."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise without unnecessary repetition or extra detail.",
+            "quote": "focusing heavily on perceived flaws while ignoring strengths or objective facts."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Action guidance not applicable for a definition question.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Action guidance not applicable for a definition question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Action guidance not applicable for a definition question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569816-dKLMJtbVh2q9ilV7g9sn",
+      "usage": {
+        "completion_tokens": 1192,
+        "prompt_tokens": 677,
+        "total_tokens": 1869,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 768,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00255325,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00255325,
+          "upstream_inference_prompt_cost": 0.00016925,
+          "upstream_inference_completions_cost": 0.002384
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0406",
+      "sample_order": 7,
+      "run": 1,
+      "question": "How can you tell if someone has borderline personality disorder?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks how to recognize if someone has BPD and mentions coping/safety resources, so it implies actions (recognition and seeking help) are relevant.",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer states how to tell by listing hallmark signs and the DSM-5 criteria requirement, directly addressing the question.",
+            "quote": "You can tell if someone may have Borderline Personality Disorder (BPD) by looking for a consistent pattern of intense emotional instability, unstable relationships, and a shifting self-image."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most descriptions use everyday language and concrete examples rather than technical jargon.",
+            "quote": "intense emotional instability, unstable relationships, and a shifting self-image."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "The answer expands abbreviations and explains clinical terms when used (e.g., DSM-5, self-injury, dissociation).",
+            "quote": "According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-5)"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear, ordered list (summary, diagnostic note, then individual criteria, then resources and follow-up questions).",
+            "quote": "According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-5), a person typically must exhibit at least five out of nine specific criteria."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on distinct criteria without unnecessary repetition or unrelated detail.",
+            "quote": "Only a trained mental health professional can officially diagnose BPD."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer tells the reader that only a trained mental health professional can diagnose BPD and points to resources for guidance, which suggests seeking professional help or using those resources.",
+            "quote": "Only a trained mental health professional can officially diagnose BPD."
+          },
+          "a2": {
+            "label": "no",
+            "reason": "The answer points to resources and to seeing a professional but does not give concrete, step-by-step guidance (e.g., how to find or contact a provider, what to say, or immediate safety steps).",
+            "quote": "If you need immediate guidance on coping or safety, the NHS BPD Symptoms Overview offers further resources."
+          },
+          "a3": {
+            "label": "yes",
+            "reason": "It indicates when/where to seek help (immediate guidance on coping or safety via NHS resources) and explains why a professional is needed for diagnosis.",
+            "quote": "If you need immediate guidance on coping or safety, the NHS BPD Symptoms Overview offers further resources."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569818-DGWdnqnBiTJ0bOCns2sy",
+      "usage": {
+        "completion_tokens": 1975,
+        "prompt_tokens": 1027,
+        "total_tokens": 3002,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1408,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00420675,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00420675,
+          "upstream_inference_prompt_cost": 0.00025675,
+          "upstream_inference_completions_cost": 0.00395
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2432",
+      "sample_order": 8,
+      "run": 1,
+      "question": "What is COPD life expectancy?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks about life expectancy and the answer includes steps and management actions (quitting smoking, treatments), so actionable advice is relevant.",
+        "actionability_score": 33.33,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer gives an overall purpose and directly addresses life expectancy with stage-based ranges and influencing factors.",
+            "quote": "Life expectancy with chronic obstructive pulmonary disease (COPD) varies widely and depends heavily on the stage of the disease, your smoking habits, and your overall health."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most of the explanation uses everyday language and plain phrases that a lay reader can follow.",
+            "quote": "Stage 1 (Mild): Life expectancy is often close to normal. Mild cases may cause little to no reduction in your overall lifespan."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Medical terms introduced (e.g., spirometry, FEV1) are not explained in plain language when first used.",
+            "quote": "Doctors measure COPD severity using stages 1 through 4 based on lung function tests like spirometry."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is ordered logically (by disease stage, then risk factors, then treatment), making it easy to follow.",
+            "quote": "Stage 2 and 3 (Moderate to Severe): Lifespan can be reduced by about 2 to 6 years on average."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise without unnecessary repetition or distracting detail.",
+            "quote": "Treatment Plan: Using prescribed inhalers, getting oxygen therapy, staying updated on vaccines, and joining pulmonary rehabilitation programs help preserve lung function and improve daily life."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer lists specific actions the reader can take, such as quitting smoking, using inhalers, getting vaccines, and joining pulmonary rehab.",
+            "quote": "Treatment Plan: Using prescribed inhalers, getting oxygen therapy, staying updated on vaccines, and joining pulmonary rehabilitation programs help preserve lung function and improve daily life."
+          },
+          "a2": {
+            "label": "no",
+            "reason": "Advice is general (e.g., 'quit smoking', 'use inhalers') but does not give concrete step-by-step guidance or how to obtain these interventions.",
+            "quote": "Smoking: Continuing to smoke greatly accelerates the loss of lung function and shortens life. Quitting smoking at any stage significantly slows the disease."
+          },
+          "a3": {
+            "label": "no",
+            "reason": "The answer mentions hospitalization for severe flare-ups but does not explain when or how to seek care or give clear thresholds for urgent action.",
+            "quote": "Flare-ups (Exacerbations): Frequent severe breathing flare-ups that require hospitalization can worsen lung damage over time."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569818-ZVbqn9VxUSL5iDVRCO1O",
+      "usage": {
+        "completion_tokens": 2079,
+        "prompt_tokens": 930,
+        "total_tokens": 3009,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1408,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0043905,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0043905,
+          "upstream_inference_prompt_cost": 0.0002325,
+          "upstream_inference_completions_cost": 0.004158
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_3069",
+      "sample_order": 9,
+      "run": 1,
+      "question": "Who is at high risk for nasopharyngeal cancer?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question identifies who is at higher risk, which can guide actions like reading more or seeking medical advice.",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Lists specific risk groups and factors, directly answering who is at high risk.",
+            "quote": "Individuals with specific geographic ancestry, a history of Epstein-Barr virus infection, or a diet high in salt-cured foods face a high risk of nasopharyngeal cancer."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Mostly uses everyday language and explains common terms (e.g., mono) in plain words.",
+            "quote": "Epstein-Barr Virus (EBV): People who have had EBV (the virus that causes mono) are at risk because the virus can mix with cells in the nose and throat."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "The answer does not define or explain the term 'nasopharyngeal cancer' itself, even though it explains some abbreviations.",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is grouped by risk factor type and presented in short, separate lines that are easy to follow.",
+            "quote": "Specific regions: People living in or with ancestry from southern China, Southeast Asia, northern Africa, and the Arctic."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise list of risk factors without distracting repetition; ends with a brief offer of next steps.",
+            "quote": "If you'd like, I can share:\nThe early signs and symptoms to watch out for How doctors diagnose nasopharyngeal cancer"
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "Suggests concrete actions such as reading more from named sources and offers to provide additional information.",
+            "quote": "You can read more about geographic patterns from the American Cancer Society."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "Gives concrete next steps (look up American Cancer Society or Mayo Clinic material, or ask for symptoms/diagnosis info).",
+            "quote": "Learn about causes and signs at the Mayo Clinic."
+          },
+          "a3": {
+            "label": "no",
+            "reason": "Does not state when or why to seek medical care or list warning signs that require prompt attention—only offers to provide symptoms/diagnosis information if asked.",
+            "quote": "If you'd like, I can share:\nThe early signs and symptoms to watch out for How doctors diagnose nasopharyngeal cancer"
+          }
+        }
+      },
+      "model_response_id": "gen-1790569823-7TrVtwSkw1o4Vu5RjAMn",
+      "usage": {
+        "completion_tokens": 2440,
+        "prompt_tokens": 998,
+        "total_tokens": 3438,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1792,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0051295,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0051295,
+          "upstream_inference_prompt_cost": 0.0002495,
+          "upstream_inference_completions_cost": 0.00488
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0484",
+      "sample_order": 10,
+      "run": 1,
+      "question": "How do I know if I have pulled or torn my hamstring?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks how to tell if the injury is a pull or a tear, which affects what to do and whether to seek care.",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly compares pulled vs torn hamstrings and lists distinguishing signs and symptoms.",
+            "quote": "A pulled hamstring involves mild stretching or micro-tears of the muscle fibers, while a torn hamstring represents a partial or complete rupture of the tissue."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most wording is simple and uses everyday descriptions of pain and function.",
+            "quote": "Sudden mild twinge, tightness, or dull ache during activity."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Key terms from the question are explained in plain language (pulled vs torn, micro-tears, rupture).",
+            "quote": "A pulled hamstring involves mild stretching or micro-tears of the muscle fibers, while a torn hamstring represents a partial or complete rupture of the tissue."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: brief definitions first, then side-by-side signs for mild vs severe injury.",
+            "quote": "Pain Type: Sudden mild twinge, tightness, or dull ache during activity.\nMobility: You can usually still walk or bear weight, though it feels stiff or uncomfortable."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on relevant distinguishing symptoms without extraneous detail.",
+            "quote": "Signs: Rapid swelling within hours, deep bruising that tracks down the leg, and sometimes a visible dent, gap, or knot in the muscle."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer prompts actions the reader can take, such as checking whether they can bear weight and describing how the injury happened.",
+            "quote": "Can you bear weight or walk on the leg right now?"
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "It gives concrete, observable signs to check (pain type, ability to walk, swelling, bruising, visible dent) so the reader can assess without guessing key steps.",
+            "quote": "Signs: Rapid swelling within hours, deep bruising that tracks down the leg, and sometimes a visible dent, gap, or knot in the muscle."
+          },
+          "a3": {
+            "label": "no",
+            "reason": "The answer offers to help with care recommendations but does not state when or where to seek medical attention or explain urgency.",
+            "quote": "I can help you understand what kind of care or professional evaluation you might need."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569828-t9oW9cpM3MgqYfXIM0cG",
+      "usage": {
+        "completion_tokens": 2001,
+        "prompt_tokens": 943,
+        "total_tokens": 2944,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1344,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00423775,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00423775,
+          "upstream_inference_prompt_cost": 0.00023575,
+          "upstream_inference_completions_cost": 0.004002
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0552",
+      "sample_order": 11,
+      "run": 1,
+      "question": "How do you catch ringworm?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks how ringworm is caught (a factual description of transmission), not what to do or when to seek care, so action steps are not required.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly states how ringworm is transmitted and lists the main routes of transmission.",
+            "quote": "You get ringworm by coming into contact with a fungus that lives on skin, animals, or objects."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The language is plain and uses everyday terms rather than technical jargon.",
+            "quote": "Person-to-person: You touch skin with an infected person."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "The misleading term from the question is explained (that ringworm is not a worm); no other specialized abbreviations appear that need explaining.",
+            "quote": "Despite the name, no actual worm causes the infection."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: transmission modes, risk situations, links for more info, and a prompt for follow-up details.",
+            "quote": "Person-to-person: You touch skin with an infected person.\nAnimal-to-human: You pet or handle infected animals like cats, dogs, or farm animals.\nObjects to human: You touch shared items like towels, bedding, hairbrushes, or clothing."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or extraneous detail.",
+            "quote": "You get ringworm by coming into contact with a fungus that lives on skin, animals, or objects."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question requested how infection occurs (transmission) rather than asking what actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because action guidance was not the focus of the question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question did not ask when or where to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569840-H1fdlln5elSGqDmUfoW2",
+      "usage": {
+        "completion_tokens": 1510,
+        "prompt_tokens": 855,
+        "total_tokens": 2365,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 960,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00323375,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00323375,
+          "upstream_inference_prompt_cost": 0.00021375,
+          "upstream_inference_completions_cost": 0.00302
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1390",
+      "sample_order": 12,
+      "run": 1,
+      "question": "What are 5 factors that affect body image?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for factors that affect body image (information), not for what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Directly lists five factors and provides brief explanations for each.",
+            "quote": "Five major factors that affect body image include media exposure, cultural standards, family attitudes, peer influence, and psychological well-being."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday language and clear descriptions rather than technical jargon.",
+            "quote": "Media and Social Media: Viewing idealized or edited photos online and in advertisements creates unrealistic physical standards."
+          },
+          "u3": {
+            "label": "na",
+            "reason": "There are no specialized medical terms or abbreviations that need explanation.",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized: an initial list of factors followed by short explanatory sentences for each.",
+            "quote": "Family and Upbringing: Parents and family members who engage in negative body talk or frequent dieting set an influential early example."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused; does not repeat ideas and ends with optional next steps.",
+            "quote": "If you'd like, I can share:\nTips for building a more positive body image\nSigns that body image concerns may need professional support\nLet me know how you would like to proceed."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable—question requested factors rather than actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable—question requested factors rather than actionable steps.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable—care-seeking guidance was not requested by the question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569842-g93aApFT238cWmGn8iI1",
+      "usage": {
+        "completion_tokens": 1274,
+        "prompt_tokens": 812,
+        "total_tokens": 2086,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 768,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.002751,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.002751,
+          "upstream_inference_prompt_cost": 0.000203,
+          "upstream_inference_completions_cost": 0.002548
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0332",
+      "sample_order": 13,
+      "run": 1,
+      "question": "Does SAD come from seasonal affective disorder?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for the meaning of an acronym (a definition), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly states the acronym's meaning.",
+            "quote": "Yes, the acronym SAD stands for seasonal affective disorder."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses plain, everyday language without technical jargon.",
+            "quote": "Most people experience symptoms during the fall and winter months when days are shorter and there is less sunlight."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Explains the term by defining what SAD is and describing its pattern.",
+            "quote": "It is a type of depression that follows a seasonal pattern, starting and ending at about the same time every year."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is ordered logically: clear answer, definition, then timing.",
+            "quote": "Definition: It is a type of depression that follows a seasonal pattern, starting and ending at about the same time every year."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and not repetitive; includes only a brief definition and timing.",
+            "quote": "Timing: Most people experience symptoms during the fall and winter months when days are shorter and there is less sunlight."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question seeks a definition, not actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — no actions are requested or provided in the answer.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — care-seeking guidance is not relevant to this definitional question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569851-tIsuJGTCVQT1UlM5r3aP",
+      "usage": {
+        "completion_tokens": 1245,
+        "prompt_tokens": 695,
+        "total_tokens": 1940,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 768,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00266375,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00266375,
+          "upstream_inference_prompt_cost": 0.00017375,
+          "upstream_inference_completions_cost": 0.00249
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2089",
+      "sample_order": 14,
+      "run": 1,
+      "question": "What do the cancerous moles look like?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks how to recognize cancerous moles and the answer includes advice about what to do if you're worried, so guidance on actions is relevant.",
+        "actionability_score": 100.0,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly describes how cancerous moles typically look using the ABCDE guide.",
+            "quote": "A cancerous mole (melanoma) often looks different from a normal mole and can be identified using the ABCDE Guide."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses plain, everyday words and short explanations for each ABCDE item.",
+            "quote": "A - Asymmetry: One half of the mole does not match the other half."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Explains key term 'melanoma' and spells out the ABCDE criteria in simple language.",
+            "quote": "A cancerous mole (melanoma) often looks different from a normal mole and can be identified using the ABCDE Guide."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear, logical order (ABCDE list then examples and next steps).",
+            "quote": "A - Asymmetry: One half of the mole does not match the other half."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on the key warning signs without unnecessary repetition.",
+            "quote": "Most normal moles on your body resemble one another. A cancerous mole often stands out like an \"ugly duckling\" because it looks entirely different from its neighboring spots."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "Suggests actions: describe the spot and report changes, and to discuss concerns with a doctor or consult reputable resources.",
+            "quote": "If you have a specific spot you are worried about, tell me:\nWhat does it look like? (color, shape, size)\nIs it changing, itching, or bleeding?\nI can help you understand if it matches common warning signs to discuss with a doctor."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "Provides concrete checks the reader can perform (asymmetry, border, color, diameter >6 mm, evolving signs).",
+            "quote": "D - Diameter: The spot is larger than 6 millimeters (about the size of a pencil eraser), though melanomas can sometimes be smaller."
+          },
+          "a3": {
+            "label": "yes",
+            "reason": "Advises to discuss warning signs with a doctor and highlights symptoms (changing, itching, bleeding) that are reasons to seek evaluation.",
+            "quote": "I can help you understand if it matches common warning signs to discuss with a doctor."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569852-U1venWpSYXbZiiO2C8SR",
+      "usage": {
+        "completion_tokens": 1975,
+        "prompt_tokens": 931,
+        "total_tokens": 2906,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1280,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00418275,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00418275,
+          "upstream_inference_prompt_cost": 0.00023275,
+          "upstream_inference_completions_cost": 0.00395
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1046",
+      "sample_order": 15,
+      "run": 1,
+      "question": "Is dandruff a fungus?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a factual explanation (whether dandruff is a fungus), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Directly answers the question by stating whether dandruff is a fungus and giving the cause.",
+            "quote": "Dandruff itself is not a fungus, but it is primarily caused by a naturally occurring yeast-like fungus called Malassezia that lives on the scalp."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday language and short phrases, with only brief technical names.",
+            "quote": "Feeding process: Malassezia feeds on the natural oils (sebum) produced by your scalp."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Explains a technical term ('sebum') in plain language and describes what Malassezia is.",
+            "quote": "feeds on the natural oils (sebum) produced by your scalp."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented logically: direct answer followed by the cause and a brief mechanism.",
+            "quote": "Dandruff itself is not a fungus, but it is primarily caused by a naturally occurring yeast-like fungus called Malassezia that lives on the scalp.\nFeeding process: Malassezia feeds on the natural oils (sebum) produced by your scalp."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Answer is concise without repetition or unnecessary detail.",
+            "quote": "Dandruff itself is not a fungus, but it is primarily caused by a naturally occurring yeast-like fungus called Malassezia that lives on the scalp."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question is informational rather than asking for actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — no action guidance is requested.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — care-seeking guidance is not relevant to this factual question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569855-zeajE3vVX6YRQjO9k9A5",
+      "usage": {
+        "completion_tokens": 1707,
+        "prompt_tokens": 673,
+        "total_tokens": 2380,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1152,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00358225,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00358225,
+          "upstream_inference_prompt_cost": 0.00016825,
+          "upstream_inference_completions_cost": 0.003414
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2808",
+      "sample_order": 16,
+      "run": 1,
+      "question": "What is the most common treatment for atrial fibrillation?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for the most common treatment (a factual description), not for instructions on what the reader should do, so actionability does not apply.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a clear, direct statement of the most common initial treatment.",
+            "quote": "The most common initial treatment for atrial fibrillation (AFib) is medication used to control the heart rate or rhythm and to prevent blood clots."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses mostly everyday words and gives familiar drug examples rather than dense technical prose.",
+            "quote": "Drugs like beta-blockers (e.g., metoprolol) and calcium channel blockers (e.g., diltiazem) are frequently prescribed to slow down a fast heart rate."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Key terms and the abbreviation are explained when first used.",
+            "quote": "atrial fibrillation (AFib)"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear, logical order: overall statement, then categories of treatments, then procedures, then an offer for more detail.",
+            "quote": "Rate-Control Medications: Drugs like beta-blockers (e.g., metoprolol) and calcium channel blockers (e.g., diltiazem) are frequently prescribed to slow down a fast heart rate.\nBlood Thinners (Anticoagulants): Medications such as apixaban (Eliquis) or rivaroxaban (Xarelto) are widely used to prevent blood clots and reduce the high risk of stroke associated with AFib.\nRhythm-Control Medications: Antiarrhythmic drugs may be used to help restore and maintain a normal sinus rhythm.\nProcedures: If medications do not work well or if symptoms are severe, doctors may recommend cardioversion (resetting the rhythm via shock or drugs) or catheter ablation (destroying tiny areas of heart tissue causing erratic signals)."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused without unnecessary repetition or excessive detail.",
+            "quote": "If you or someone you know is managing AFib, let me know if you would like details on specific medication side effects or lifestyle changes that help manage symptoms."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question requested a factual description, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question requested a factual description, not actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question requested a factual description, not actions to take.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569856-4O9Kx5C5GlfXU4KsncOS",
+      "usage": {
+        "completion_tokens": 1945,
+        "prompt_tokens": 861,
+        "total_tokens": 2806,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1216,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00410525,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00410525,
+          "upstream_inference_prompt_cost": 0.00021525,
+          "upstream_inference_completions_cost": 0.00389
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2420",
+      "sample_order": 17,
+      "run": 1,
+      "question": "What is carbuncle caused by?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asked only for the cause of a carbuncle (a factual description), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer starts with a direct statement of cause and stays on topic.",
+            "quote": "Carbuncles are deep, pus-filled skin infections caused most often by Staphylococcus aureus (staph) bacteria entering through hair follicles or minor skin breaks."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Mostly everyday language and clear examples are used to explain how bacteria enter the skin.",
+            "quote": "Bacterial entry: Bacteria move into deeper layers of skin through an opening like a hair follicle, a tiny scratch, a bug bite, or a shaving nick."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms and abbreviations used (carbuncle, Staphylococcus aureus, MRSA) are defined in plain language when introduced.",
+            "quote": "MRSA strains: Some carbuncles involve methicillin-resistant Staphylococcus aureus (MRSA), a strain that resists standard antibiotics."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: definition, how bacteria get in, how clusters form, and risk factors.",
+            "quote": "Cluster formation: Unlike a single boil (furuncle), a carbuncle forms when multiple hair follicles become infected and connect under the skin into a larger, deeper cluster."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids needless repetition while listing relevant causes and risk factors.",
+            "quote": "Other factors: Obesity, poor hygiene, and older age also increase susceptibility."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asked only about cause, not about actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asked only about cause, not about actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asked only about cause, not about when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569862-ZZYEtLpGtoIV4fTgHqSH",
+      "usage": {
+        "completion_tokens": 1916,
+        "prompt_tokens": 994,
+        "total_tokens": 2910,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1344,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0040805,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0040805,
+          "upstream_inference_prompt_cost": 0.0002485,
+          "upstream_inference_completions_cost": 0.003832
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2005",
+      "sample_order": 18,
+      "run": 1,
+      "question": "What causes polyps in nose?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks about causes (a factual explanation), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Directly states the main cause and notes uncertainty about the exact trigger.",
+            "quote": "Nasal polyps are caused by long-term inflammation in the lining of the nose and sinuses, though doctors do not know the exact trigger."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday wording and explains at least one term ('chronic') in plain language.",
+            "quote": "chronic (long-lasting) swelling"
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Key terms from the question ('nasal polyps') and 'inflammation' are not defined in plain language.",
+            "quote": "Nasal polyps are caused by long-term inflammation in the lining of the nose and sinuses"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is ordered logically: main cause first, then note of uncertainty, then related conditions.",
+            "quote": "While the exact root trigger remains unclear, medical experts link nasal polyps to conditions that cause chronic (long-lasting) swelling:"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Answer is concise and focused without repetition or unnecessary detail.",
+            "quote": ""
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about causes rather than actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about causes rather than actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about causes rather than actions to take.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569868-Wj6GtHbxY1o3gIhOP8W4",
+      "usage": {
+        "completion_tokens": 1547,
+        "prompt_tokens": 700,
+        "total_tokens": 2247,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1088,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003269,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003269,
+          "upstream_inference_prompt_cost": 0.000175,
+          "upstream_inference_completions_cost": 0.003094
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0440",
+      "sample_order": 19,
+      "run": 1,
+      "question": "How do I deal with a persistent erection?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks what to do about a persistent erection (how to manage it and when to seek care), so actionable guidance is expected.",
+        "actionability_score": 100.0,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer gives direct steps and clear urgency, including when to go to the emergency room and what to try at home.",
+            "quote": "Go to the emergency room immediately if your erection is painful or lasts longer than four hours, as this condition (called priapism) is a medical emergency that can cause permanent damage."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most instructions use plain, everyday language and describe simple actions (walk, ice pack, try to urinate).",
+            "quote": "Do light physical activity, such as taking a brisk walk or doing squats, to help redirect blood flow."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Key terms from the question are explained in plain language (the emergency definition of priapism and the perineum).",
+            "quote": "Go to the emergency room immediately if your erection is painful or lasts longer than four hours, as this condition (called priapism) is a medical emergency that can cause permanent damage."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is ordered logically: immediate danger first, then home measures for shorter-duration problems, then hospital treatments and references.",
+            "quote": "If the erection is rigid, painful, and has lasted for at least two hours (but less than four hours), you can try these steps:"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on relevant steps without unnecessary repetition or unrelated detail.",
+            "quote": "Apply an ice pack wrapped in a thin cloth to your penis or the perineum (the area between the base of the penis and the anus) for 10 to 20 minutes."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer lists specific actions the reader can take: go to the ER, take pseudoephedrine, do light exercise, apply ice, try to urinate.",
+            "quote": "Go to the emergency room immediately if your erection is painful or lasts longer than four hours, as this condition (called priapism) is a medical emergency that can cause permanent damage."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "Most home steps are concrete and feasible (timing for ER, 10–20 minutes for ice, types of activity to try); a prescription-level treatment is clearly marked as hospital-only.",
+            "quote": "Apply an ice pack wrapped in a thin cloth to your penis or the perineum (the area between the base of the penis and the anus) for 10 to 20 minutes."
+          },
+          "a3": {
+            "label": "yes",
+            "reason": "The answer clearly explains when and why to seek urgent care (painful or lasting ≥4 hours) and describes possible permanent harm if ignored.",
+            "quote": "If the erection lasts four hours or more, do not wait—go to the nearest emergency room right away."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569872-4jPvNzrpYcJuGy4Ld9TV",
+      "usage": {
+        "completion_tokens": 2338,
+        "prompt_tokens": 974,
+        "total_tokens": 3312,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1600,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0049195,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0049195,
+          "upstream_inference_prompt_cost": 0.0002435,
+          "upstream_inference_completions_cost": 0.004676
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0954",
+      "sample_order": 20,
+      "run": 1,
+      "question": "Is a popliteal cyst the same as a Baker\\'s cyst?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks whether the two terms mean the same thing (a definitional question), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The first sentence directly answers the question clearly.",
+            "quote": "A Baker's cyst and a popliteal cyst are the exact same thing: a fluid-filled swelling that forms a lump at the back of the knee."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The explanation uses plain, everyday language rather than technical jargon.",
+            "quote": "a fluid-filled swelling that forms a lump at the back of the knee"
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Key terms from the question are explained in plain language when first used.",
+            "quote": "\"Popliteal cyst\" is the medical and anatomical term (named after the popliteal fossa, the hollow space at the back of the knee), while \"Baker's cyst\" is the common name"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized clearly (definition, causes, symptoms, treatment).",
+            "quote": "What it is: A fluid-filled sac that develops when excess joint fluid gets pushed out the back of the knee joint."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or extraneous detail.",
+            "quote": "Treatment: Rest, ice, anti-inflammatory drugs, or treating the core knee issue rather than just draining the cyst."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question is definitional.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question is definitional.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question is definitional.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569912-Mk2BKBtuivJvBrX9ICpG",
+      "usage": {
+        "completion_tokens": 1443,
+        "prompt_tokens": 849,
+        "total_tokens": 2292,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 896,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00309825,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00309825,
+          "upstream_inference_prompt_cost": 0.00021225,
+          "upstream_inference_completions_cost": 0.002886
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0442",
+      "sample_order": 21,
+      "run": 1,
+      "question": "How do I fix my drooping face?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks how to fix a drooping face — it seeks guidance on what to do and when to seek care.",
+        "actionability_score": 100.0,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer gives a clear purpose and directly addresses causes and options for fixing a drooping face.",
+            "quote": "Fixing a drooping face depends on whether the sagging is due to natural aging and collagen loss or a sudden medical issue like a stroke or Bell's palsy."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most language is simple and conversational, describing options in plain terms rather than dense technical prose.",
+            "quote": "Injectables: Dermal fillers add structural volume, while Botox can relax downward-pulling muscles to create a subtle lifting effect."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Several medical terms are used without plain-language definitions (for example, 'Bell's palsy' and 'corticosteroids' are not explained).",
+            "quote": "Seek urgent medical care within 48 hours if you experience sudden partial paralysis, which may be treated with oral corticosteroids if diagnosed as Bell's palsy."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is ordered logically: emergency/urgent triage first, then non-surgical to surgical treatment options, then maintenance and a follow-up question.",
+            "quote": "Call emergency services immediately if a facial droop happens suddenly, as it can be a sign of a stroke."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids repeating the same points; it lists distinct options without unnecessary detail.",
+            "quote": "Skincare maintenance: Topical retinoids can support subtle long-term collagen production, though they cannot reverse severe sagging."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer tells the reader to call emergency services immediately for sudden droop and to seek urgent care within 48 hours for possible Bell's palsy.",
+            "quote": "Call emergency services immediately if a facial droop happens suddenly, as it can be a sign of a stroke."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "It gives concrete steps: call emergency services immediately for sudden droop and seek urgent medical care within 48 hours for sudden partial paralysis.",
+            "quote": "Seek urgent medical care within 48 hours if you experience sudden partial paralysis, which may be treated with oral corticosteroids if diagnosed as Bell's palsy."
+          },
+          "a3": {
+            "label": "yes",
+            "reason": "The answer explains when and why to seek urgent or emergency care (sudden droop may indicate stroke; Bell's palsy may need treatment).",
+            "quote": "Call emergency services immediately if a facial droop happens suddenly, as it can be a sign of a stroke."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569884-8mVMWa12HJ1bLa6uAkkJ",
+      "usage": {
+        "completion_tokens": 2174,
+        "prompt_tokens": 874,
+        "total_tokens": 3048,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1472,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0045665,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0045665,
+          "upstream_inference_prompt_cost": 0.0002185,
+          "upstream_inference_completions_cost": 0.004348
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2423",
+      "sample_order": 22,
+      "run": 1,
+      "question": "What is causing shivering?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked \"What is causing shivering?\" which requests causes/explanation rather than what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a clear definition of shivering and then lists likely causes, directly addressing the question.",
+            "quote": "Shivering is an involuntary muscle contraction and relaxation that the body uses to generate heat or respond to internal signals."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The text uses everyday language and short phrases to describe causes (e.g., cold exposure, fever, stress).",
+            "quote": "Cold Exposure: Low environmental temperatures drop core body temperature, triggering a reflex to warm up and prevent hypothermia."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms are explained in plain language when introduced (e.g., hypoglycemia is labeled as low blood sugar).",
+            "quote": "Low Blood Sugar (Hypoglycemia): Skipping meals or prolonged hunger can cause shaking and tremors."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: a brief definition followed by a clear list of possible causes and a closing offer of follow-up questions.",
+            "quote": "If you'd like, let me know:\nAre you or the person shivering experiencing a fever or other symptoms?\nHow long has the shivering lasted?"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or excessive detail.",
+            "quote": "Medications and Withdrawal: Drug side effects or withdrawal from substances like alcohol or opioids can trigger cold flashes."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for causes rather than actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for causes rather than actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for causes rather than when or where to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569886-MleBAmAvdyCmxk4IjWqr",
+      "usage": {
+        "completion_tokens": 1435,
+        "prompt_tokens": 891,
+        "total_tokens": 2326,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 896,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00309275,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00309275,
+          "upstream_inference_prompt_cost": 0.00022275,
+          "upstream_inference_completions_cost": 0.00287
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2797",
+      "sample_order": 23,
+      "run": 1,
+      "question": "What is the most common organ to prolapse?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a factual identification (which organ), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Directly answers the question with a clear statement.",
+            "quote": "The bladder is the most common organ to prolapse."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday language and simple sentences.",
+            "quote": "The supportive tissue between a person's bladder and vaginal wall weakens, causing the bladder to sag or bulge into the vagina."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Provides the medical term and explains what it means in plain language.",
+            "quote": "Medical name: Cystocele (or anterior vaginal wall prolapse).\nWhat happens: The supportive tissue between a person's bladder and vaginal wall weakens, causing the bladder to sag or bulge into the vagina."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear, logical order (answer, medical name, explanation, signs, other organs).",
+            "quote": "Medical name: Cystocele (or anterior vaginal wall prolapse).\nWhat happens: The supportive tissue between a person's bladder and vaginal wall weakens, causing the bladder to sag or bulge into the vagina."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused without distracting repetition or unnecessary detail.",
+            "quote": "Common signs: Feeling a heavy pressure in the pelvis or a bulge as if something is falling out of the vagina."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question requested a factual identification, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — the question requested a factual identification, not actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — the question requested a factual identification, not actions to take.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569905-r7fn7quFjrBA7oxQdmdh",
+      "usage": {
+        "completion_tokens": 2057,
+        "prompt_tokens": 757,
+        "total_tokens": 2814,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1536,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00430325,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00430325,
+          "upstream_inference_prompt_cost": 0.00018925,
+          "upstream_inference_completions_cost": 0.004114
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2116",
+      "sample_order": 24,
+      "run": 1,
+      "question": "What does a narcoleptic episode feel like?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a description of sensations (what it feels like), not for instructions or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly describes the sensations of a narcoleptic episode and its effects on wakefulness.",
+            "quote": "A narcolepsy sleep attack feels like an intense, heavy, and overwhelming wave of exhaustion that makes it nearly impossible to stay awake."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The language is simple and uses everyday words to describe the experience.",
+            "quote": "sudden physical weight in their body, blurred focus, and a fierce pressure to close their eyes."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "The term 'narcolepsy' (from the question) is used but not explained in plain language for readers unfamiliar with it.",
+            "quote": "A narcolepsy sleep attack"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented clearly: an overall description followed by specific features and a comparison to normal tiredness.",
+            "quote": "Unlike normal tiredness: Unlike standard evening sleepiness, a sleep attack can strike abruptly in the middle of a conversation, meal, or while walking, even if you slept well the night before."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused without unnecessary repetition or extraneous detail.",
+            "quote": "Sudden heaviness: People often describe the feeling as a sudden physical weight in their body, blurred focus, and a fierce pressure to close their eyes."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Action guidance is not applicable for this descriptive question.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Action guidance is not applicable for this descriptive question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Action guidance is not applicable for this descriptive question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569905-nJ9Rmg90NQBZRUDGdGPr",
+      "usage": {
+        "completion_tokens": 1257,
+        "prompt_tokens": 723,
+        "total_tokens": 1980,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 704,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00269475,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00269475,
+          "upstream_inference_prompt_cost": 0.00018075,
+          "upstream_inference_completions_cost": 0.002514
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2779",
+      "sample_order": 25,
+      "run": 1,
+      "question": "What is the most common cause of otitis media?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for the most common cause (a factual cause), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Clearly states the underlying mechanical cause (Eustachian tube dysfunction) and how it is typically triggered, directly answering the question.",
+            "quote": "The underlying mechanical cause of otitis media is Eustachian tube dysfunction, which typically gets triggered by a viral upper respiratory infection (like the common cold), leading to trapped fluid that frequently becomes infected by bacteria."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday language for the main ideas (e.g., 'common cold', 'fluid builds up') making the explanation accessible despite some technical pathogen names.",
+            "quote": "viral upper respiratory infection (like the common cold)"
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Does not explain what the Eustachian tube is or what 'dysfunction' means in plain language; it assumes the reader knows the anatomical term.",
+            "quote": "The underlying mechanical cause of otitis media is Eustachian tube dysfunction, which typically gets triggered by a viral upper respiratory infection (like the common cold), leading to trapped fluid that frequently becomes infected by bacteria."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a logical sequence: main cause, how viral infections lead to blockage, then the typical bacterial culprits and resources.",
+            "quote": "Viral infections: Colds, flu, and respiratory syncytial virus (RSV) cause swelling that blocks the Eustachian tubes."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused; no distracting repetition or excessive detail.",
+            "quote": "When the trapped fluid develops a secondary infection, the most common bacterial causes include:"
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable: the question asks for a cause, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable: the question asks for a cause, not actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable: the question asks for a cause, not when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569912-0S96gj1BEMcC5FNNhHgm",
+      "usage": {
+        "completion_tokens": 1818,
+        "prompt_tokens": 842,
+        "total_tokens": 2660,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1216,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0038465,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0038465,
+          "upstream_inference_prompt_cost": 0.0002105,
+          "upstream_inference_completions_cost": 0.003636
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2447",
+      "sample_order": 26,
+      "run": 1,
+      "question": "What is dizziness lightheadedness a symptom of?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked what dizziness/lightheadedness is a symptom of (informational), not what to do or when to seek care, so action guidance is not required by the question.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer lists likely causes and opens with a clear summary, directly addressing what dizziness/lightheadedness can indicate.",
+            "quote": "Dizziness and lightheadedness are common symptoms that signal a temporary drop in blood flow or oxygen to the brain, or an issue with your body's balance systems."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most of the answer uses everyday language and plain descriptions for common causes.",
+            "quote": "Dehydration: Not drinking enough fluids reduces your blood volume and lowers blood pressure."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Some medical terms are not fully explained in plain language when first used (e.g., 'labyrinthitis'); others are only partially explained.",
+            "quote": "Inner Ear Issues: Conditions like BPPV (benign paroxysmal positional vertigo) or labyrinthitis affect balance."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear order: brief summary, list of common causes, urgent signs, and follow-up suggestions.",
+            "quote": "Most causes are mild and pass quickly, but seek emergency help if lightheadedness lasts over 15 minutes or pairs with red-flag signs:"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or excessive detail.",
+            "quote": "Most causes are mild and pass quickly, but seek emergency help if lightheadedness lasts over 15 minutes or pairs with red-flag signs:"
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asked what the symptom indicates rather than what to do.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asked what the symptom indicates rather than what to do.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asked what the symptom indicates rather than when to seek care (though the answer does include emergency signs).",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569917-SmYBLdGBaYznSwJNXjv0",
+      "usage": {
+        "completion_tokens": 1863,
+        "prompt_tokens": 938,
+        "total_tokens": 2801,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1280,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0039605,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0039605,
+          "upstream_inference_prompt_cost": 0.0002345,
+          "upstream_inference_completions_cost": 0.003726
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1648",
+      "sample_order": 27,
+      "run": 1,
+      "question": "What are the 7 types of headaches?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked for the types of headaches (a factual list), not for what to do or when to seek care, so action steps are not required.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer lists the seven types up front and gives brief descriptions, directly addressing the question.",
+            "quote": "The seven most common types of headaches include tension headaches, migraines, cluster headaches, sinus headaches, hormone headaches, exertion headaches, and rebound headaches."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The language is simple and conversational, with plain descriptions for each headache type.",
+            "quote": "feeling like a dull, aching band of tight pressure around both sides of the head."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms used are briefly explained in plain language when introduced (for example, what rebound headaches are).",
+            "quote": "Rebound Headaches: Also called medication overuse headaches, these occur when frequent pain-relief medication use backfires and triggers more head pain."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented as a clear list of types followed by individual descriptions in a predictable order.",
+            "quote": "Tension Headaches: The American College of Healthcare Sciences notes these are the most frequent type, feeling like a dull, aching band of tight pressure around both sides of the head.\nMigraines: Severe, throbbing neurological attacks usually felt on one side of the head, often paired with nausea and extreme sensitivity to light and sound."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or unrelated detail.",
+            "quote": "If you are currently experiencing a headache, would you like help identifying your specific symptoms or learning when to see a doctor?"
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for types/definitions, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for types/definitions, not actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for types/definitions, not actions to take.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569923-zrxprnhpYSDcGj83v2qr",
+      "usage": {
+        "completion_tokens": 1505,
+        "prompt_tokens": 911,
+        "total_tokens": 2416,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 896,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00323775,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00323775,
+          "upstream_inference_prompt_cost": 0.00022775,
+          "upstream_inference_completions_cost": 0.00301
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0508",
+      "sample_order": 28,
+      "run": 1,
+      "question": "How do I make my priapism go down?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks what to do to make priapism go down, so it requests actionable guidance (when and how to respond).",
+        "actionability_score": 100.0,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer clearly states what to do and its purpose (seek emergency care) and addresses shorter-duration options.",
+            "quote": "An erection lasting longer than four hours is a medical emergency that requires immediate care at an emergency room to prevent permanent tissue damage."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most language is everyday and easy to follow (simple verbs and plain instructions).",
+            "quote": "Hydrate: Drink plenty of water."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms used are explained in plain language when introduced.",
+            "quote": "Doctors use specific procedures depending on whether the condition is ischemic (low-flow, trapped blood) or non-ischemic (high-flow, unregulated blood entry)."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: urgency first, risks, medical procedures, then mild/self-care steps and warnings.",
+            "quote": "Duration: Go to the emergency room if an erection lasts 4 hours or longer (or reaches the 3-hour mark if it is painful)."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition, giving key points and clear do/don't guidance.",
+            "quote": "What NOT to do: Do not attempt sexual activity or masturbation, and avoid alcohol or smoking."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "It tells the reader to go to the emergency room for long-lasting erections and lists immediate self-care steps for shorter/milder cases.",
+            "quote": "Duration: Go to the emergency room if an erection lasts 4 hours or longer (or reaches the 3-hour mark if it is painful)."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "Provides specific, feasible at-home actions (e.g., walk stairs, warm bath, drink water) and a clear instruction to seek ER care when appropriate.",
+            "quote": "Light activity: Try gentle exercises like walking up stairs or doing light squats."
+          },
+          "a3": {
+            "label": "yes",
+            "reason": "States when to seek care (4 hours or 3 if painful), where (emergency room), and why (to prevent permanent tissue damage).",
+            "quote": "An erection lasting longer than four hours is a medical emergency that requires immediate care at an emergency room to prevent permanent tissue damage."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569924-KEEnAJ64qVDr2AuxHSnt",
+      "usage": {
+        "completion_tokens": 2326,
+        "prompt_tokens": 1041,
+        "total_tokens": 3367,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1664,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00491225,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00491225,
+          "upstream_inference_prompt_cost": 0.00026025,
+          "upstream_inference_completions_cost": 0.004652
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2598",
+      "sample_order": 29,
+      "run": 1,
+      "question": "What is the difference between a stroke and a TIA transient ischemic attack?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for the difference (a factual description) between stroke and TIA, not for what to do or when to seek care, so action guidance is not required by the question.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer states the main difference up front and organizes supporting points, so it directly addresses the question.",
+            "quote": "A stroke causes permanent brain damage, while a transient ischemic attack (TIA or \"mini-stroke\") involves a temporary blockage that resolves without permanent injury."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most of the wording is everyday language and easy to follow (short sentences, common words).",
+            "quote": "Symptoms: Both share identical signs, such as sudden numbness, facial drooping, arm weakness, slurred speech, and vision loss."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "The abbreviation TIA is explained, but other medical terms (for example, 'infarction' and 'MRI') are used without plain-language definitions.",
+            "quote": "A stroke results in the death of brain tissue (infarction), while a TIA leaves no permanent injury visible on imaging tests like an MRI."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is grouped by topic (duration, tissue damage, symptoms, urgency) in a clear, logical order.",
+            "quote": "Duration: TIA symptoms usually last a few minutes to an hour (and under 24 hours), whereas stroke symptoms persist and worsen until blood flow is actively restored."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and stays on topic without unnecessary repetition or extraneous detail.",
+            "quote": "Urgency: You cannot tell the difference between a stroke and a TIA based on symptoms alone, so both require emergency medical care."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question asks for a difference/definition rather than what to do.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question asks for a difference/definition rather than instructions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question asks for a difference/definition rather than when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569926-6ehTZOMf5W4BqOyUy3Ed",
+      "usage": {
+        "completion_tokens": 1782,
+        "prompt_tokens": 887,
+        "total_tokens": 2669,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1152,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00378575,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00378575,
+          "upstream_inference_prompt_cost": 0.00022175,
+          "upstream_inference_completions_cost": 0.003564
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2398",
+      "sample_order": 30,
+      "run": 1,
+      "question": "What is an example of avoidance?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for examples/definition of avoidance, not for instructions or what to do.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Provides multiple concrete examples of avoidance behaviors that directly answer the question.",
+            "quote": "Avoidance behaviors are actions people use to escape or distract themselves from distressing thoughts, feelings, or situations."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday language and familiar examples (procrastination, binge-watching, substance use) rather than technical jargon.",
+            "quote": "Procrastination: Putting off important tasks, work assignments, or chores to avoid the stress of starting them."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Defines 'avoidance behaviors' and explains named categories (e.g., Situational Avoidance) in plain language when introduced.",
+            "quote": "Situational Avoidance: Staying away from specific people, places, or events that trigger anxiety, such as refusing to drive on highways or enter crowded spaces."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: a brief definition, a list of concrete examples, then categorized forms and follow-up questions.",
+            "quote": "Avoidance behaviors are actions people use to escape or distract themselves from distressing thoughts, feelings, or situations."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise lists and brief descriptions without distracting repetition or excessive detail.",
+            "quote": "Substance Use: Using alcohol, drugs, or sedatives to blunt uncomfortable feelings or numb anxiety."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asks for examples/definition rather than actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asks for examples/definition rather than actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asks for examples/definition rather than actions to take.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569933-7Uj6NgxaEtxW3k5fQJU7",
+      "usage": {
+        "completion_tokens": 1326,
+        "prompt_tokens": 975,
+        "total_tokens": 2301,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 768,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00289575,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00289575,
+          "upstream_inference_prompt_cost": 0.00024375,
+          "upstream_inference_completions_cost": 0.002652
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0674",
+      "sample_order": 31,
+      "run": 1,
+      "question": "How do you know if you have prostatitis?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks how to know if you have prostatitis (how to recognize symptoms and when to seek care).",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer lists clear symptoms and types of prostatitis, directly addressing how to know if you have it.",
+            "quote": "Prostatitis causes painful or difficult urination, frequent urges to pee, and aches in the lower back, pelvis, or genitals."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most wording is plain and conversational (few technical terms are used and are explained).",
+            "quote": "painful or difficult urination, frequent urges to pee, and aches in the lower back, pelvis, or genitals."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms used are explained in plain language when first introduced (e.g., dysuria, nocturia, perineum).",
+            "quote": "Pain or burning when you pee (dysuria), trouble starting a stream, weak flow, or waking up often at night to go (nocturia)."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: general symptoms, then specific types, then resources and follow-up questions.",
+            "quote": "Prostatitis causes painful or difficult urination, frequent urges to pee, and aches in the lower back, pelvis, or genitals.\nUrinary issues: Pain or burning when you pee (dysuria), trouble starting a stream, weak flow, or waking up often at night to go (nocturia)."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or extraneous detail.",
+            "quote": "If you or someone you know is experiencing these symptoms, let me know:"
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer indicates urgency for the acute form and invites the reader to report symptoms so the assistant can advise further.",
+            "quote": "This is an urgent medical condition."
+          },
+          "a2": {
+            "label": "no",
+            "reason": "The answer does not give concrete steps to take (for example, where to go, when exactly to seek care, or immediate home actions).",
+            "quote": "I can help you understand when to see a doctor or what questions to ask."
+          },
+          "a3": {
+            "label": "yes",
+            "reason": "It explains when the condition is urgent (sudden onset with high fever and severe flu-like signs) versus chronic forms that are less likely to include high fever.",
+            "quote": "Acute bacterial prostatitis: Starts very suddenly. It includes high fever, chills, body aches, and severe flu-like signs alongside urinary trouble. This is an urgent medical condition."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569934-LEWY6VkGJEwpKSKlLLtM",
+      "usage": {
+        "completion_tokens": 2025,
+        "prompt_tokens": 927,
+        "total_tokens": 2952,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1344,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00428175,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00428175,
+          "upstream_inference_prompt_cost": 0.00023175,
+          "upstream_inference_completions_cost": 0.00405
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2424",
+      "sample_order": 32,
+      "run": 1,
+      "question": "What is cerebral palsy life expectancy?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for life expectancy (a factual estimate), not for steps to take or when to seek care, so action guidance is not required.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer gives a clear, direct summary and compares mild vs severe cases with examples and statistics.",
+            "quote": "Life expectancy for someone with cerebral palsy (CP) depends heavily on the severity of the condition and co-occurring medical complications."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most of the answer uses plain, everyday language and concrete examples (walking, tube feeding, ages).",
+            "quote": "Mild CP: Individuals with mild cerebral palsy—who can walk independently and feed themselves—typically experience a normal or near-normal lifespan, with over 80% living past age 58."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Some technical terms and an abbreviation are used without plain-language explanations (e.g., GMFCS levels and 'aspiration' are not explained).",
+            "quote": "Mobility: Measured using scales like the Gross Motor Function Classification System (GMFCS); lower mobility levels correlate with higher medical risks."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: overall statement, mild vs severe examples, then factors affecting prognosis and resources.",
+            "quote": "Severe CP: Individuals with severe impairments (such as complete lack of independent mobility, reliance on tube feeding, or severe cognitive disabilities) often face a reduced life expectancy, though survival rates continue to improve with modern medical advancements."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused, without unnecessary repetition or extraneous detail.",
+            "quote": "If you would like more specific information, please share:\nThe age and mobility level (GMFCS scale if known) of the individual\nAny co-occurring conditions like seizures or feeding difficulties\nI can provide more tailored insights."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question seeks a factual estimate of life expectancy rather than advice or actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Actionability not applicable.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Actionability not applicable.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569941-XO1vNNWFAFXMpfk8PY7E",
+      "usage": {
+        "completion_tokens": 1462,
+        "prompt_tokens": 1016,
+        "total_tokens": 2478,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 832,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003178,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003178,
+          "upstream_inference_prompt_cost": 0.000254,
+          "upstream_inference_completions_cost": 0.002924
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0235",
+      "sample_order": 33,
+      "run": 1,
+      "question": "Can you survive a sepsis infection?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks about likelihood of survival (a prognosis), not what to do, how to treat, or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a direct reply to the question and states the main point clearly.",
+            "quote": "Yes, you can survive sepsis, especially with early diagnosis and prompt medical treatment."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Language is simple and concise, using everyday phrasing rather than dense jargon.",
+            "quote": "Early Stages: Most people with mild or early-stage sepsis recover completely."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "The answer does not define or explain medical terms from the question (for example, it doesn't explain what 'sepsis' or 'septic shock' mean).",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is ordered logically from general answer to outcomes by stage (early stage then most severe).",
+            "quote": "Early Stages: Most people with mild or early-stage sepsis recover completely."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The response is brief and avoids unnecessary repetition or extraneous detail.",
+            "quote": "Yes, you can survive sepsis, especially with early diagnosis and prompt medical treatment."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about survival, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about survival, not actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asks about survival, not when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569942-9jxbU7LHP4xPDvrt63jF",
+      "usage": {
+        "completion_tokens": 1513,
+        "prompt_tokens": 683,
+        "total_tokens": 2196,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1024,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00319675,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00319675,
+          "upstream_inference_prompt_cost": 0.00017075,
+          "upstream_inference_completions_cost": 0.003026
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2948",
+      "sample_order": 34,
+      "run": 1,
+      "question": "What triggers hidradenitis suppurativa?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks what triggers HS, which implies avoiding triggers and managing flares—practical actions the reader may take.",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer lists specific triggers and begins with a clear summary statement about what causes flare-ups.",
+            "quote": "Hidradenitis suppurativa (HS) flare-ups are triggered by a combination of physical irritation, lifestyle factors, hormonal shifts, and an overactive immune response that blocks and inflames hair follicles."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Language is mostly everyday and nontechnical, using plain terms like 'sweating', 'smoking', and 'stress'.",
+            "quote": "Sweating: Excessive heat, humidity, or heavy workouts can trigger flares in skin folds."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Key medical terms and the abbreviation 'HS' are not explained in plain language or defined.",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented as a short summary followed by a clear, organized list of triggers, then resources and next steps.",
+            "quote": "Friction: Skin rubbing against skin or tight, rough clothing can irritate hair follicles."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or excessive detail.",
+            "quote": "Smoking: Nicotine and tobacco are major risk factors linked to severe and frequent outbreaks."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer points to actions the reader can take, such as learning more via the HS Foundation and avoiding listed triggers.",
+            "quote": "You can learn more about managing these outbreaks through the HS Foundation."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "It names specific, actionable triggers to avoid (e.g., friction from tight clothing, hair removal, smoking, certain foods), which are concrete steps a reader can follow.",
+            "quote": "Hair Removal: Shaving, waxing, or plucking in sensitive areas can damage follicles."
+          },
+          "a3": {
+            "label": "no",
+            "reason": "The answer does not explain when or why to seek medical care or give guidance on when to contact a clinician.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569946-zAL3vRSLOGSNYKKtsLUT",
+      "usage": {
+        "completion_tokens": 1833,
+        "prompt_tokens": 912,
+        "total_tokens": 2745,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1216,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.003894,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.003894,
+          "upstream_inference_prompt_cost": 0.000228,
+          "upstream_inference_completions_cost": 0.003666
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2801",
+      "sample_order": 35,
+      "run": 1,
+      "question": "What is the most common reason for hematuria?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for the most common reason (a factual description), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a direct statement identifying the most common cause.",
+            "quote": "The most common cause of blood in the urine (known medically as hematuria ) is a urinary tract infection (UTI)."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Mostly uses everyday language and clear descriptions (not dense medical jargon).",
+            "quote": "Signs include burning pain and frequent urges to pee."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms are explained in plain language when first used (e.g., hematuria).",
+            "quote": "blood in the urine (known medically as hematuria )"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: main cause first, then other causes, then follow-up questions.",
+            "quote": "If you or someone else is experiencing this, please tell me:"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise list of causes without needless repetition or excessive detail.",
+            "quote": "Urinary tract infections (UTIs): Bacteria enter the urethra and multiply in the bladder or kidneys, causing inflammation and bleeding."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question sought a cause, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — no action requested by the question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — the question did not ask when or where to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569955-7qErj8UJ2kHfJor9Sr43",
+      "usage": {
+        "completion_tokens": 1724,
+        "prompt_tokens": 938,
+        "total_tokens": 2662,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1216,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0036825,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0036825,
+          "upstream_inference_prompt_cost": 0.0002345,
+          "upstream_inference_completions_cost": 0.003448
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2283",
+      "sample_order": 36,
+      "run": 1,
+      "question": "What happens if gestational diabetes is controlled?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks about outcomes of controlling gestational diabetes (what happens), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly states the main outcome in the first sentence and then lists specific effects.",
+            "quote": "When gestational diabetes is well-controlled, you have a very high chance of having a healthy pregnancy and a normal, healthy baby."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses plain, everyday wording and short sentences.",
+            "quote": "Keeping blood sugar stable prevents the baby from growing too large ( macrosomia ), which lowers delivery complications."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "The answer does not define the term from the question ('gestational diabetes') in plain language before using it.",
+            "quote": "When gestational diabetes is well-controlled,"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically: outcomes for baby and mother first, then monitoring and treatment, then postpartum follow-up.",
+            "quote": "Normal baby growth: Keeping blood sugar stable prevents the baby from growing too large ( macrosomia ), which lowers delivery complications."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused without unnecessary repetition or excessive detail.",
+            "quote": "Blood sugar levels usually go back to normal soon after the baby is born."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Question asks about outcomes, not actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Question asks about outcomes, not actions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Question asks about outcomes, not actions.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569957-8yFPrWiN0FswqMVUev1P",
+      "usage": {
+        "completion_tokens": 1578,
+        "prompt_tokens": 875,
+        "total_tokens": 2453,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1088,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00337475,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00337475,
+          "upstream_inference_prompt_cost": 0.00021875,
+          "upstream_inference_completions_cost": 0.003156
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1402",
+      "sample_order": 37,
+      "run": 1,
+      "question": "What are 5 symptoms of Tourette\\'s?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks for symptoms (how to recognize a condition), so guidance about what to look for or what to do is relevant.",
+        "actionability_score": 0.0,
+        "items": {
+          "u1": {
+            "label": "no",
+            "reason": "The answer promises five symptoms but only lists two, so it does not fully answer the question.",
+            "quote": "Here are 5 common symptoms of Tourette's:"
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Language is simple and approachable (defines tics in everyday words).",
+            "quote": "The hallmark sign of Tourette's syndrome is the presence of uncontrollable physical movements and sounds called tics."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "The medical term 'tics' is defined in plain language where first used.",
+            "quote": "uncontrollable physical movements and sounds called tics."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is arranged logically (definition first, then a bulleted list of symptoms), though the list is incomplete.",
+            "quote": "The hallmark sign of Tourette's syndrome is the presence of uncontrollable physical movements and sounds called tics.\nHere are 5 common symptoms of Tourette's:"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and does not repeat or add irrelevant detail.",
+            "quote": "Eye blinking: Rapid, repetitive blinking or eye-rolling is a very common simple motor tic."
+          },
+          "a1": {
+            "label": "no",
+            "reason": "The answer only lists symptoms and does not recommend any actions (e.g., see a doctor, get diagnosis, treatment options).",
+            "quote": ""
+          },
+          "a2": {
+            "label": "no",
+            "reason": "No concrete, actionable steps are provided for next steps or management.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "no",
+            "reason": "The answer does not say when or where to seek care or why one should consult a professional.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569968-n4nfA1g5YuOTHycG0zsH",
+      "usage": {
+        "completion_tokens": 1669,
+        "prompt_tokens": 702,
+        "total_tokens": 2371,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1152,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0035135,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0035135,
+          "upstream_inference_prompt_cost": 0.0001755,
+          "upstream_inference_completions_cost": 0.003338
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1519",
+      "sample_order": 38,
+      "run": 1,
+      "question": "What are the 3 types of coronary heart disease?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asked for the three types (a factual list), not what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "Directly lists the three types in the opening sentence.",
+            "quote": "The three main types of coronary heart disease (also known as coronary artery disease or CAD) are obstructive coronary artery disease, nonobstructive coronary artery disease, and spontaneous coronary artery dissection (SCAD)."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Uses everyday language and simple descriptions for each type.",
+            "quote": "This is the most common form. It happens when a waxy buildup called plaque narrows or blocks the large coronary arteries by 50% or more."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Explains medical terms and the abbreviation SCAD when introduced.",
+            "quote": "Spontaneous Coronary Artery Dissection (SCAD): This is a rare emergency condition. It happens when a sudden tear forms inside the wall of a coronary artery."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented logically: names the types, then gives a brief explanation of each.",
+            "quote": "Obstructive Coronary Artery Disease: This is the most common form."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise explanations without unnecessary repetition or extraneous detail.",
+            "quote": "Nonobstructive Coronary Artery Disease: This occurs when the major arteries are not blocked by 50% or more, but blood flow is still reduced."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question requested types of disease rather than actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — no action guidance was requested.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — care-seeking guidance was not relevant to the user's factual question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569970-Yxi5dE8l9esNDq0rx0Zk",
+      "usage": {
+        "completion_tokens": 1771,
+        "prompt_tokens": 913,
+        "total_tokens": 2684,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1216,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00377025,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00377025,
+          "upstream_inference_prompt_cost": 0.00022825,
+          "upstream_inference_completions_cost": 0.003542
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0559",
+      "sample_order": 39,
+      "run": 1,
+      "question": "How do you clear up sinusitis?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The question asks how to clear up sinusitis, which is a request for actions the reader can take to treat symptoms.",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly lists multiple home treatments and has a clear purpose of how to clear sinusitis.",
+            "quote": "You can get rid of sinusitis at home by using saline nasal rinses, staying hydrated, and inhaling steam to clear blocked passages."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Mostly uses common everyday words and simple instructions.",
+            "quote": "Inhale steam: Breathe in steam from a hot shower or a bowl of hot water to open your airways."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "The answer does not define the term 'sinusitis' from the question or explain other medical terms like 'rebound congestion.'",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented as a clear list of steps and remedies in a logical order.",
+            "quote": "Rinse your nose: Use a neti pot or squeeze bottle with distilled or boiled and cooled water to clear out thick mucus."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or excessive detail.",
+            "quote": "Use warm compresses: Place a warm, wet towel over your nose and forehead to ease facial pain and pressure."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer lists specific actions the reader can take (nasal rinses, steam inhalation, hydration, humidifier, pain relievers, etc.).",
+            "quote": "Rinse your nose: Use a neti pot or squeeze bottle with distilled or boiled and cooled water to clear out thick mucus."
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "It gives concrete, feasible steps and some specific limits (e.g., use distilled/boiled water for rinses; limit nasal sprays to three days).",
+            "quote": "Use a neti pot or squeeze bottle with distilled or boiled and cooled water to clear out thick mucus."
+          },
+          "a3": {
+            "label": "no",
+            "reason": "The answer does not give clear criteria for when to seek medical care; it only points to external resources and asks for more symptom details to help decide.",
+            "quote": "If you tell me how many days you have had these symptoms and whether you have a fever, I can help you decide if it is time to see a doctor."
+          }
+        }
+      },
+      "model_response_id": "gen-1790570000-fvL7jSsShryLnNjgTJwm",
+      "usage": {
+        "completion_tokens": 2058,
+        "prompt_tokens": 935,
+        "total_tokens": 2993,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1408,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00434975,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00434975,
+          "upstream_inference_prompt_cost": 0.00023375,
+          "upstream_inference_completions_cost": 0.004116
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1417",
+      "sample_order": 40,
+      "run": 1,
+      "question": "What are different types of tremors?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a list and descriptions of different types of tremors (informational), not for instructions on what to do or when to seek care.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer clearly lists and describes multiple types of tremors, directly addressing the question.",
+            "quote": "Tremors are involuntary, rhythmic shaking movements that can affect the hands, arms, head, voice, or other body parts, and they are generally grouped into two main categories: resting tremors and action tremors."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "The language is largely everyday and uses simple examples to explain each type.",
+            "quote": "Resting Tremor: Occurs when the muscle is completely relaxed and supported against gravity, such as hands resting on a lap."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Most terms are explained, but at least one medical term used ('dystonia') is not defined in plain language for a lay reader.",
+            "quote": "Dystonic Tremor: Affects individuals with dystonia, causing irregular, jerky, or twisting involuntary muscle contractions."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically (overview, main categories, subtypes, then named conditions).",
+            "quote": "they are generally grouped into two main categories: resting tremors and action tremors."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and avoids unnecessary repetition or excessive detail.",
+            "quote": "Essential Tremor: The most common movement disorder."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question requested types of tremors, not actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question requested types of tremors, not actions to take.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question requested types of tremors, not guidance on seeking care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569974-zgIi5Sf35cx7NZK6eyFb",
+      "usage": {
+        "completion_tokens": 1991,
+        "prompt_tokens": 1107,
+        "total_tokens": 3098,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1408,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00425875,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00425875,
+          "upstream_inference_prompt_cost": 0.00027675,
+          "upstream_inference_completions_cost": 0.003982
+        }
+      },
+      "warnings": []
+    }
+  ],
+  "summary": {
+    "record_count": 40,
+    "aio_present_count": 39,
+    "scored_count": 39,
+    "error_count": 0,
+    "actionability_na_count": 27,
+    "understandability": {
+      "n": 39,
+      "mean": 90.77,
+      "standard_deviation": 10.1,
+      "median": 100.0,
+      "q1": 80.0,
+      "q3": 100.0,
+      "minimum": 80.0,
+      "maximum": 100.0
+    },
+    "actionability": {
+      "n": 12,
+      "mean": 69.45,
+      "standard_deviation": 30.01,
+      "median": 66.67,
+      "q1": 66.67,
+      "q3": 100.0,
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "warning_count": 0,
+    "prompt_tokens": 34209,
+    "completion_tokens": 68609,
+    "cost_usd": 0.14577
+  }
+}

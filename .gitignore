@@ -8,7 +8,7 @@ __pycache__/
 .anthropic_env
 .tinker_env
 
-outputs/
+outputs/healthsearchqa_pilot/evaluation/citation_cache
 # macOS metadata
 ._*
 **/._*

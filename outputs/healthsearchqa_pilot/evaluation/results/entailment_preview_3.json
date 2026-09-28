@@ -1,0 +1,991 @@
+{
+  "schema_version": "0.1.0",
+  "created_at": "2026-09-27T04:32:47.745176+00:00",
+  "completed_at": "2026-09-27T05:30:17.247002+00:00",
+  "source_retrieval_file_created_at": "2026-09-27T04:30:35.116866+00:00",
+  "model": "openai/gpt-5-mini",
+  "method": "LLM entailment over retrieved top-k passages; no outside knowledge",
+  "records": [
+    {
+      "dataset_id": "HSQA_2125",
+      "run": 1,
+      "question": "What does a vulvodynia flare up feel like?",
+      "claim_count": 12,
+      "claims_with_local_citation": 6,
+      "claim_citation_pairs": [
+        {
+          "pair_id": "HSQA_2125::c001::src_001",
+          "claim_id": "c001",
+          "claim_text": "A vulvodynia flare-up feels like intense, persistent burning, stinging, rawness, or sharp knife-like pain in the external female genital area.",
+          "citation_id": "src_001",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "page_retrieval_status": "success",
+          "entailment_label": "partially_supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "The main vulvodynia symptom is pain in the vulva, which includes the opening of the vagina."
+            },
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "The pain often is described as: * Burning. * Irritation. * Stinging. * Rawness. * Soreness. * Sharp or knife-like pain."
+            },
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "Your pain might be constant, or it may come and go."
+            }
+          ],
+          "reason": "The supplied passages explicitly list burning, stinging, rawness and 'sharp or knife-like pain' in the vulva (external genital area), and note pain may be constant. However, the claim's qualifier 'intense' is not specified in the passages, and persistence is described as variable (may be constant or may come and go), so the claim's emphasis on consistently intense, persistent flares is not fully supported.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483568-6RwEZ2ttENkoUkUhgXd3",
+          "usage": {
+            "completion_tokens": 851,
+            "prompt_tokens": 1454,
+            "total_tokens": 2305,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 576,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.0020655,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.0020655,
+              "upstream_inference_prompt_cost": 0.0003635,
+              "upstream_inference_completions_cost": 0.001702
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2125::c005::src_002",
+          "claim_id": "c005",
+          "claim_text": "Throbbing or aching during a vulvodynia flare-up is a dull, heavy pressure or pulsing discomfort in the region.",
+          "citation_id": "src_002",
+          "citation_url": "https://my.clevelandclinic.org/health/diseases/17878-vulvodynia",
+          "page_retrieval_status": "success",
+          "entailment_label": "not_supported",
+          "evidence": [],
+          "reason": "The supplied passages describe that vulvodynia pain varies in location, timing, and severity and can be provoked or unprovoked, but they do not describe the pain quality as a \"dull, heavy pressure\" or \"pulsing\" discomfort (nor mention \"throbbing\" or \"aching\") as stated in the claim.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483575-RP6Agq6tyV0UIhMxYeEf",
+          "usage": {
+            "completion_tokens": 427,
+            "prompt_tokens": 1320,
+            "total_tokens": 1747,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 320,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.001184,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.001184,
+              "upstream_inference_prompt_cost": 0.00033,
+              "upstream_inference_completions_cost": 0.000854
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2125::c006::src_001",
+          "claim_id": "c006",
+          "claim_text": "Vulvodynia pain can affect the entire vulva (generalized) or concentrate strictly around the vaginal opening (the vestibule) (localized).",
+          "citation_id": "src_001",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "You might feel the pain throughout your entire vulva. This is called generalized vulvodynia. Or the pain may flare up in a certain area, such as the tissue surrounding the opening of the vagina, called the vestibule. This is known as localized vulvodynia, and it's more common than the generalized kind."
+            }
+          ],
+          "reason": "The supplied passage explicitly states vulvodynia pain can be felt throughout the entire vulva (generalized) or in a specific area around the vaginal opening (the vestibule) (localized).",
+          "confidence": "high",
+          "model_response_id": "gen-1790483579-PoIGQJxoujl9L0UbkOP2",
+          "usage": {
+            "completion_tokens": 518,
+            "prompt_tokens": 1377,
+            "total_tokens": 1895,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 320,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00138025,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00138025,
+              "upstream_inference_prompt_cost": 0.00034425,
+              "upstream_inference_completions_cost": 0.001036
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2125::c007::src_003",
+          "claim_id": "c007",
+          "claim_text": "Flare-ups can happen spontaneously or be triggered by everyday pressure.",
+          "citation_id": "src_003",
+          "citation_url": "https://myobgynvegas.com/vulvodynia/",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0001",
+              "quote": "The pain can last for three months or longer and may be constant or come and go."
+            },
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "others notice pain only when the area is touched or when pressure is applied."
+            },
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "Everyday activities can become difficult. Sitting for long periods, wearing tight clothing, exercising, or even inserting a tampon may trigger or worsen the pain."
+            }
+          ],
+          "reason": "The passages state vulvodynia pain \"may be constant or come and go,\" and explicitly note pain occurs \"when the area is touched or when pressure is applied,\" with everyday activities (sitting, tight clothing, exercise, tampon use) able to \"trigger or worsen the pain,\" directly supporting the claim.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483584-IteBb17zhelpNufKTCZC",
+          "usage": {
+            "completion_tokens": 694,
+            "prompt_tokens": 1447,
+            "total_tokens": 2141,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 448,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00174975,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00174975,
+              "upstream_inference_prompt_cost": 0.00036175,
+              "upstream_inference_completions_cost": 0.001388
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2125::c011::src_003",
+          "claim_id": "c011",
+          "claim_text": "Inserting a tampon or having sexual activity can trigger a vulvodynia flare-up.",
+          "citation_id": "src_003",
+          "citation_url": "https://myobgynvegas.com/vulvodynia/",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "inserting a tampon may trigger or worsen the pain."
+            },
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "Sexual intercourse is often painful, which can take a toll on intimate relationships and sexual health ."
+            }
+          ],
+          "reason": "The supplied passages explicitly state that inserting a tampon may trigger or worsen vulvodynia pain and that sexual intercourse is often painful, supporting the claim that tampon use or sexual activity can trigger a flare-up.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483590-YDEKtFJMwTve5cXx3ZMc",
+          "usage": {
+            "completion_tokens": 409,
+            "prompt_tokens": 1437,
+            "total_tokens": 1846,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 192,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00117725,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00117725,
+              "upstream_inference_prompt_cost": 0.00035925,
+              "upstream_inference_completions_cost": 0.000818
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2125::c012::src_004",
+          "claim_id": "c012",
+          "claim_text": "During a vulvodynia flare-up, the vulvar tissue often looks entirely normal with no visible signs of infection, redness, or broken skin.",
+          "citation_id": "src_004",
+          "citation_url": "https://www.bad.org.uk/pils/vulvodynia-and-vestibulodynia",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0001",
+              "quote": "Vulvodynia means ongoing pain in the vulva (the female genital area from the clitoris to the perineum including the labia) when there is nothing abnormal to see and no known cause for the pain; and other diagnoses have been ruled out by examination and investigation."
+            },
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "The skin of the vulva looks normal. This is important as other skin problems, such as dermatitis or infections, can cause the vulva to look inflamed, swollen, ulcerated or with broken skin, very red, and to feel sore."
+            }
+          ],
+          "reason": "The supplied leaflet explicitly states vulvodynia occurs \"when there is nothing abnormal to see\" and that \"the skin of the vulva looks normal,\" contrasting this with infections or dermatitis that cause redness, inflammation, or broken skin.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483594-tWutfh7M99naWV1oAS1P",
+          "usage": {
+            "completion_tokens": 1037,
+            "prompt_tokens": 2002,
+            "total_tokens": 3039,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 768,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.0025745,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.0025745,
+              "upstream_inference_prompt_cost": 0.0005005,
+              "upstream_inference_completions_cost": 0.002074
+            }
+          },
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "dataset_id": "HSQA_1045",
+      "run": 1,
+      "question": "Is cystic fibrosis usually fatal?",
+      "claim_count": 9,
+      "claims_with_local_citation": 9,
+      "claim_citation_pairs": [
+        {
+          "pair_id": "HSQA_1045::c001::src_001",
+          "claim_id": "c001",
+          "claim_text": "People can die from cystic fibrosis.",
+          "citation_id": "src_001",
+          "citation_url": "https://medlineplus.gov/ency/article/000107.htm",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0001",
+              "quote": "It can lead to a life-threatening illness."
+            },
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "The buildup of mucus results in life-threatening lung infections and serious digestion problems."
+            }
+          ],
+          "reason": "The passages explicitly describe cystic fibrosis as leading to \"life-threatening\" illness and \"life-threatening lung infections,\" which supports that people can die from the disease.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483603-LiFiigoZmiVem6Cwz9HH",
+          "usage": {
+            "completion_tokens": 397,
+            "prompt_tokens": 1415,
+            "total_tokens": 1812,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 256,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00114775,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00114775,
+              "upstream_inference_prompt_cost": 0.00035375,
+              "upstream_inference_completions_cost": 0.000794
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c002::src_001",
+          "claim_id": "c002",
+          "claim_text": "Cystic fibrosis is a serious, life‑threatening genetic condition.",
+          "citation_id": "src_001",
+          "citation_url": "https://medlineplus.gov/ency/article/000107.htm",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0002",
+              "quote": "Cystic fibrosis (CF) is a disease that is passed down through families. It is caused by a defective gene that makes the body produce abnormally thick and sticky fluid, called mucus."
+            },
+            {
+              "chunk_id": "chunk_0001",
+              "quote": "It can lead to a life-threatening illness."
+            }
+          ],
+          "reason": "The supplied passages explicitly state CF is caused by a defective gene / passed down through families and that it can lead to life‑threatening illness (including life‑threatening lung infections), supporting the claim that it is a serious, life‑threatening genetic condition.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483606-1trbeXEJUskcqP6lEgyE",
+          "usage": {
+            "completion_tokens": 718,
+            "prompt_tokens": 1423,
+            "total_tokens": 2141,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 512,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00179175,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00179175,
+              "upstream_inference_prompt_cost": 0.00035575,
+              "upstream_inference_completions_cost": 0.001436
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c003::src_002",
+          "claim_id": "c003",
+          "claim_text": "Respiratory failure is the most common cause of death in cystic fibrosis.",
+          "citation_id": "src_002",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0015",
+              "quote": "Respiratory failure is the most common cause of death with CF."
+            }
+          ],
+          "reason": "The supplied Mayo Clinic passage explicitly states that respiratory failure is the most common cause of death in cystic fibrosis.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483612-ZFoSk9Ret6wuAOEKqvBp",
+          "usage": {
+            "completion_tokens": 367,
+            "prompt_tokens": 1663,
+            "total_tokens": 2030,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 256,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00114975,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00114975,
+              "upstream_inference_prompt_cost": 0.00041575,
+              "upstream_inference_completions_cost": 0.000734
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c004::src_002",
+          "claim_id": "c004",
+          "claim_text": "In cystic fibrosis, thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue.",
+          "citation_id": "src_002",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0008",
+              "quote": "The thick and sticky mucus that happens with CF clogs the tubes that carry air in and out of the lungs."
+            },
+            {
+              "chunk_id": "chunk_0015",
+              "quote": "* **Ongoing infections.** Thick mucus in the lungs and sinuses makes a place for bacteria and fungi to live and grow. Sinus infections, bronchitis or pneumonia are common and may happen repeatedly."
+            },
+            {
+              "chunk_id": "chunk_0015",
+              "quote": "* **Respiratory failure.** Over time, CF can damage lung tissue so badly that it no longer works. Lung function usually worsens slowly over time and can become life-threatening."
+            }
+          ],
+          "reason": "The passages state that thick, sticky mucus clogs airways, creates a place for repeated/chronic infections, and that over time CF can damage lung tissue to the point of respiratory failure, directly supporting the claim.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483615-OUl6o5amkgEcakR7spRr",
+          "usage": {
+            "completion_tokens": 1129,
+            "prompt_tokens": 2044,
+            "total_tokens": 3173,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 832,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.002769,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.002769,
+              "upstream_inference_prompt_cost": 0.000511,
+              "upstream_inference_completions_cost": 0.002258
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c005::src_003",
+          "claim_id": "c005",
+          "claim_text": "Other multi-system complications—such as end-stage lung disease, severe malnutrition from digestive problems, or organ failure—can contribute to fatal outcomes in cystic fibrosis.",
+          "citation_id": "src_003",
+          "citation_url": "https://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/",
+          "page_retrieval_status": "success",
+          "entailment_label": "partially_supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "* Chronic respiratory failure remains the major cause of morbidity and mortality. End-stage lung disease from CF is characterized by bronchiectasis, mucus plugging, chronic infections, and fibrosis of the lungs and airways. Patients frequently die from overwhelming lung infections."
+            },
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "* Factors associated with earlier death in CF include the deltaF508 mutation, pancreatic insufficiency, low body mass index, certain infections (Pseudomonas aeruginosa, Staphylococcus aureus, and Burkholderia cepacia), low socioeconomic status, tobacco smoke exposure and female sex (3,4)."
+            }
+          ],
+          "reason": "The passages explicitly state that end-stage lung disease/chronic respiratory failure is a major cause of mortality and list pancreatic insufficiency and low BMI (reflecting digestive problems/malnutrition) among factors associated with earlier death. They do not, however, explicitly state that other non-respiratory \"organ failure\" generally contributes to fatal outcomes, so the claim is only partly supported by the supplied text.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483625-YVZ5z1HdkVBrJLKvqYEY",
+          "usage": {
+            "completion_tokens": 1416,
+            "prompt_tokens": 2484,
+            "total_tokens": 3900,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 1088,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.003453,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.003453,
+              "upstream_inference_prompt_cost": 0.000621,
+              "upstream_inference_completions_cost": 0.002832
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c006::src_004",
+          "claim_id": "c006",
+          "claim_text": "Treatments for cystic fibrosis have improved dramatically over the decades.",
+          "citation_id": "src_004",
+          "citation_url": "https://www.nationaljewish.org/conditions/cf",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0018",
+              "quote": "CFTR modulators : Targeted therapies, such as Trikafta, correct specific CFTR protein defects and have dramatically improved survival and quality of life for many people with CF."
+            },
+            {
+              "chunk_id": "chunk_0004",
+              "quote": "Thanks to modern therapies — including CFTR modulators that target the underlying protein defect — people with CF are living longer, healthier lives than ever before."
+            },
+            {
+              "chunk_id": "chunk_0011",
+              "quote": "Fortunately, steady advances in medical treatments for cystic fibrosis have provided a range of therapies to slow or prevent complications. New therapies have improved quality of life and extended the lifespan of children and adults."
+            }
+          ],
+          "reason": "The supplied passages state that steady/modern advances and new therapies (including CFTR modulators) have dramatically improved survival, quality of life, and lifespan for people with cystic fibrosis, which supports the claim that treatments have improved dramatically over the decades.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483639-TukxcbZs8aRF6H6ChcdX",
+          "usage": {
+            "completion_tokens": 802,
+            "prompt_tokens": 1299,
+            "total_tokens": 2101,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 512,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00192875,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00192875,
+              "upstream_inference_prompt_cost": 0.00032475,
+              "upstream_inference_completions_cost": 0.001604
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c007::src_004",
+          "claim_id": "c007",
+          "claim_text": "Modern therapies and modulator drugs help people with cystic fibrosis live much longer, healthier lives than in the past.",
+          "citation_id": "src_004",
+          "citation_url": "https://www.nationaljewish.org/conditions/cf",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0004",
+              "quote": "Thanks to modern therapies — including CFTR modulators that target the underlying protein defect — people with CF are living longer, healthier lives than ever before."
+            }
+          ],
+          "reason": "The supplied passage explicitly states that modern therapies, including CFTR modulators, have led to people with CF living longer, healthier lives than in the past, which matches the claim.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483646-hKjGBynF0Q0NVkjSznTL",
+          "usage": {
+            "completion_tokens": 326,
+            "prompt_tokens": 1426,
+            "total_tokens": 1752,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 192,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.0010085,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.0010085,
+              "upstream_inference_prompt_cost": 0.0003565,
+              "upstream_inference_completions_cost": 0.000652
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c008::src_005",
+          "claim_id": "c008",
+          "claim_text": "According to the Cystic Fibrosis Foundation, the median age of death in cystic fibrosis has risen significantly over time.",
+          "citation_id": "src_005",
+          "citation_url": "https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0001",
+              "quote": "The latest Registry data show steady gains in survival for people with CF."
+            },
+            {
+              "chunk_id": "chunk_0001",
+              "quote": "Based on 2025 Registry data, the median age of survival for people with CF who were born between 2021 and 2025 is predicted to be 66 years."
+            },
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "of the deaths reported in the Registry in 2024, known as the median age of death, half occurred before the age of 38.8"
+            }
+          ],
+          "reason": "The Cystic Fibrosis Foundation reports 'steady gains in survival' and provides a current median age of death (~38.8 for deaths reported in 2024) and a much higher predicted median age of survival (66 years for those born 2021–2025), indicating a significant rise over time.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483650-AZilWbhDU0mtUvTie7f5",
+          "usage": {
+            "completion_tokens": 1250,
+            "prompt_tokens": 1536,
+            "total_tokens": 2786,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 960,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.002884,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.002884,
+              "upstream_inference_prompt_cost": 0.000384,
+              "upstream_inference_completions_cost": 0.0025
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_1045::c009::src_005",
+          "claim_id": "c009",
+          "claim_text": "Severe cases and rapid disease progression in cystic fibrosis still cut some lives short.",
+          "citation_id": "src_005",
+          "citation_url": "https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "Data also show that of the deaths reported in the Registry in 2024, known as the median age of death, half occurred before the age of 38.8 — meaning too many people with CF miss the opportunity to finish school, begin careers, start families, and reach other milestones."
+            },
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "So, we still have a long way to go — particularly for those who have faster and more severe disease progression, for those living post-transplant, and for those who cannot benefit from modulator therapy."
+            }
+          ],
+          "reason": "The passages state that half of deaths occurred before age 38.8 (indicating lives are still cut short) and explicitly single out people with faster and more severe disease progression as a group for whom outcomes remain poor, directly supporting the claim.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483660-ZKYdmPfvLiEVyqTvcCky",
+          "usage": {
+            "completion_tokens": 653,
+            "prompt_tokens": 1528,
+            "total_tokens": 2181,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 448,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.001688,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.001688,
+              "upstream_inference_prompt_cost": 0.000382,
+              "upstream_inference_completions_cost": 0.001306
+            }
+          },
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "dataset_id": "HSQA_2782",
+      "run": 1,
+      "question": "What is the most common cause of septic shock?",
+      "claim_count": 9,
+      "claims_with_local_citation": 4,
+      "claim_citation_pairs": [
+        {
+          "pair_id": "HSQA_2782::c001::src_001",
+          "claim_id": "c001",
+          "claim_text": "Bacterial infections are the most common cause of septic shock.",
+          "citation_id": "src_001",
+          "citation_url": "https://my.clevelandclinic.org/health/diseases/23255-septic-shock",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0005",
+              "quote": "Bacterial infections are the most common cause of sepsis."
+            },
+            {
+              "chunk_id": "chunk_0003",
+              "quote": "It may start with an infection and bacteria in your blood ( bacteremia ). It can then progress to septic shock."
+            }
+          ],
+          "reason": "The passages state that bacterial infections are the most common cause of sepsis and explicitly say sepsis can progress to septic shock, which supports that bacterial infections are the most common cause of septic shock.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483666-0qk9BYGVwhcmO113e4MB",
+          "usage": {
+            "completion_tokens": 939,
+            "prompt_tokens": 1438,
+            "total_tokens": 2377,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 768,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.0022375,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.0022375,
+              "upstream_inference_prompt_cost": 0.0003595,
+              "upstream_inference_completions_cost": 0.001878
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2782::c002::src_001",
+          "claim_id": "c002",
+          "claim_text": "Septic shock usually starts as infections in the lungs (like pneumonia), the abdomen, or the urinary tract.",
+          "citation_id": "src_001",
+          "citation_url": "https://my.clevelandclinic.org/health/diseases/23255-septic-shock",
+          "page_retrieval_status": "success",
+          "entailment_label": "supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0005",
+              "quote": "Infections can start anywhere in your body, but most often develop in your lungs, belly or urinary tract."
+            },
+            {
+              "chunk_id": "chunk_0005",
+              "quote": "Septic shock happens when an infection triggers such an extreme immune response that it causes a chain reaction of harmful effects throughout your body."
+            }
+          ],
+          "reason": "The passage states septic shock begins when an infection triggers the condition and explicitly says infections most often develop in the lungs, belly (abdomen) or urinary tract, which matches the claim.",
+          "confidence": "high",
+          "model_response_id": "gen-1790483675-ZJlXKXnh30aR4ITXJWGu",
+          "usage": {
+            "completion_tokens": 461,
+            "prompt_tokens": 1449,
+            "total_tokens": 1910,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 320,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00128425,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00128425,
+              "upstream_inference_prompt_cost": 0.00036225,
+              "upstream_inference_completions_cost": 0.000922
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2782::c006::src_002",
+          "claim_id": "c006",
+          "claim_text": "Wounds, burns, or cellulitis are skin and soft tissue sources of infection that can lead to septic shock.",
+          "citation_id": "src_002",
+          "citation_url": "https://www.michiganmedicine.org/health-lab/what-are-septic-shock-and-sepsis-facts-behind-these-deadly-conditions",
+          "page_retrieval_status": "success",
+          "entailment_label": "not_supported",
+          "evidence": [],
+          "reason": "The supplied passages state sepsis \"most commonly\" starts as pneumonia, urinary tract infection, or intra-abdominal infection and do not mention wounds, burns, or cellulitis as skin/soft-tissue sources that can lead to septic shock. The claim is not substantiated by the provided text.",
+          "confidence": "high",
+          "model_response_id": "gen-1790485458-aBzLABbkb4Cv8C0LKnZ9",
+          "usage": {
+            "completion_tokens": 468,
+            "prompt_tokens": 1587,
+            "total_tokens": 2055,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 320,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.00133275,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.00133275,
+              "upstream_inference_prompt_cost": 0.00039675,
+              "upstream_inference_completions_cost": 0.000936
+            }
+          },
+          "warnings": []
+        },
+        {
+          "pair_id": "HSQA_2782::c009::src_003",
+          "claim_id": "c009",
+          "claim_text": "Less frequently, fungal infections (such as Candida) or viral infections can trigger septic shock.",
+          "citation_id": "src_003",
+          "citation_url": "https://www.nejm.org/doi/full/10.1056/NEJMra1208623",
+          "page_retrieval_status": "success",
+          "entailment_label": "partially_supported",
+          "evidence": [
+            {
+              "chunk_id": "chunk_0004",
+              "quote": "in a more recent study involving 14,000 ICU patients in 75 countries, gram-negative bacteria were isolated in 62% of patients with severe sepsis who had positive cultures, gram-positive bacteria in 47%, and fungi in 19%."
+            }
+          ],
+          "reason": "The passage states that fungi accounted for 19% of isolates in patients with severe sepsis, supporting that fungal infections are a less-frequent cause. However, the supplied text does not mention Candida specifically, does not mention viral infections, and refers to severe sepsis (not explicitly to septic shock), so the claim's details about 'such as Candida' and 'viral infections' triggering septic shock are not supported by the provided passages.",
+          "confidence": "high",
+          "model_response_id": "gen-1790487010-AU5BhHLLBFbMnP4hhB00",
+          "usage": {
+            "completion_tokens": 674,
+            "prompt_tokens": 1580,
+            "total_tokens": 2254,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": null,
+              "audio_tokens": 0,
+              "reasoning_tokens": 448,
+              "rejected_prediction_tokens": null,
+              "image_tokens": 0
+            },
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost": 0.001743,
+            "is_byok": false,
+            "cost_details": {
+              "upstream_inference_cost": 0.001743,
+              "upstream_inference_prompt_cost": 0.000395,
+              "upstream_inference_completions_cost": 0.001348
+            }
+          },
+          "warnings": [],
+          "superseded_judgment": {
+            "entailment_label": "partially_supported",
+            "evidence": [
+              {
+                "chunk_id": "chunk_0001",
+                "quote": "bacteria in 47%, and fungi in 19%."
+              },
+              {
+                "chunk_id": "chunk_0002",
+                "quote": "at high risk for invasive candidiasis."
+              }
+            ],
+            "reason": "The passages state that fungi account for 19% (vs bacteria 47%) and mention invasive candidiasis, supporting that fungal infections (including Candida) can less frequently cause sepsis/septic shock. However, none of the supplied passages mention viral infections as triggers, so the claim's statement about viral causes is not supported by the provided text.",
+            "confidence": "high",
+            "model_response_id": "gen-1790485462-5Ahcvm54BlgQZwaspz83",
+            "usage": {
+              "completion_tokens": 723,
+              "prompt_tokens": 1786,
+              "total_tokens": 2509,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": null,
+                "audio_tokens": 0,
+                "reasoning_tokens": 576,
+                "rejected_prediction_tokens": null,
+                "image_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "video_tokens": 0
+              },
+              "cost": 0.0018925,
+              "is_byok": false,
+              "cost_details": {
+                "upstream_inference_cost": 0.0018925,
+                "upstream_inference_prompt_cost": 0.0004465,
+                "upstream_inference_completions_cost": 0.001446
+              }
+            },
+            "warnings": []
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "record_count": 3,
+    "pair_count": 19,
+    "label_counts": {
+      "partially_supported": 3,
+      "not_supported": 2,
+      "supported": 14
+    },
+    "warning_count": 0,
+    "prompt_tokens": 29909,
+    "completion_tokens": 13536,
+    "total_tokens": 43445,
+    "cost_usd": 0.03454925
+  }
+}

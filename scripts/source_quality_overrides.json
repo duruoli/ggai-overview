@@ -1,0 +1,102 @@
+{
+  "https://cff.org/managing-cf/understanding-changes-life-expectancy": {
+    "label": "moderate",
+    "source_type": "Disease foundation patient-information page",
+    "reason": "The Cystic Fibrosis Foundation is an identified disease organization, but this page is not a government source, medical society guideline, systematic review, or academic medical institution."
+  },
+  "https://diabetes.org.uk/about-diabetes/gestational-diabetes/complications": {
+    "label": "moderate",
+    "source_type": "National disease charity patient-information page",
+    "reason": "Diabetes UK is an identified disease charity; this patient-information page does not meet a specified high-category source type."
+  },
+  "https://parkinson.org/understanding-parkinsons/movement-symptoms/tremor": {
+    "label": "moderate",
+    "source_type": "Disease foundation patient-information page",
+    "reason": "Parkinson's Foundation patient information fits an identified disease organization, without evidence that this page is a guideline or systematic review."
+  },
+  "https://skincancer.org/skin-cancer-information/melanoma/melanoma-warning-signs-and-images": {
+    "label": "moderate",
+    "source_type": "Disease foundation patient-information page",
+    "reason": "Skin Cancer Foundation is an identified disease organization; this warning-sign page is patient information."
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/16765736": {
+    "label": "moderate",
+    "source_type": "Bibliographic record for a journal article",
+    "reason": "PubMed is the record host, not the author of the cited research. The article should not be rated as government guidance solely because its record is on a .gov domain.",
+    "needs_review": true
+  },
+  "https://nejm.org/doi/full/10.1056/NEJMra1208623": {
+    "label": "moderate",
+    "source_type": "Peer-reviewed narrative review article",
+    "reason": "NEJM identifies this as a Review Article. The supplied rubric reserves high for systematic reviews, guidelines, societies, agencies, and major academic medical institutions; this is not identified as a systematic review."
+  },
+  "https://youtube.com/watch?v=UCD2kCxR6uI": {
+    "label": "low",
+    "source_type": "Commercial mental-health education platform video",
+    "reason": "Psych Hub publishes the video; naming an academic collaborator does not make this an academic medical institution source. Psych Hub is a commercial platform under the rubric.",
+    "needs_review": true
+  },
+  "https://youtube.com/watch?v=GGdPpwhrVos": {
+    "label": "moderate",
+    "source_type": "Medical journal educational video",
+    "reason": "The title identifies NEJM, but an educational video is not itself a peer-reviewed systematic review or guideline."
+  },
+  "https://facebook.com/MITnews/posts/every-year-about-85000-americans-are-diagnosed-with-bladder-cancer-while-treatme/1498537055651759": {
+    "label": "low",
+    "source_type": "Institutional general-news social post",
+    "reason": "MIT News is a news source and this is a social post, not a clinical or patient-information page with identified professional review."
+  },
+  "https://ncbi.nlm.nih.gov/books/NBK582729": {
+    "label": "high",
+    "source_type": "Professional scientific society fact sheet hosted by NCBI Bookshelf",
+    "reason": "MotherToBaby is the information service of OTIS, a professional scientific society. The high label follows the publisher, not NCBI hosting."
+  },
+  "https://getsmartaboutafib.net/en-US/afib-treatment-options": {
+    "label": "low",
+    "source_type": "Medical-device company education campaign",
+    "reason": "The campaign subscription notice identifies Biosense Webster as the party using submitted information; this is industry-sponsored patient education.",
+    "needs_review": false
+  },
+  "https://makingwomenhealthier.org/health-community/health-resources/health-library/detail?id=dizzi&lang=en-us": {
+    "label": "moderate",
+    "source_type": "Hospital patient-information page",
+    "reason": "The site identifies itself as The Hospital of Central Connecticut; the cited health-library page is hospital patient information.",
+    "needs_review": false
+  },
+  "https://medvidi.com/blog/distorted-self-image": {
+    "label": "low",
+    "source_type": "Commercial telehealth provider blog",
+    "reason": "MEDvidi identifies itself as an online mental health center with its own clinical services; the cited article is on its provider blog.",
+    "needs_review": false
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC4771139": {
+    "label": "moderate",
+    "source_type": "Peer-reviewed primary prevalence study",
+    "reason": "The matching PubMed record identifies this PMCID as 'Prevalence of Sickle Cell Trait in the Southern Suburb of Beirut, Lebanon,' an original study; the captured citation title was misleadingly generic.",
+    "needs_review": false
+  },
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10041873": {
+    "label": "moderate",
+    "source_type": "Peer-reviewed expert overview",
+    "reason": "The publisher labels this a Specialty Grand Challenge article and identifies its editor/reviewer. It is an expert overview, not the systematic review mentioned within its text.",
+    "needs_review": false
+  },
+  "https://rumcsi.org/news/when-blood-in-urine-is-serious": {
+    "label": "moderate",
+    "source_type": "Hospital patient-information article",
+    "reason": "The domain belongs to Richmond University Medical Center, a teaching hospital; the cited article is in its news/education section.",
+    "needs_review": false
+  },
+  "https://shinealightonhs.com/drivers-seat/understanding-hs": {
+    "label": "low",
+    "source_type": "Pharmaceutical-company education campaign",
+    "reason": "The site's footer identifies Novartis Pharmaceuticals Corporation as publisher, so the material falls under promotional/commercial sources.",
+    "needs_review": false
+  },
+  "https://upnt.com/understanding-priapism-what-you-need-to-know-and-when-to-get-help": {
+    "label": "low",
+    "source_type": "Private urology practice patient-information article",
+    "reason": "UPNT identifies itself as Urology Partners of North Texas, a private urology practice.",
+    "needs_review": false
+  }
+}

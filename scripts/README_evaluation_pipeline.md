@@ -13,14 +13,28 @@ This separation prevents source-card snippets and interface text from entering t
 
 The final flat `citations` list is treated as the response-level `source_pool`. Local HTML anchors are retained as additional mapping evidence, but the pipeline does not assume that every source in the flat list belongs to one identifiable paragraph.
 
+## Output layout
+
+Pilot artifacts are grouped by purpose:
+
+```text
+outputs/healthsearchqa_pilot/
+├── inputs/       # captured input files
+├── queues/       # files waiting for manual or follow-up processing
+└── evaluation/
+    ├── reports/  # human-readable Markdown reports
+    ├── results/  # JSON and CSV evaluation artifacts
+    └── citation_cache/  # reusable citation and browser cache
+```
+
 ## 1. Parse the captured HTML
 
 From the repository root:
 
 ```bash
 python scripts/parse_aio.py \
-  "outputs/healthsearchqa_pilot/healthsearchqa_aio_capture_2026-09-26 (1).json" \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json
+  "outputs/healthsearchqa_pilot/inputs/healthsearchqa_aio_capture_2026-09-26 (1).json" \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json
 ```
 
 The parser:
@@ -39,8 +53,8 @@ This command does not call an API:
 
 ```bash
 python scripts/extract_medical_claims.py \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
-  outputs/healthsearchqa_pilot/evaluation/claim_extraction_input.json \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/results/claim_extraction_input.json \
   --prepare-only
 ```
 
@@ -50,8 +64,8 @@ Set `OPENAI_API_KEY`, choose an available model explicitly, and run:
 
 ```bash
 python scripts/extract_medical_claims.py \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
-  outputs/healthsearchqa_pilot/evaluation/extracted_claims.json \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/results/extracted_claims.json \
   --model MODEL_NAME
 ```
 
@@ -59,8 +73,8 @@ For OpenRouter, the repository-local `.openrouter_env` can be loaded directly:
 
 ```bash
 python scripts/extract_medical_claims.py \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
-  outputs/healthsearchqa_pilot/evaluation/extracted_claims_sample.json \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/results/extracted_claims_sample.json \
   --provider openrouter \
   --env-file .openrouter_env \
   --model openai/gpt-5-mini \
@@ -71,8 +85,8 @@ To extract one response per question from a repeated-run capture, select the run
 
 ```bash
 python scripts/extract_medical_claims.py \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
-  outputs/healthsearchqa_pilot/evaluation/extracted_claims_run1.json \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/results/extracted_claims_run1.json \
   --provider openrouter \
   --env-file .openrouter_env \
   --model openai/gpt-5-mini \
@@ -83,8 +97,8 @@ For an initial quality check, limit execution to a small number of responses:
 
 ```bash
 python scripts/extract_medical_claims.py \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
-  outputs/healthsearchqa_pilot/evaluation/extracted_claims_sample.json \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/results/extracted_claims_sample.json \
   --model MODEL_NAME \
   --limit 5
 ```
@@ -103,8 +117,8 @@ For a three-question retrieval pilot:
 
 ```bash
 python scripts/retrieve_citation_evidence.py \
-  outputs/healthsearchqa_pilot/evaluation/extracted_claims_gpt5mini_run1.json \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/results/extracted_claims_gpt5mini_run1.json \
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_preview_3.json \
   --cache-dir outputs/healthsearchqa_pilot/evaluation/citation_cache \
   --limit-questions 3 \
   --top-k 5
@@ -125,8 +139,8 @@ retrieved passages:
 
 ```bash
 python scripts/evaluate_citation_entailment.py \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_preview_3.json \
-  outputs/healthsearchqa_pilot/evaluation/entailment_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/results/entailment_preview_3.json \
   --env-file .openrouter_env \
   --model openai/gpt-5-mini
 ```
@@ -156,10 +170,10 @@ evidence quotes, reason, confidence, and validation warnings:
 
 ```bash
 python scripts/export_citation_entailment_audit.py \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_preview_3.json \
-  outputs/healthsearchqa_pilot/evaluation/entailment_audit_preview_3.md \
-  --entailment-json outputs/healthsearchqa_pilot/evaluation/entailment_preview_3.json \
-  --output-csv outputs/healthsearchqa_pilot/evaluation/entailment_audit_preview_3.csv
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/reports/entailment_audit_preview_3.md \
+  --entailment-json outputs/healthsearchqa_pilot/evaluation/results/entailment_preview_3.json \
+  --output-csv outputs/healthsearchqa_pilot/evaluation/results/entailment_audit_preview_3.csv
 ```
 
 The Markdown is intended for direct human review; the CSV is convenient for filtering and
@@ -172,7 +186,7 @@ Prepare the queue without opening a browser:
 
 ```bash
 python scripts/capture_blocked_citations.py \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_preview_3.json \
   --cache-dir outputs/healthsearchqa_pilot/evaluation/citation_cache \
   --prepare-only
 ```
@@ -191,8 +205,8 @@ After manual recovery, update only the previously unavailable entailment pairs:
 
 ```bash
 python scripts/evaluate_citation_entailment.py \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_preview_3.json \
-  outputs/healthsearchqa_pilot/evaluation/entailment_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_preview_3.json \
+  outputs/healthsearchqa_pilot/evaluation/results/entailment_preview_3.json \
   --env-file .openrouter_env \
   --model openai/gpt-5-mini \
   --resume-unavailable
@@ -205,7 +219,7 @@ create a queue with deterministic filenames:
 
 ```bash
 python scripts/import_manual_citation_content.py \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_run1.json \
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_run1.json \
   --cache-dir outputs/healthsearchqa_pilot/evaluation/citation_cache \
   --prepare-only
 ```
@@ -221,7 +235,7 @@ Then run the same command without `--prepare-only`:
 
 ```bash
 python scripts/import_manual_citation_content.py \
-  outputs/healthsearchqa_pilot/evaluation/evidence_retrieval_run1.json \
+  outputs/healthsearchqa_pilot/evaluation/results/evidence_retrieval_run1.json \
   --cache-dir outputs/healthsearchqa_pilot/evaluation/citation_cache
 ```
 
@@ -238,8 +252,8 @@ in `PILOT_EVALUATION_METRICS.md`:
 
 ```bash
 python scripts/evaluate_communication.py \
-  outputs/healthsearchqa_pilot/evaluation/parsed_aio.json \
-  outputs/healthsearchqa_pilot/evaluation/communication_evaluation.json \
+  outputs/healthsearchqa_pilot/evaluation/results/parsed_aio.json \
+  outputs/healthsearchqa_pilot/evaluation/results/communication_evaluation.json \
   --env-file .openrouter_env \
   --model openai/gpt-5-mini
 ```

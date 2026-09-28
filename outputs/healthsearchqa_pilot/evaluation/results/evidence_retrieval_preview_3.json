@@ -1,0 +1,1168 @@
+{
+  "schema_version": "0.1.0",
+  "created_at": "2026-09-27T04:30:35.116866+00:00",
+  "retrieval_method": {
+    "scope": "explicit local citations only",
+    "chunking": "HTML main/article paragraphs grouped by heading",
+    "ranking": "TF-IDF cosine similarity over word unigrams and bigrams",
+    "top_k": 5
+  },
+  "summary": {
+    "record_count": 3,
+    "unique_page_count": 12,
+    "page_status_counts": {
+      "success": 12
+    },
+    "claim_citation_pair_count": 19
+  },
+  "records": [
+    {
+      "dataset_id": "HSQA_2125",
+      "run": 1,
+      "question": "What does a vulvodynia flare up feel like?",
+      "claim_count": 12,
+      "claims_with_local_citation": 6,
+      "pages": [
+        {
+          "citation_id": "src_001",
+          "citation_title": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "final_url": "https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "retrieval_status": "success",
+          "http_status": 403,
+          "content_type": "text/html",
+          "page_title": "Vulvodynia - Symptoms and causes",
+          "access_method": "jina_reader_fallback",
+          "direct_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "cache_key": "aa65bb400b7527960dea",
+          "chunk_count": 7,
+          "error": null
+        },
+        {
+          "citation_id": "src_002",
+          "citation_title": "Cleveland Clinic",
+          "url": "https://my.clevelandclinic.org/health/diseases/17878-vulvodynia",
+          "final_url": "https://my.clevelandclinic.org/health/diseases/17878-vulvodynia",
+          "retrieval_status": "success",
+          "http_status": 200,
+          "content_type": "text/html",
+          "page_title": "Vulvodynia: Causes, Symptoms, Management & Treatment",
+          "access_method": "direct_html",
+          "direct_error": null,
+          "cache_key": "97e20e82e71b0f3a0a48",
+          "chunk_count": 23,
+          "error": null
+        },
+        {
+          "citation_id": "src_003",
+          "citation_title": "MyOBGYN Las Vegas",
+          "url": "https://myobgynvegas.com/vulvodynia/",
+          "final_url": "https://myobgynvegas.com/vulvodynia/",
+          "retrieval_status": "success",
+          "http_status": 200,
+          "content_type": "text/html",
+          "page_title": "Why Does My Vulva Hurt? It Could Be Vulvodynia",
+          "access_method": "direct_html",
+          "direct_error": null,
+          "cache_key": "9e93123e5e517627cf5b",
+          "chunk_count": 6,
+          "error": null
+        },
+        {
+          "citation_id": "src_004",
+          "citation_title": "British Association of Dermatologists",
+          "url": "https://www.bad.org.uk/pils/vulvodynia-and-vestibulodynia",
+          "final_url": "https://www.bad.org.uk/pils/vulvodynia-and-vestibulodynia",
+          "retrieval_status": "success",
+          "http_status": 200,
+          "content_type": "text/html",
+          "page_title": "Vulvodynia and vestibulodynia",
+          "access_method": "direct_html",
+          "direct_error": null,
+          "cache_key": "c5ca9824323dabf43ca4",
+          "chunk_count": 8,
+          "error": null
+        }
+      ],
+      "claim_citation_pairs": [
+        {
+          "pair_id": "HSQA_2125::c001::src_001",
+          "claim_id": "c001",
+          "claim_text": "A vulvodynia flare-up feels like intense, persistent burning, stinging, rawness, or sharp knife-like pain in the external female genital area.",
+          "citation_id": "src_001",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0002",
+              "heading": "Symptoms",
+              "text": "The main vulvodynia symptom is pain in the vulva, which includes the opening of the vagina. The pain often is described as: * Burning. * Irritation. * Stinging. * Rawness. * Soreness. * Sharp or knife-like pain. You also may feel aching, throbbing and swelling. How often the symptoms happen and where exactly they're felt varies from person to person. Your pain might be constant, or it may come and go. It might flare up only when the vulva is touched. You might feel the pain throughout your entire vulva. This is called generalized vulvodynia. Or the pain may flare up in a certain area, such as the tissue surrounding the opening of the vagina, called the vestibule. This is known as localized vulvodynia, and it's more common than the generalized kind. The tissue of the vulva might look slightly inflamed or swollen. More often, your vulva doesn't look different than usual.",
+              "word_count": 152,
+              "retrieval_score": 0.168188
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0007",
+              "heading": "Complications",
+              "text": "Without treatment, vulvodynia can affect mental health, relationships and other aspects of your life. The condition is linked with anxiety and depression. It's also tied to less sexual desire, arousal and enjoyment. Pain or fear of pain may lead to involuntary tightening of the pelvic floor muscles, which can make vaginal penetration difficult or painful. Intimacy issues such as these lead many people with vulvodynia to say they feel shame, lower self-esteem, negative about body image and lacking as a sexual partner. The pain and other symptoms of vulvodynia might make it harder to keep up with work. You may feel less social too. And you may have trouble getting quality sleep.",
+              "word_count": 112,
+              "retrieval_score": 0.038798
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0001",
+              "heading": "Overview",
+              "text": "Vulvodynia (vul-voe-DIN-e-uh) is a type of long-term pain or discomfort around the outer part of the female genitals, called the vulva. It lasts at least three months and has no clear cause. The pain, burning or irritation linked with vulvodynia may make sitting, exercise or sexual activity painful or difficult. The condition can last for months to years. If you have symptoms of vulvodynia, don't let embarrassment or a lack of visible signs stop you from talking with your gynecologist or another healthcare professional. Treatments can ease your discomfort. And your care team can check for other causes of your pain. So, it's key to get a medical exam.",
+              "word_count": 109,
+              "retrieval_score": 0.037127
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0005",
+              "heading": "Causes",
+              "text": "Experts don't know the exact cause of vulvodynia. More than one factor may contribute. The cause may be different from person to person. Possible contributing factors include: * Changes or irritation of the nerves in or near the vulva. * Higher sensitivity of the nerves that process pain. * Changes in the body's inflammatory or immune response. * Differences in how the brain and nervous system process pain. * Pelvic floor muscle tension or weakness. More research is needed to understand how hormonal, genetic and other biological factors may contribute to the development of vulvodynia in some people.",
+              "word_count": 98,
+              "retrieval_score": 0.035902
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0003",
+              "heading": "When to see a doctor",
+              "text": "If you have pain in your vulva, talk with your gynecologist or another member of your healthcare team. If you don't have a gynecologist, you might be referred to one. A healthcare professional needs to find out if your pain has a treatable cause that's different from vulvodynia, such as: * An active infection from yeast or bacteria. * A sexually transmitted infection such as herpes. * An inflammatory skin condition. * Vulvar skin conditions or growths. * Genitourinary syndrome of menopause. Some people who don't realize they have vulvodynia try to ease their symptoms by using yeast infection treatments without a prescription. But it's key to get a checkup, so a member of your healthcare team can give you an exam and recommend the right treatment for you.",
+              "word_count": 129,
+              "retrieval_score": 0.024102
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2125::c005::src_002",
+          "claim_id": "c005",
+          "claim_text": "Throbbing or aching during a vulvodynia flare-up is a dull, heavy pressure or pulsing discomfort in the region.",
+          "citation_id": "src_002",
+          "citation_url": "https://my.clevelandclinic.org/health/diseases/17878-vulvodynia",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0004",
+              "heading": "What is vulvodynia?",
+              "text": "Vulvodynia could be provoked and unprovoked. In provoked vulvodynia, you feel pain with touch or activity. With unprovoked vulvodynia, you feel pain without these factors.",
+              "word_count": 25,
+              "retrieval_score": 0.056591
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0007",
+              "heading": "What are the symptoms of vulvodynia?",
+              "text": "The pain associated with vulvodynia feels different to different people. When the pain starts, stops or feels most severe varies from person to person, too. The pain in your vulva may range from mild to severe. It may feel like: You may feel the pain in one spot, the pain may shift from one place to another, or the pain may feel spread out throughout your entire vulva. Start and stop unpredictably over several months. Last nonstop for several months. Begin all of a sudden with no obvious cause. Start when you’re touched or participating in an activity like sex, exercise, running, walking, inserting a tampon or even sitting. Any of these activities can also intensify the vulvar pain that you’re already feeling.",
+              "word_count": 123,
+              "retrieval_score": 0.052238
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0003",
+              "heading": "What is vulvodynia?",
+              "text": "Vulvodynia (pronounced vul-vo-DIN-ee-a) is chronic pain in your vulva, and or vagina or genitals , with no apparent cause. Vulvar and vaginal pain are common symptoms of various conditions, including infections and skin disorders . Vulvodynia is different. Vulvodynia is pain lasting three or more months that isn’t an obvious symptom of a specific condition. The pain can be so draining that it keeps you from doing activities you enjoy. Cleveland Clinic is a non-profit academic medical center. Advertising on our site helps support our mission. We do not endorse non-Cleveland Clinic products or services. Policy There are two types of vulvodynia. They’re classified based on where the pain originates. Localized vulvodynia: Most of the time, pain is isolated to one spot, like your vulvar vestibule or clitoris. Your vulvar vestibule is the skin located between your inner labia (vaginal lips) and the opening of your urethra (where you pee) and vagina. Your clitoris is the small, bead-like organ at the top of your vulva. Localized vulvodynia is sometimes called localized vulvar pain syndrome. Generalized vulvodynia: Sometimes, the pain isn’t isolated to one spot. Instead, you may feel pain in different parts of your vulva and/or vagina at different times. You may feel pain throughout your vulva.",
+              "word_count": 207,
+              "retrieval_score": 0.041659
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0014",
+              "heading": "Does vulvodynia ever go away?",
+              "text": "There isn’t enough evidence to predict when (or if) your vulvodynia will ease or resolve on its own. Instead of trying a wait-and-see approach, schedule a visit with your provider to begin treatments that can help.",
+              "word_count": 36,
+              "retrieval_score": 0.04009
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0005",
+              "heading": "How does vulvodynia affect a person’s life?",
+              "text": "Vulvodynia can be so stressful that it’s life-altering. With vulvodynia: Pain from sitting for too long can make it challenging to do your job. The difficulty or impossibility of sexual intercourse can damage relationships. You may have a harder time falling and staying asleep. Clothing options can be limited. Research has linked vulvodynia to depression and anxiety.",
+              "word_count": 57,
+              "retrieval_score": 0.03437
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2125::c006::src_001",
+          "claim_id": "c006",
+          "claim_text": "Vulvodynia pain can affect the entire vulva (generalized) or concentrate strictly around the vaginal opening (the vestibule) (localized).",
+          "citation_id": "src_001",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/vulvodynia/symptoms-causes/syc-20353423",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0002",
+              "heading": "Symptoms",
+              "text": "The main vulvodynia symptom is pain in the vulva, which includes the opening of the vagina. The pain often is described as: * Burning. * Irritation. * Stinging. * Rawness. * Soreness. * Sharp or knife-like pain. You also may feel aching, throbbing and swelling. How often the symptoms happen and where exactly they're felt varies from person to person. Your pain might be constant, or it may come and go. It might flare up only when the vulva is touched. You might feel the pain throughout your entire vulva. This is called generalized vulvodynia. Or the pain may flare up in a certain area, such as the tissue surrounding the opening of the vagina, called the vestibule. This is known as localized vulvodynia, and it's more common than the generalized kind. The tissue of the vulva might look slightly inflamed or swollen. More often, your vulva doesn't look different than usual.",
+              "word_count": 152,
+              "retrieval_score": 0.153532
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0007",
+              "heading": "Complications",
+              "text": "Without treatment, vulvodynia can affect mental health, relationships and other aspects of your life. The condition is linked with anxiety and depression. It's also tied to less sexual desire, arousal and enjoyment. Pain or fear of pain may lead to involuntary tightening of the pelvic floor muscles, which can make vaginal penetration difficult or painful. Intimacy issues such as these lead many people with vulvodynia to say they feel shame, lower self-esteem, negative about body image and lacking as a sexual partner. The pain and other symptoms of vulvodynia might make it harder to keep up with work. You may feel less social too. And you may have trouble getting quality sleep.",
+              "word_count": 112,
+              "retrieval_score": 0.073894
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0006",
+              "heading": "Risk factors",
+              "text": "Some factors have been linked with vulvodynia. But having one or more of these factors doesn't mean you'll develop the condition. Developing vulvodynia may be more likely if you have: * A history of recurrent vaginal infections, especially vaginal yeast infections. * Ongoing or repeated irritation of the vulva. * Conditions that affect the pelvic floor muscles. * Other chronic pain conditions, such as fibromyalgia or bladder pain syndrome.",
+              "word_count": 69,
+              "retrieval_score": 0.072189
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0001",
+              "heading": "Overview",
+              "text": "Vulvodynia (vul-voe-DIN-e-uh) is a type of long-term pain or discomfort around the outer part of the female genitals, called the vulva. It lasts at least three months and has no clear cause. The pain, burning or irritation linked with vulvodynia may make sitting, exercise or sexual activity painful or difficult. The condition can last for months to years. If you have symptoms of vulvodynia, don't let embarrassment or a lack of visible signs stop you from talking with your gynecologist or another healthcare professional. Treatments can ease your discomfort. And your care team can check for other causes of your pain. So, it's key to get a medical exam.",
+              "word_count": 109,
+              "retrieval_score": 0.063877
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0005",
+              "heading": "Causes",
+              "text": "Experts don't know the exact cause of vulvodynia. More than one factor may contribute. The cause may be different from person to person. Possible contributing factors include: * Changes or irritation of the nerves in or near the vulva. * Higher sensitivity of the nerves that process pain. * Changes in the body's inflammatory or immune response. * Differences in how the brain and nervous system process pain. * Pelvic floor muscle tension or weakness. More research is needed to understand how hormonal, genetic and other biological factors may contribute to the development of vulvodynia in some people.",
+              "word_count": 98,
+              "retrieval_score": 0.035598
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2125::c007::src_003",
+          "claim_id": "c007",
+          "claim_text": "Flare-ups can happen spontaneously or be triggered by everyday pressure.",
+          "citation_id": "src_003",
+          "citation_url": "https://myobgynvegas.com/vulvodynia/",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0002",
+              "heading": "What Vulvodynia Feels Like",
+              "text": "The experience of vulvodynia varies from person to person. Some women feel a persistent burning or rawness that is present most of the time, while others notice pain only when the area is touched or when pressure is applied. The pain may be focused in one specific spot, often near the vaginal opening, or it may be spread across the entire vulvar area. Everyday activities can become difficult. Sitting for long periods, wearing tight clothing, exercising, or even inserting a tampon may trigger or worsen the pain. Sexual intercourse is often painful, which can take a toll on intimate relationships and sexual health . Many women with vulvodynia also experience anxiety or depression related to their symptoms.",
+              "word_count": 117,
+              "retrieval_score": 0.059511
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0005",
+              "heading": "Lifestyle Changes That Make a Difference",
+              "text": "Small adjustments to your daily routine can also help manage vulvodynia symptoms. Wearing loose-fitting cotton underwear without dyes or seams reduces irritation against sensitive skin. Switching to fragrance-free soaps, detergents, and personal care products can prevent flare-ups caused by chemical irritants. When cleansing the vulvar area, warm water alone is usually enough. Avoid douches, scented wipes, and bubble baths. For women who experience pain during intercourse, it can be helpful to use a generous amount of water-based lubricant and communicate openly with your partner about comfort levels. Some women also find relief by applying a cool gel pack wrapped in a soft cloth to the area after activities that trigger pain. If you are also experiencing vulvar itching or irritation alongside pain, mention this to your provider, as it can help narrow the diagnosis.",
+              "word_count": 134,
+              "retrieval_score": 0.05396
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0001",
+              "heading": "",
+              "text": "Vulvodynia is a condition that causes chronic pain, burning, or discomfort in the vulva, the outer area of the female genitals, without an identifiable cause like an infection or skin disease. The pain can last for three months or longer and may be constant or come and go. Despite affecting an estimated 8% to 10% of women at some point in their lives, vulvodynia often goes undiagnosed for years because it is frequently confused with other conditions.",
+              "word_count": 77,
+              "retrieval_score": 0.023855
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0006",
+              "heading": "You Deserve Answers and Relief",
+              "text": "Living with unexplained vulvar pain can feel isolating, especially when previous providers cannot seem to pinpoint the problem. But vulvodynia is a real, recognized medical condition, and effective treatments are available. If you have been dealing with ongoing vulvar discomfort that has not responded to typical treatments, it may be time to talk with a provider who can evaluate you for vulvodynia. Schedule an appointment with the team at MyOBGYN by visiting myobgynvegas.com/book-appt or calling (702) 463-2981. You do not have to keep living with pain that has no name. We are MyOBGYN. We believe in empowering women through every stage in their lives. At MyOBGYN, we take pride in providing an inclusive community in support of all women. We are committed to patient education, evidence-based practices, and creating positive experiences for our patients.",
+              "word_count": 134,
+              "retrieval_score": 0.023201
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0004",
+              "heading": "Treatment Options That Can Help",
+              "text": "There is no one-size-fits-all cure for vulvodynia, but there are several treatment approaches that can reduce pain and improve quality of life. Your provider will likely recommend a combination of strategies based on your specific symptoms. Pelvic floor physical therapy is one of the most effective treatments. Many women with vulvodynia have tight or overactive pelvic floor muscles without realizing it. A specially trained physical therapist can teach you exercises and techniques to relax those muscles and reduce pain over time. Women dealing with related concerns like chronic pelvic pain may also benefit from this approach. Topical medications, such as lidocaine ointment, can help numb the area and make daily activities or intercourse more comfortable. For women experiencing painful intercourse , these topical treatments can be an important part of a broader management plan. Some providers prescribe low-dose tricyclic antidepressants or anticonvulsants, not for depression, but because these medications can help calm overactive nerve signals that contribute to chronic pain.",
+              "word_count": 160,
+              "retrieval_score": 0.018196
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2125::c011::src_003",
+          "claim_id": "c011",
+          "claim_text": "Inserting a tampon or having sexual activity can trigger a vulvodynia flare-up.",
+          "citation_id": "src_003",
+          "citation_url": "https://myobgynvegas.com/vulvodynia/",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0002",
+              "heading": "What Vulvodynia Feels Like",
+              "text": "The experience of vulvodynia varies from person to person. Some women feel a persistent burning or rawness that is present most of the time, while others notice pain only when the area is touched or when pressure is applied. The pain may be focused in one specific spot, often near the vaginal opening, or it may be spread across the entire vulvar area. Everyday activities can become difficult. Sitting for long periods, wearing tight clothing, exercising, or even inserting a tampon may trigger or worsen the pain. Sexual intercourse is often painful, which can take a toll on intimate relationships and sexual health . Many women with vulvodynia also experience anxiety or depression related to their symptoms.",
+              "word_count": 117,
+              "retrieval_score": 0.087631
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0005",
+              "heading": "Lifestyle Changes That Make a Difference",
+              "text": "Small adjustments to your daily routine can also help manage vulvodynia symptoms. Wearing loose-fitting cotton underwear without dyes or seams reduces irritation against sensitive skin. Switching to fragrance-free soaps, detergents, and personal care products can prevent flare-ups caused by chemical irritants. When cleansing the vulvar area, warm water alone is usually enough. Avoid douches, scented wipes, and bubble baths. For women who experience pain during intercourse, it can be helpful to use a generous amount of water-based lubricant and communicate openly with your partner about comfort levels. Some women also find relief by applying a cool gel pack wrapped in a soft cloth to the area after activities that trigger pain. If you are also experiencing vulvar itching or irritation alongside pain, mention this to your provider, as it can help narrow the diagnosis.",
+              "word_count": 134,
+              "retrieval_score": 0.030906
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0001",
+              "heading": "",
+              "text": "Vulvodynia is a condition that causes chronic pain, burning, or discomfort in the vulva, the outer area of the female genitals, without an identifiable cause like an infection or skin disease. The pain can last for three months or longer and may be constant or come and go. Despite affecting an estimated 8% to 10% of women at some point in their lives, vulvodynia often goes undiagnosed for years because it is frequently confused with other conditions.",
+              "word_count": 77,
+              "retrieval_score": 0.023283
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0003",
+              "heading": "Why It Takes So Long to Get Answers",
+              "text": "One of the most frustrating aspects of vulvodynia is how long it can take to get a correct diagnosis. Research suggests that many women see multiple providers over several years before receiving an answer. There are a few reasons for this. Vulvodynia shares symptoms with several other conditions, and providers often need to rule those out first. Conditions commonly confused with vulvodynia include: Yeast infections or bacterial vaginosis Skin conditions like lichen sclerosus or contact dermatitis Sexually transmitted infections Pelvic floor muscle dysfunction Because there is no single test that confirms vulvodynia, diagnosis is based on your reported symptoms, a careful physical exam, and the process of ruling out other causes. If standard treatments for infections or skin conditions are not helping your pain, that is an important clue that something else may be going on.",
+              "word_count": 136,
+              "retrieval_score": 0.017922
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0004",
+              "heading": "Treatment Options That Can Help",
+              "text": "There is no one-size-fits-all cure for vulvodynia, but there are several treatment approaches that can reduce pain and improve quality of life. Your provider will likely recommend a combination of strategies based on your specific symptoms. Pelvic floor physical therapy is one of the most effective treatments. Many women with vulvodynia have tight or overactive pelvic floor muscles without realizing it. A specially trained physical therapist can teach you exercises and techniques to relax those muscles and reduce pain over time. Women dealing with related concerns like chronic pelvic pain may also benefit from this approach. Topical medications, such as lidocaine ointment, can help numb the area and make daily activities or intercourse more comfortable. For women experiencing painful intercourse , these topical treatments can be an important part of a broader management plan. Some providers prescribe low-dose tricyclic antidepressants or anticonvulsants, not for depression, but because these medications can help calm overactive nerve signals that contribute to chronic pain.",
+              "word_count": 160,
+              "retrieval_score": 0.017699
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2125::c012::src_004",
+          "claim_id": "c012",
+          "claim_text": "During a vulvodynia flare-up, the vulvar tissue often looks entirely normal with no visible signs of infection, redness, or broken skin.",
+          "citation_id": "src_004",
+          "citation_url": "https://www.bad.org.uk/pils/vulvodynia-and-vestibulodynia",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0002",
+              "heading": "",
+              "text": "Many conditions affecting the vulva can be painful (e.g. infections such as thrush or genital herpes , as well as skin conditions such as eczema ). What causes vulvodynia? The precise cause is unknown. The nerve endings in the skin of the vulva appear to become hypersensitive and account for the pain felt. Vulvodynia is one type of ‘complex regional pain syndrome,’ others including migraine and fibromyalgia. Stress is known to worsen the condition. Vulvodynia is thought to affect about 15 in 100 women. It is not contagious or related to hygiene or hygiene products. It may be primary (with no known cause) or secondary (following another condition)., Secondary vulvodynia may follow inflammation in the vulva, such as that caused by thrush or the overuse of topical and vaginal anti-thrush treatments). Is vulvodynia hereditary? What does vulvodynia feel and look like? Pain occurs in the vulva, and occasionally involves the buttocks or even the inner thighs. It is often felt as a burning, stinging or raw sandpaper-like discomfort. These sensations may fluctuate in intensity and can be constant or intermittent. Symptoms may occur only in a small area or involve the entire vulva. The pain can occur spontaneously or when the vulva is touched.",
+              "word_count": 204,
+              "retrieval_score": 0.076813
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0003",
+              "heading": "",
+              "text": "Vulvodynia can lead to painful sexual intercourse, decreased libido, and communication barriers (for example, being embarrassed to talk about it). The ongoing pain can cause significant distress, anxiety and affect sexual relationships. The skin of the vulva looks normal. This is important as other skin problems, such as dermatitis or infections, can cause the vulva to look inflamed, swollen, ulcerated or with broken skin, very red, and to feel sore. How will vulvodynia be diagnosed? Your doctor will make the diagnosis by listening to your description of the problem and then examining you to exclude other causes of pain in the area. Taking swabs to look for infection or a biopsy (removal of a small sample of skin under a local anaesthetic to examine under the microscope) may occasionally be needed to rule out other causes, but there is no specific test to make the diagnosis. Can vulvodynia be cured? There is no simple cure, but the condition can improve by one or more of a variety of treatments, so that it may no longer a problem. How can vulvodynia be prevented and treated? Vulvodynia can be managed with appropriate self-care practices (discussed in the next section). If these do not help, then prescribed off-licence oral medication may be needed. What is an unlicensed drug?",
+              "word_count": 215,
+              "retrieval_score": 0.068313
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0001",
+              "heading": "",
+              "text": "Patient Information Leaflets Vulvodynia and vestibulodynia Vulvodynia and vestibulodynia PIL (Oct 2024) What are the aims of this leaflet? This leaflet has been written to help you understand more about vulvodynia. It tells you what it is, what causes it, what can be done about it, and where you can find out more about it. What is vulvodynia and vestibulodynia? Vulvodynia means ongoing pain in the vulva (the female genital area from the clitoris to the perineum including the labia) when there is nothing abnormal to see and no known cause for the pain; and other diagnoses have been ruled out by examination and investigation. Vestibulodynia is a term used for pain specifically arising at the entrance of the vagina, in the area known as the vestibule (the area of the openings to the vagina and the urethra), when any pressure, be it touch or friction, is applied. It is also called localised vulvodynia. Vulvodynia can be generalised (involving skin around the inner thighs and buttocks) or localised just to the entrance into the vagina. Whether generalised or localised vulvodynia may be described as provoked (caused by touch) or spontaneous (occurring without touch as a trigger).",
+              "word_count": 196,
+              "retrieval_score": 0.031485
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0007",
+              "heading": "",
+              "text": "Pelvic floor exercise. The pelvic floor is a group of muscles which are in the shape of a sling between the legs. These muscles keep the pelvic organs (bladder, uterus, and rectum) in place. If vulvodynia occurs with sex-related pain, this might mean that the pelvic floor muscles do not work as they should. Physiotherapy for the pelvic floor muscles can be helpful. Speak to your healthcare professional for more information. These recommendations may suit some women better than others, so it is worth trying different things to see which will help you as an individual. Most women find that a combined approach including several techniques is the most effective way of managing vulvodynia. It is very common for the condition to have periods of flaring up as well as dying down. Overall, it will improve spontaneously in around 50% of women. Where can I get more information? Patient support groups providing information: Vulval Pain Society Web: to https://vulvalpainsociety.org.uk British Society for the Study of Vulval Disease Web: www.bssvd.org/ International Society for the Study of Vulvovaginal Disease National Vulvodynia Association (in USA) Web: www.nva.org/ Web links to other relevant sources www.bad.org.uk/pils/vulval-skincare/ dermnetnz.org/site-age-specific/vulvodynia.html dermnetnz.org/topics/vestibulodynia/ Jargon Buster: www.skinhealthinfo.org.uk/support-resources/jargon-buster/",
+              "word_count": 196,
+              "retrieval_score": 0.024019
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0008",
+              "heading": "",
+              "text": "Please note that the British Association of Dermatologists (BAD) provides web links to additional resources to help people access a range of information about their treatment or skin condition. The views expressed in these external resources may not be shared by the BAD or its members. The BAD has no control of and does not endorse the content of external links. This leaflet aims to provide accurate information about the subject and is a consensus of the views held by representatives of the British Association of Dermatologists: individual patient circumstances may differ, which might alter both the advice and course of therapy given to you by your doctor . This leaflet has been assessed for readability by the British Association of Dermatologists’ Patient Information Lay Review Panel BRITISH ASSOCIATION OF DERMATOLOGISTS PATIENT INFORMATION LEAFLET PRODUCED | MAY 2006 UPDATED | SEPTEMBER 2012, SEPTEMBER 2015, DECEMBER 2021, OCTOBER 2024 NEXT REVIEW DATE | OCTOBER 2027",
+              "word_count": 154,
+              "retrieval_score": 0.022453
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_id": "HSQA_1045",
+      "run": 1,
+      "question": "Is cystic fibrosis usually fatal?",
+      "claim_count": 9,
+      "claims_with_local_citation": 9,
+      "pages": [
+        {
+          "citation_id": "src_001",
+          "citation_title": "cystic fibrosis",
+          "url": "https://medlineplus.gov/ency/article/000107.htm",
+          "final_url": "https://medlineplus.gov/ency/article/000107.htm",
+          "retrieval_status": "success",
+          "http_status": 200,
+          "content_type": "text/html",
+          "page_title": "Cystic fibrosis: MedlinePlus Medical Encyclopedia",
+          "access_method": "direct_html",
+          "direct_error": null,
+          "cache_key": "0d15fc3202d93d326d9e",
+          "chunk_count": 15,
+          "error": null
+        },
+        {
+          "citation_id": "src_002",
+          "citation_title": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "final_url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "retrieval_status": "success",
+          "http_status": 403,
+          "content_type": "text/html",
+          "page_title": "Cystic fibrosis - Symptoms and causes",
+          "access_method": "jina_reader_fallback",
+          "direct_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "cache_key": "4da0b01b992189ce3178",
+          "chunk_count": 20,
+          "error": null
+        },
+        {
+          "citation_id": "src_003",
+          "citation_title": "Palliative Care Network of Wisconsin",
+          "url": "https://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/",
+          "final_url": "https://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/",
+          "retrieval_status": "success",
+          "http_status": 403,
+          "content_type": "text/html",
+          "page_title": "Palliative Care for Patients with Cystic Fibrosis | Palliative Care Network of Wisconsin",
+          "access_method": "jina_reader_fallback",
+          "direct_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/",
+          "cache_key": "e2b0213e561a41836110",
+          "chunk_count": 9,
+          "error": null
+        },
+        {
+          "citation_id": "src_004",
+          "citation_title": "National Jewish Health",
+          "url": "https://www.nationaljewish.org/conditions/cf",
+          "final_url": "https://www.nationaljewish.org/conditions/cf",
+          "retrieval_status": "success",
+          "http_status": 200,
+          "content_type": "text/html",
+          "page_title": "Cystic Fibrosis (CF) Information | National Jewish Health",
+          "access_method": "direct_html",
+          "direct_error": null,
+          "cache_key": "5a548549f255663164cc",
+          "chunk_count": 24,
+          "error": null
+        },
+        {
+          "citation_id": "src_005",
+          "citation_title": "Cystic Fibrosis Foundation",
+          "url": "https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "final_url": "https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "retrieval_status": "success",
+          "http_status": 403,
+          "content_type": "text/html",
+          "page_title": "Understanding Changes in Life Expectancy",
+          "access_method": "jina_reader_fallback",
+          "direct_error": "HTTPError: 403 Client Error: Forbidden for url: https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "cache_key": "8bb4cba6792d7edf4876",
+          "chunk_count": 4,
+          "error": null
+        }
+      ],
+      "claim_citation_pairs": [
+        {
+          "pair_id": "HSQA_1045::c001::src_001",
+          "claim_id": "c001",
+          "claim_text": "People can die from cystic fibrosis.",
+          "citation_id": "src_001",
+          "citation_url": "https://medlineplus.gov/ency/article/000107.htm",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0001",
+              "heading": "Cystic fibrosis",
+              "text": "Cystic fibrosis is a disease that causes thick, sticky mucus to build up in the lungs, digestive tract, and other areas of the body. It is one of the most common chronic lung diseases in children and young adults. It can lead to a life-threatening illness.",
+              "word_count": 46,
+              "retrieval_score": 0.110306
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0008",
+              "heading": "Support Groups",
+              "text": "You can ease the stress of illness by joining a cystic fibrosis support group . Sharing with others who have common experiences and problems can help your family to not feel alone.",
+              "word_count": 32,
+              "retrieval_score": 0.078929
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0014",
+              "heading": "References",
+              "text": "Egan ME, Schechter MS, Voynow JA. Cystic fibrosis. In: Kliegman RM, St. Geme JW, Blum NJ, et al, eds. Nelson Textbook of Pediatrics . 22nd ed. Philadelphia, PA: Elsevier; 2025:chap 454. Grasemann H. Cystic fibrosis. In: Goldman L, Cooney KA, eds. Goldman-Cecil Medicine . 27th ed. Philadelphia, PA: Elsevier; 2024:chap 77. Ong T, Ramsey BW. Cystic Fibrosis: A Review. JAMA . 2023;329(21):1859-1871. PMID: 37278811 pubmed.ncbi.nlm.nih.gov/37278811/ . Solomon GM, Hoover W, Sorscher EJ, Rowe SM. Cystic fibrosis: diagnosis and management. In: Broaddus VC, Ernst JD, King TE, et al, eds. Murray and Nadel's Textbook of Respiratory Medicine . 7th ed. Philadelphia, PA: Elsevier; 2022:chap 68.",
+              "word_count": 104,
+              "retrieval_score": 0.065177
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0002",
+              "heading": "Causes",
+              "text": "Cystic fibrosis (CF) is a disease that is passed down through families. It is caused by a defective gene that makes the body produce abnormally thick and sticky fluid, called mucus. This mucus builds up in the breathing passages of the lungs and in the pancreas. The buildup of mucus results in life-threatening lung infections and serious digestion problems. The disease may also affect the sweat glands and a man's reproductive system. Many people carry a CF gene, but do not have symptoms. This is because for a person to get CF, they must inherit 2 defective genes, 1 from each parent. Some Americans have the CF gene. It is more common among those of northern or central European descent. Most children with CF are diagnosed by age 2, especially as newborn screening is performed across the United States. For a small number, the disease is not detected until age 18 or older. These children often have a milder form of the disease.",
+              "word_count": 163,
+              "retrieval_score": 0.052836
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0005",
+              "heading": "Treatment",
+              "text": "An early diagnosis of CF and treatment plan can improve both survival and quality of life. Follow-up and monitoring are very important. When possible, care should be received at a cystic fibrosis specialty clinic. When children reach adulthood, they should transfer to a cystic fibrosis specialty center for adults. Treatment for lung problems includes: Antibiotics to prevent and treat lung and sinus infections. They may be taken by mouth, or given in the veins or by breathing treatments. People with CF may take antibiotics only when needed, or all the time. Doses are often higher than normal. Inhaled medicines to help open the airways. Other medicines that are given by a breathing treatment to thin mucus and make it easier to cough up are DNase enzyme therapy and highly concentrated salt solutions (hypertonic saline). Flu vaccine, COVID-19 vaccine, and pneumococcal conjugate and polysaccharide vaccines Â (ask your health care provider for the best age to get these). Lung transplant is an option in some cases. Oxygen therapy may be needed as lung disease gets worse. Lung problems are also treated with therapies to thin the mucus. This makes it easier to cough the mucus out of the lungs. These methods include: Activity or exercise that causes you to breathe deeply",
+              "word_count": 210,
+              "retrieval_score": 0.050389
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c002::src_001",
+          "claim_id": "c002",
+          "claim_text": "Cystic fibrosis is a serious, life‑threatening genetic condition.",
+          "citation_id": "src_001",
+          "citation_url": "https://medlineplus.gov/ency/article/000107.htm",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0001",
+              "heading": "Cystic fibrosis",
+              "text": "Cystic fibrosis is a disease that causes thick, sticky mucus to build up in the lungs, digestive tract, and other areas of the body. It is one of the most common chronic lung diseases in children and young adults. It can lead to a life-threatening illness.",
+              "word_count": 46,
+              "retrieval_score": 0.166246
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0002",
+              "heading": "Causes",
+              "text": "Cystic fibrosis (CF) is a disease that is passed down through families. It is caused by a defective gene that makes the body produce abnormally thick and sticky fluid, called mucus. This mucus builds up in the breathing passages of the lungs and in the pancreas. The buildup of mucus results in life-threatening lung infections and serious digestion problems. The disease may also affect the sweat glands and a man's reproductive system. Many people carry a CF gene, but do not have symptoms. This is because for a person to get CF, they must inherit 2 defective genes, 1 from each parent. Some Americans have the CF gene. It is more common among those of northern or central European descent. Most children with CF are diagnosed by age 2, especially as newborn screening is performed across the United States. For a small number, the disease is not detected until age 18 or older. These children often have a milder form of the disease.",
+              "word_count": 163,
+              "retrieval_score": 0.07635
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0014",
+              "heading": "References",
+              "text": "Egan ME, Schechter MS, Voynow JA. Cystic fibrosis. In: Kliegman RM, St. Geme JW, Blum NJ, et al, eds. Nelson Textbook of Pediatrics . 22nd ed. Philadelphia, PA: Elsevier; 2025:chap 454. Grasemann H. Cystic fibrosis. In: Goldman L, Cooney KA, eds. Goldman-Cecil Medicine . 27th ed. Philadelphia, PA: Elsevier; 2024:chap 77. Ong T, Ramsey BW. Cystic Fibrosis: A Review. JAMA . 2023;329(21):1859-1871. PMID: 37278811 pubmed.ncbi.nlm.nih.gov/37278811/ . Solomon GM, Hoover W, Sorscher EJ, Rowe SM. Cystic fibrosis: diagnosis and management. In: Broaddus VC, Ernst JD, King TE, et al, eds. Murray and Nadel's Textbook of Respiratory Medicine . 7th ed. Philadelphia, PA: Elsevier; 2022:chap 68.",
+              "word_count": 104,
+              "retrieval_score": 0.059159
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0008",
+              "heading": "Support Groups",
+              "text": "You can ease the stress of illness by joining a cystic fibrosis support group . Sharing with others who have common experiences and problems can help your family to not feel alone.",
+              "word_count": 32,
+              "retrieval_score": 0.0516
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0005",
+              "heading": "Treatment",
+              "text": "An early diagnosis of CF and treatment plan can improve both survival and quality of life. Follow-up and monitoring are very important. When possible, care should be received at a cystic fibrosis specialty clinic. When children reach adulthood, they should transfer to a cystic fibrosis specialty center for adults. Treatment for lung problems includes: Antibiotics to prevent and treat lung and sinus infections. They may be taken by mouth, or given in the veins or by breathing treatments. People with CF may take antibiotics only when needed, or all the time. Doses are often higher than normal. Inhaled medicines to help open the airways. Other medicines that are given by a breathing treatment to thin mucus and make it easier to cough up are DNase enzyme therapy and highly concentrated salt solutions (hypertonic saline). Flu vaccine, COVID-19 vaccine, and pneumococcal conjugate and polysaccharide vaccines Â (ask your health care provider for the best age to get these). Lung transplant is an option in some cases. Oxygen therapy may be needed as lung disease gets worse. Lung problems are also treated with therapies to thin the mucus. This makes it easier to cough the mucus out of the lungs. These methods include: Activity or exercise that causes you to breathe deeply",
+              "word_count": 210,
+              "retrieval_score": 0.042547
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c003::src_002",
+          "claim_id": "c003",
+          "claim_text": "Respiratory failure is the most common cause of death in cystic fibrosis.",
+          "citation_id": "src_002",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0015",
+              "heading": "Respiratory system complications",
+              "text": "* **Damaged airways.** Cystic fibrosis is one of the leading causes of damaged airways, a long-term lung condition called bronchiectasis. Bronchiectasis results in widening and scarring of the airways. This makes it harder to move air in and out of the lungs and clear mucus from the airways. * **Ongoing infections.** Thick mucus in the lungs and sinuses makes a place for bacteria and fungi to live and grow. Sinus infections, bronchitis or pneumonia are common and may happen repeatedly. Infections with bacteria that don't respond to antibiotics and are difficult to treat is common too. * **Growths in the nose.** Because the lining inside the nose is irritated and swollen, it can develop soft, fleshy growths called nasal polyps. * **Coughing up blood.** Bronchiectasis can occur next to blood vessels in the lungs. The combination of airway damage and infection can result in coughing up blood. Often this is only a small amount of blood, but rarely it can be life-threatening. * **Collapsed lung.** Also called pneumothorax, this condition happens when air leaks into the space that separates the lungs from the chest wall. This causes part or all of a lung to collapse. Collapsed lung is more common in adults with CF. Collapsed lung can cause sudden chest pain and trouble breathing. People often have a bubbling feeling in the chest. * **Respiratory failure.** Over time, CF can damage lung tissue so badly that it no longer works. Lung function usually worsens slowly over time and can become life-threatening. Respiratory failure is the most common cause of death with CF. * **Bouts of worsening symptoms.** People with CF may experience times when respiratory symptoms are worse than usual. These are called exacerbations (eg-zas-er-bay-shuns). Symptoms may include coughing with more mucus than usual and trouble breathing. Low energy and weight loss also are common during exacerbations. Exacerbations are treated with antibiotics. Sometimes treatment can be given at home, but",
+              "word_count": 320,
+              "retrieval_score": 0.15244
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0002",
+              "heading": "Overview",
+              "text": "Simply put, cystic fibrosis is a gene defect. A defect to this gene changes how a salt moves in and out of cells, resulting in thick, sticky mucus in the respiratory, digestive and reproductive systems. It's an inherited condition. A child needs to inherit one copy of the mutated gene from each parent to develop cystic fibrosis. If they only inherit one copy from one parent, they won't develop it. However, they will be a carrier of that mutated gene, so they could pass it along to their own children in the future. Because CF is an inherited disorder, family history determines your risk. Although it can occur in all races, cystic fibrosis is most common in white people of North European ancestry.",
+              "word_count": 123,
+              "retrieval_score": 0.078332
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0012",
+              "heading": "Causes",
+              "text": "In cystic fibrosis, a change in a gene causes problems with the protein that controls the movement of salt and water in and out of cells. This gene is the cystic fibrosis transmembrane conductance regulator (CFTR) gene. It affects the cells that make mucus, sweat and digestive juices. When the CFTR protein doesn't work as it should, the result is thick, sticky mucus in the respiratory, digestive and reproductive systems, as well as extra salt in sweat. Changes in the CFTR gene that cause CF are divided into several different groups based on the problems they cause. Different groups of gene changes affect how much CFTR protein is made and how well it works. To have cystic fibrosis, children must get one copy of the changed CFTR gene from each parent. If children get only one copy, they won't develop CF. But they will be carriers and could pass the changed gene to their own children. People who are carriers may have no symptoms of CF or a few mild symptoms.",
+              "word_count": 171,
+              "retrieval_score": 0.074372
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0013",
+              "heading": "Risk factors",
+              "text": "Because cystic fibrosis is a condition passed down in families, family history is a risk factor. CF occurs in all races, but it's most common in white people of Northern European ancestry. Because it's less common in people who are Black, Hispanic, Middle Eastern, Native American or Asian, this might lead to a much later diagnosis. A late diagnosis may cause worse health issues. Early and effective treatment can improve your quality of life, prevent complications and help you live longer. If you're a person of color and have symptoms that could be CF, talk to your healthcare professional so that you can get tested for CF.",
+              "word_count": 107,
+              "retrieval_score": 0.070316
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0008",
+              "heading": "Respiratory symptoms",
+              "text": "In cystic fibrosis, the lungs are most commonly affected. The thick and sticky mucus that happens with CF clogs the tubes that carry air in and out of the lungs. This can cause symptoms such as: * A cough that won't go away and brings up thick mucus. * A squeaking sound when breathing called wheezing. * Limited ability to do physical activity before tiring. * Repeated lung infections. * Irritated and swollen nasal passages or a stuffy nose. * Repeated sinus infections.",
+              "word_count": 83,
+              "retrieval_score": 0.065635
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c004::src_002",
+          "claim_id": "c004",
+          "claim_text": "In cystic fibrosis, thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue.",
+          "citation_id": "src_002",
+          "citation_url": "https://www.mayoclinic.org/diseases-conditions/cystic-fibrosis/symptoms-causes/syc-20353700",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0008",
+              "heading": "Respiratory symptoms",
+              "text": "In cystic fibrosis, the lungs are most commonly affected. The thick and sticky mucus that happens with CF clogs the tubes that carry air in and out of the lungs. This can cause symptoms such as: * A cough that won't go away and brings up thick mucus. * A squeaking sound when breathing called wheezing. * Limited ability to do physical activity before tiring. * Repeated lung infections. * Irritated and swollen nasal passages or a stuffy nose. * Repeated sinus infections.",
+              "word_count": 83,
+              "retrieval_score": 0.112704
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0015",
+              "heading": "Respiratory system complications",
+              "text": "* **Damaged airways.** Cystic fibrosis is one of the leading causes of damaged airways, a long-term lung condition called bronchiectasis. Bronchiectasis results in widening and scarring of the airways. This makes it harder to move air in and out of the lungs and clear mucus from the airways. * **Ongoing infections.** Thick mucus in the lungs and sinuses makes a place for bacteria and fungi to live and grow. Sinus infections, bronchitis or pneumonia are common and may happen repeatedly. Infections with bacteria that don't respond to antibiotics and are difficult to treat is common too. * **Growths in the nose.** Because the lining inside the nose is irritated and swollen, it can develop soft, fleshy growths called nasal polyps. * **Coughing up blood.** Bronchiectasis can occur next to blood vessels in the lungs. The combination of airway damage and infection can result in coughing up blood. Often this is only a small amount of blood, but rarely it can be life-threatening. * **Collapsed lung.** Also called pneumothorax, this condition happens when air leaks into the space that separates the lungs from the chest wall. This causes part or all of a lung to collapse. Collapsed lung is more common in adults with CF. Collapsed lung can cause sudden chest pain and trouble breathing. People often have a bubbling feeling in the chest. * **Respiratory failure.** Over time, CF can damage lung tissue so badly that it no longer works. Lung function usually worsens slowly over time and can become life-threatening. Respiratory failure is the most common cause of death with CF. * **Bouts of worsening symptoms.** People with CF may experience times when respiratory symptoms are worse than usual. These are called exacerbations (eg-zas-er-bay-shuns). Symptoms may include coughing with more mucus than usual and trouble breathing. Low energy and weight loss also are common during exacerbations. Exacerbations are treated with antibiotics. Sometimes treatment can be given at home, but",
+              "word_count": 320,
+              "retrieval_score": 0.086123
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0003",
+              "heading": "Overview",
+              "text": "There are two kinds of symptoms associated with cystic fibrosis. The first are respiratory symptoms. Thick, sticky mucus can clog the tubes that carry air in and out of your lungs. This can trigger a persistent cough that produces thick mucus, wheezing, exercise intolerance, repeated lung infections, and inflamed nasal passages or a stuffy nose or recurrent sinusitis. The second type of symptoms are digestive. That same thick mucus that can clog your airways can also bog tubes that carry enzymes from your pancreas to your small intestine. This can result in foul-smelling or greasy stools, poor weight gain and growth, intestinal blockage, or chronic and severe constipation, which may include frequent straining while trying to pass stool. If you or your child show symptoms of cystic fibrosis or if someone in your family has CF, talk with your doctor about testing for the disease. Since this disease is an inherited condition, reviewing your family history is important. Genetic testing may be done to see if you carry the mutated gene that triggers cystic fibrosis. A sweat test may also be conducted. CF causes higher than normal levels of salt in your sweat. Doctors will examine the levels of salt in your sweat to confirm a diagnosis.",
+              "word_count": 207,
+              "retrieval_score": 0.07693
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0005",
+              "heading": "Overview",
+              "text": "Learning you or someone you know has cystic fibrosis can be incredibly challenging. It's okay to feel depressed, anxious, angry, or afraid. In time, you'll find ways to cope, find support and talk to others who are going through it too. Look to your friends and family to help manage stress and reduce anxiety. Seek professional help. Remember, physical conditions come with an emotional and mental burden. And take the time to learn about cystic fibrosis. It's a complicated, severe disorder. So don't hesitate to talk to your medical team about your questions or concerns. With the knowledge and treatment available to doctors today, life with cystic fibrosis is better than ever before. If you'd like to learn even more about cystic fibrosis, watch our other related videos or visit mayoclinic.org. We wish you well. Cystic fibrosis (CF) is a condition passed down in families that causes damage to the lungs, digestive system and other organs in the body. CF affects the cells that make mucus, sweat and digestive juices. These fluids, also called secretions, are usually thin and slippery to protect the body's internal tubes and ducts and make them smooth pathways. But in people with CF, a changed gene causes the secretions to become sticky and thick. The secretions plug up pathways, especially in the lungs and pancreas.",
+              "word_count": 220,
+              "retrieval_score": 0.066565
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0004",
+              "heading": "Overview",
+              "text": "Because this condition is passed from parent to children, newborn screening is routinely done in every state in the U.S. Early diagnosis of CF means that treatments can begin immediately. Unfortunately, there is no cure for cystic fibrosis, but proper treatment can ease your symptoms, reduce complications, and improve your quality of life. Doctors may decide that certain medications are necessary. These could include antibiotics to treat and prevent lung infections, anti-inflammatories to lessen the swelling in your airways, or mucus-thinning drugs to help expel mucus and improve lung function. Medications can also help improve digestive function. From stool softeners to enzymes, to acid-reducing drugs. Some medications can even target the gene defect that causes cystic fibrosis, aiding the faulty proteins to improve lung function and reduce salt in your sweat. Outside of medications, airway clearance techniques, also called chest physical therapy, can relieve mucus obstruction and help to reduce infection and inflammation in the airways. These techniques loosen the thick mucus in the lungs, making it easier to cough up. In some cases, doctors turn to surgery to help alleviate conditions that can arise from cystic fibrosis. For instance, nasal and sinus surgery to help you breathe, or bowel surgery to help improve digestive function. In life-threatening instances, lung transplant and liver transplant had been performed. Managing cystic fibrosis can be very complex. So consider getting treatment at a center with medical professionals trained in the disorder to evaluate and treat your condition. You can even ask your physician about clinical trials. New treatments, interventions and tests are constantly under development to help prevent, detect, and treat this disease.",
+              "word_count": 270,
+              "retrieval_score": 0.065836
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c005::src_003",
+          "claim_id": "c005",
+          "claim_text": "Other multi-system complications—such as end-stage lung disease, severe malnutrition from digestive problems, or organ failure—can contribute to fatal outcomes in cystic fibrosis.",
+          "citation_id": "src_003",
+          "citation_url": "https://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0007",
+              "heading": "",
+              "text": "1. MacKenzie T, Gifford AH, et al. Longevity of Patients With Cystic Fibrosis in 2000 to 2010 and Beyond: Survival Analysis of the Cystic Fibrosis Foundation Patient Registry._Ann Intern Med._ 2014;161(4):233-241. 2. Singh H, Jani C, Marshall DC, et al. Cystic fibrosis-related mortality in the United States from 1999 to 2020: an observational analysis of time trends and disparities. Scientific Reports 2023; 13:15030. 3. Buzzetti R, et al, Validation of a predictive survival model in Italian patients with cystic fibrosis, _J Cyst Fibros._ 2012;11(1):24-9. doi:10.1016/j.jcf.2011.08.007. 4. Barr HL, Britton J, Smyth AR, et al. Association between socioeconomic status, sex, and age at death from cystic fibrosis in England and Wales (1959 to 2008): cross sectional study. _BMJ._ 2011; 343:d4662. 5. Stephenson AL, Sykes Mmath J, et al. Clinical and demographic factors associated with post-lung transplantation survival in individuals with cystic fibrosis. The Journal of Heart and Lung Transplantation 2015; 34(9):1139-1145. 6. Ravilly S, Robinson W, Suresh S, et al. . Chronic pain in cystic fibrosis. _Pediatrics_. 1996;98:741-747. 7. Hayes M, Yaster M, Haythornthwaite J, et al. Pain is a common problem affecting clinical outcomes in adults with cystic fibrosis._Chest._ 2011; 140(6):1598-1603. doi:10.1378/chest.11-0132. 8. Sands D, Repetto T, Dupont LJ, et al. End of life care for patients with cystic fibrosis. _J Cyst Fibros._ 2011; (10)2:S37-S44. 9. Ernst MM, Johnson MC, Stark LJ. Developmental and psychosocial issues in cystic fibrosis. _Pediatr Clin N Am._ 2011; 58:865–885. 10. Robinson WM. Palliative and end-of-life care in cystic fibrosis: what we know and what we need to know. _Curr Opin Pulm Med_. 2009; 15(6):621-5. 11. Jackson AD, Daly L, Kelleher C, et al. The application of current lifetable methods to compare cystic fibrosis median survival internationally is limited. _J Cyst Fibros._ 2011; (10):62-65.",
+              "word_count": 289,
+              "retrieval_score": 0.083037
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0003",
+              "heading": "",
+              "text": "* Chronic respiratory failure remains the major cause of morbidity and mortality. End-stage lung disease from CF is characterized by bronchiectasis, mucus plugging, chronic infections, and fibrosis of the lungs and airways. Patients frequently die from overwhelming lung infections. * Factors associated with earlier death in CF include the deltaF508 mutation, pancreatic insufficiency, low body mass index, certain infections (_Pseudomonas aeruginosa_, _Staphylococcus aureus,_ and _Burkholderia cepacia_), low socioeconomic status, tobacco smoke exposure and female sex (3,4). * For select candidates, lung transplantation improves survival and quality-of-life. The 5-year survival post-transplant is > 67% and 50% live > 10 years (5). * Other important causes of morbidity include CF-related diabetes mellitus, pancreatic insufficiency (manifesting as fat malabsorption and poor growth), hepatobiliary disease (including portal hypertension and varices), male infertility, and meconium ileus in newborns. ETI has allowed most persons with CF to have a normal bodyweight. * CF patients commonly suffer from cough, fatigue, and dyspnea; these symptoms tend to worsen as lung disease progresses. Chest wall and back pain from cough, pleurisy, rib fractures, and chest physiotherapy is common (6). Fears of addiction, respiratory depression, and concern that chronic opioid use complicates lung transplant success create barriers to opioid administration (6.7). * With multiple medications, therapies, and nutritional supplements required each day, routine care for CF used to be quite physically and emotionally exhausting for patients and family members. This has improved tremendously though with the wider access to ETIs. * Adolescents with CF report a high quality-of-life and they abuse substances less frequently than their healthy counterparts (8,9). Nonetheless, in this age group, chronic anxiety and depressive disorders are common, and treatment adherence routinely declines when they are present (8,9).",
+              "word_count": 281,
+              "retrieval_score": 0.064867
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0009",
+              "heading": "",
+              "text": "**Disclaimer:**_Fast Facts and Concepts_ provide educational information for health care professionals. This information is not medical advice. _Fast Facts_ are not continually updated, and new safety information may emerge after a _Fast Fact_ is published. Health care providers should always exercise their own independent clinical judgment and consult other relevant and up-to-date experts and resources. Some _Fast Facts_ cite the use of a product in a dosage, for an indication, or in a manner other than that recommended in the product labeling. Accordingly, the official prescribing information should be consulted before any such product is used. [Page load link](http://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/#)[Go to Top](http://www.mypcnow.org/fast-fact/palliative-care-for-patients-with-cystic-fibrosis/#)",
+              "word_count": 101,
+              "retrieval_score": 0.064607
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0006",
+              "heading": "",
+              "text": "care planning more challenging (8,9). **Key teaching points** * Pulmonary involvement in CF is the most common cause of morbidity and mortality in people affected by this disease. Symptoms such as dyspnea, anxiety, cough, and pain commonly interfere with CF patients’ quality-of-life. Advances in medication management of CF and lung transplantation offer hope of improved survival and quality-of-life. * Accurate temporal prognostication in CF is challenging. However, patients and families should be prepared for the physical and emotional challenges of end-stage CF, including end-of-life decision-making, even without a precise estimation of survival time.",
+              "word_count": 93,
+              "retrieval_score": 0.052838
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0005",
+              "heading": "",
+              "text": "* Prediction of short-term mortality is difficult and largely subjective, especially in the ETI clinical error. Predicting the need for lung transplant has also become more complex. Most predictive models focus on clinical severity of pulmonary disease using age, FEV1%, BMI, the presence of pancreatic insufficiency, and opportunistic infections as parameters. (10). * The dynamic, chronic, progressive course of CF creates challenges for timing goals-of-care discussions. Periodic planned meetings amongst patient, family, and care team are advised. Single-center studies reinforce that, despite documented need, palliative care consultation is rarely offered until days before death or when lung transplantation becomes contraindicated (10). * Do-not-resuscitate (DNR) orders are often not written until the final few days of life. Many patients continue to receive disease-modifying therapies up until the last 24 hours of life (10). Although many disease-specific therapies can be administered in the home setting, most CF patients die in the hospital setting (8). This likely reflects a combination of prognostication challenges, reluctance to abandon aggressive therapies, patient/family preference, and caregiving burdens (11). CF patients may be uniquely suited to Medicaid ‘concurrent care’ waiver programs in which patients can receive hospice and routine medical care simultaneously (10). * Although guidelines are lacking, progressive hypoxic respiratory failure may benefit from long-term oxygen therapy (6). Non-invasive positive pressure ventilation (NIPPV) has a role for hypercapneic respiratory failure, dyspnea management, and, in select candidates,as a bridge to lung transplant. Use of invasive positive pressure ventilation (IPPV) should always involve clear discussions around therapeutic options and goals-of-care (10). * Common symptoms at the end of life include dyspnea, fatigue, anxiety, anorexia, pain, and cough (see [_Fast Fact_](https://www.mypcnow.org/fast-fact/dyspnea-at-end-of-life/) #27,[_Fast Fact_ #199](https://www.mypcnow.org/fast-fact/opioids-for-cough/), [_Fast Fact #_ 200](https://www.mypcnow.org/fast-fact/non-opioid-anti-tussives/)). Care providers must balance benefit vs. burden of disease-specific treatments such as nebulized medications, NIPPV, and chest physiotherapy (8-11). * Patients who survived multiple episodes of acute respiratory failure may develop a sense of resilience about their mortality that could make end-of-life",
+              "word_count": 320,
+              "retrieval_score": 0.046985
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c006::src_004",
+          "claim_id": "c006",
+          "claim_text": "Treatments for cystic fibrosis have improved dramatically over the decades.",
+          "citation_id": "src_004",
+          "citation_url": "https://www.nationaljewish.org/conditions/cf",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0011",
+              "heading": "Associated Conditions",
+              "text": "The most important complication of CF is the progressive destruction of the lungs. This can cause respiratory failure and death. Fortunately, steady advances in medical treatments for cystic fibrosis have provided a range of therapies to slow or prevent complications. New therapies have improved quality of life and extended the lifespan of children and adults.",
+              "word_count": 55,
+              "retrieval_score": 0.155704
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0018",
+              "heading": "Medications",
+              "text": "A variety of inhaled medications may be used along with the airway clearance techniques. Your CF team will review the medications recommended for you. Medications for CF can include: Antibiotics to treat bacteria and other infectious organisms causing infection and damage and airways. Bronchodilators to improve airflow. CFTR modulators : Targeted therapies, such as Trikafta, correct specific CFTR protein defects and have dramatically improved survival and quality of life for many people with CF. Eligibility depends on your specific mutation. Enzyme replacement therapy to help digest food. Inhaled antibiotics to treat chronic lung infections. Mucolytics and airway-hydrating agents to thin mucus. Antibiotics may be taken as a routine chronic regimen. These can be oral or inhaled for specific bacteria in the lungs. Occasionally the bacterial burden in the lungs becomes overgrown and a course of oral or IV antibiotics is needed. The typical amount of time for a course of antibiotics for an acute infection is two to three weeks. Although there is not yet a cure for cystic fibrosis, there have been many treatment advances that have improved digestion, lung function and longevity, while enhancing mucus clearing and restoring CFTR function. See the Cystic Fibrosis Foundation website for up-to-date information about approved CF medications and those under development.",
+              "word_count": 209,
+              "retrieval_score": 0.080377
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0004",
+              "heading": "What Is Cystic Fibrosis?",
+              "text": "Cystic fibrosis (CF) is an inherited, lifelong genetic disease that primarily affects the lungs and digestive system. About 40,000 children and adults in the United States and more than 105,000 worldwide have cystic fibrosis, according to the Cystic Fibrosis Foundation . Thanks to modern therapies — including CFTR modulators that target the underlying protein defect — people with CF are living longer, healthier lives than ever before. CF is a progressive disease, meaning it gets worse over time. It causes persistent lung infections and makes breathing difficult. People with CF have a defective CFTR gene that produces unusually thick, sticky mucus. This mucus builds up in the lungs and pancreas, making it hard to cough out and increasing the risk of severe infections. It also blocks ducts in the pancreas, leading to problems digesting food and absorbing nutrients.",
+              "word_count": 138,
+              "retrieval_score": 0.077198
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0013",
+              "heading": "Newborn Screening",
+              "text": "Newborn screening for cystic fibrosis is now required in all 50 states and the District of Columbia. Many studies have proven that CF diagnosed early in life results in healthier children and increased survival rates when compared to children with a delayed diagnosis. The United States Centers for Disease Control and Prevention (CDC) and the Cystic Fibrosis Foundation recommend newborn screening. The test detects elevated quantities of trypsinogen in a drop of blood collected from the heel. This procedure (in which blood is collected from the heel) is already widely performed to test for other congenital disorders. Newborn screening is not a definitive diagnostic test for cystic fibrosis. If the test is positive, a sweat test and genetic testing may be done.",
+              "word_count": 122,
+              "retrieval_score": 0.070905
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0002",
+              "heading": "Programs and Services",
+              "text": "Cystic Fibrosis Program (Adult)",
+              "word_count": 4,
+              "retrieval_score": 0.065386
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c007::src_004",
+          "claim_id": "c007",
+          "claim_text": "Modern therapies and modulator drugs help people with cystic fibrosis live much longer, healthier lives than in the past.",
+          "citation_id": "src_004",
+          "citation_url": "https://www.nationaljewish.org/conditions/cf",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0004",
+              "heading": "What Is Cystic Fibrosis?",
+              "text": "Cystic fibrosis (CF) is an inherited, lifelong genetic disease that primarily affects the lungs and digestive system. About 40,000 children and adults in the United States and more than 105,000 worldwide have cystic fibrosis, according to the Cystic Fibrosis Foundation . Thanks to modern therapies — including CFTR modulators that target the underlying protein defect — people with CF are living longer, healthier lives than ever before. CF is a progressive disease, meaning it gets worse over time. It causes persistent lung infections and makes breathing difficult. People with CF have a defective CFTR gene that produces unusually thick, sticky mucus. This mucus builds up in the lungs and pancreas, making it hard to cough out and increasing the risk of severe infections. It also blocks ducts in the pancreas, leading to problems digesting food and absorbing nutrients.",
+              "word_count": 138,
+              "retrieval_score": 0.165894
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0012",
+              "heading": "Diagnosis",
+              "text": "Children are most often diagnosed with cystic fibrosis through state-run newborn screening programs, according to the National Institutes of Health . However, in people with less severe symptoms born before widespread implementation of newborn screening, the diagnosis may be delayed for decades. Mild forms of CF can remain undiagnosed until adulthood. Most people with cystic fibrosis diagnosed in adulthood will have normal pancreatic function. The life expectancy of people diagnosed as adults with mild CF is significantly longer than for people diagnosed in childhood. The people diagnosed later in life also respond well to standard CF care. Reliable testing is one of the most significant advances in our understanding and treatment of CF. Testing is important for children and adults suspected of having the disease. It is also important for individuals without symptoms who are concerned about the risk of being a CF carrier and passing the CF gene to their children, sometimes with a single mutated gene.",
+              "word_count": 158,
+              "retrieval_score": 0.079971
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0010",
+              "heading": "Associated Conditions",
+              "text": "When the CFTR gene is defective, many organ systems are affected. While damage to the lungs and pancreas is the most critical, CF can involve other organ systems and greatly impact the lives of people with CF. Adults with cystic fibrosis may also develop: Bronchiectasis: Abnormal widening and inflammation of the airways in the lungs Clubbing: Rounded and enlarged ends of the toes and fingers Diabetes , CF-related diabetes (CDFD): Blood sugar that is too high Osteoporosis : Weakened bones Pancreatitis: Inflammation of the pancreas Sinus disease: Inflammation of the sinuses, chronic sinusitis In people with cystic fibrosis, thick and dehydrated mucus prevents the normal clearance of bacteria and other microbes from the lungs. Chronic infections often occur. Aggressive medical treatment of CF sinus disease is very important. Poorly controlled sinusitis can greatly worsen the severity of CF lung disease and impact quality of life. Although sinus surgery is sometimes needed, this should only be performed by an otolaryngologist (ear, nose and throat (ENT) specialist) experienced in the treatment of cystic fibrosis-related sinus disease.",
+              "word_count": 174,
+              "retrieval_score": 0.077085
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0005",
+              "heading": "Causes",
+              "text": "CF is most common in individuals of northern European descent, but people of all ethnicities can carry CFTR mutations. When diagnosed with CF, a person has two defective CFTR genes—one inherited from each parent. If both parents are carriers, each child has a one-in-four chance of having cystic fibrosis. People with only one copy of a CFTR mutation are carriers and typically have no symptoms. There are approximately 40,000 people with CF in the U.S., according to the Cystic Fibrosis Foundation , although many do not know they carry the gene. Genetic testing can identify common CFTR mutations and is recommended for individuals planning a pregnancy or those with a family history of CF. When the CFTR protein does not function correctly, it cannot transport salt and water across cells. This leads to thick, dehydrated mucus in the airways, pancreas, sweat glands, sinuses and bowels.",
+              "word_count": 145,
+              "retrieval_score": 0.058909
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0002",
+              "heading": "Programs and Services",
+              "text": "Cystic Fibrosis Program (Adult)",
+              "word_count": 4,
+              "retrieval_score": 0.056006
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c008::src_005",
+          "claim_id": "c008",
+          "claim_text": "According to the Cystic Fibrosis Foundation, the median age of death in cystic fibrosis has risen significantly over time.",
+          "citation_id": "src_005",
+          "citation_url": "https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0003",
+              "heading": "Improving Life for Everyone With CF",
+              "text": "Many people with CF still face significant challenges, including frequent hospitalizations, complications such as [CF-related diabetes](http://www.cff.org/managing-cf/cystic-fibrosis-related-diabetes \"Cystic Fibrosis-Related Diabetes\") and [depression](http://www.cff.org/managing-cf/depression \"Depression\"), and time-consuming [treatment plans](http://www.cff.org/managing-cf/managing-your-treatment-plan \"Managing Your Treatment Plan\") that can take 2 to 3 hours a day. Data also show that of the deaths reported in the Registry in 2024, known as the median age of death, half occurred before the age of 38.8 — meaning too many people with CF miss the opportunity to finish school, begin careers, start families, and reach other milestones. So, we still have a long way to go — particularly for those who have faster and more severe disease progression, for those living [post-transplant](http://www.cff.org/managing-cf/lung-transplantation \"Lung Transplantation\"), and for those who cannot benefit from [modulator therapy](http://www.cff.org/managing-cf/cftr-modulator-therapies \"CFTR Modulator Therapies\"). The CF Foundation continues to work to develop transformative treatments and find a cure for all people with CF.",
+              "word_count": 145,
+              "retrieval_score": 0.101723
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0002",
+              "heading": "CF Foundation Patient Registry",
+              "text": "Sometimes the term “life expectancy” is used instead of median age of survival. But life expectancy is calculated in a different way. Life expectancy refers to an average rather than a median, which means it can be influenced by extreme outliers in a number set. For this reason, the CF Foundation focuses on median age of survival.",
+              "word_count": 57,
+              "retrieval_score": 0.079858
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0001",
+              "heading": "CF Foundation Patient Registry",
+              "text": "The [CF Foundation Patient Registry](http://www.cff.org/medical-professionals/patient-registry \"Patient Registry\") was created in 1966 to track the health of people with cystic fibrosis who receive care at CF Foundation-accredited care centers and agree to share their data. Registry data inform continued quality improvements in treatment and [specialized care](http://www.cff.org/managing-cf/cf-care-center-visits \"CF Care Center Visits\"). Each year, the CF Foundation analyzes and shares the data with the CF community through the [Patient Registry Annual Data Report](http://www.cff.org/media/38406/download?inline \"2024-Patient-Registry-Annual-Data-Report.pdf\") (published every fall) and the [Patient Registry Highlights Report](http://www.cff.org/medical-professionals/2025-patient-registry-highlights \"2025 Patient Registry Highlights\") (published every spring). The latest Registry data show steady gains in survival for people with CF. Based on 2025 Registry data, the median age of survival for people with CF who were born between 2021 and 2025 is predicted to be 66 years. To understand what this means for our community, it is important to understand how this number is calculated and what it represents. A median is the middle number in a number set. So of all the babies with CF born between 2021 and 2025, we predict that half will live longer than age 66 and half will die before that age. This prediction assumes that currently available CF treatments do not change within those babies’ lifetimes.",
+              "word_count": 203,
+              "retrieval_score": 0.074058
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0004",
+              "heading": "What Does Survival Age Data Mean for Me?",
+              "text": "Although median age of survival and median age of death are used to track the progress made for the entire population with CF followed by the Registry, these numbers do not predict how long you, as an individual, will live. As statistical calculations for the entire population of people with CF, neither of these figures take into consideration your personal characteristics, such as your mutations, how severe your disease is, or how you respond to different CF treatments as part of your daily CF care. > “Statistics are impersonal. They are about 'people with CF,' but not necessarily me.” — Linda Bowman, adult with CF These calculations also don't reflect continuous improvements in specialized CF care. And because CF is a rare disease, small changes in the population can have a noticeable impact on survival calculations. For these reasons, you should talk to [your CF care team](http://www.cff.org/managing-cf/your-cf-care-team \"Your CF Care Team\") if you have questions specific to your personal health.",
+              "word_count": 160,
+              "retrieval_score": 0.054739
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_1045::c009::src_005",
+          "claim_id": "c009",
+          "claim_text": "Severe cases and rapid disease progression in cystic fibrosis still cut some lives short.",
+          "citation_id": "src_005",
+          "citation_url": "https://www.cff.org/managing-cf/understanding-changes-life-expectancy",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0003",
+              "heading": "Improving Life for Everyone With CF",
+              "text": "Many people with CF still face significant challenges, including frequent hospitalizations, complications such as [CF-related diabetes](http://www.cff.org/managing-cf/cystic-fibrosis-related-diabetes \"Cystic Fibrosis-Related Diabetes\") and [depression](http://www.cff.org/managing-cf/depression \"Depression\"), and time-consuming [treatment plans](http://www.cff.org/managing-cf/managing-your-treatment-plan \"Managing Your Treatment Plan\") that can take 2 to 3 hours a day. Data also show that of the deaths reported in the Registry in 2024, known as the median age of death, half occurred before the age of 38.8 — meaning too many people with CF miss the opportunity to finish school, begin careers, start families, and reach other milestones. So, we still have a long way to go — particularly for those who have faster and more severe disease progression, for those living [post-transplant](http://www.cff.org/managing-cf/lung-transplantation \"Lung Transplantation\"), and for those who cannot benefit from [modulator therapy](http://www.cff.org/managing-cf/cftr-modulator-therapies \"CFTR Modulator Therapies\"). The CF Foundation continues to work to develop transformative treatments and find a cure for all people with CF.",
+              "word_count": 145,
+              "retrieval_score": 0.083086
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0001",
+              "heading": "CF Foundation Patient Registry",
+              "text": "The [CF Foundation Patient Registry](http://www.cff.org/medical-professionals/patient-registry \"Patient Registry\") was created in 1966 to track the health of people with cystic fibrosis who receive care at CF Foundation-accredited care centers and agree to share their data. Registry data inform continued quality improvements in treatment and [specialized care](http://www.cff.org/managing-cf/cf-care-center-visits \"CF Care Center Visits\"). Each year, the CF Foundation analyzes and shares the data with the CF community through the [Patient Registry Annual Data Report](http://www.cff.org/media/38406/download?inline \"2024-Patient-Registry-Annual-Data-Report.pdf\") (published every fall) and the [Patient Registry Highlights Report](http://www.cff.org/medical-professionals/2025-patient-registry-highlights \"2025 Patient Registry Highlights\") (published every spring). The latest Registry data show steady gains in survival for people with CF. Based on 2025 Registry data, the median age of survival for people with CF who were born between 2021 and 2025 is predicted to be 66 years. To understand what this means for our community, it is important to understand how this number is calculated and what it represents. A median is the middle number in a number set. So of all the babies with CF born between 2021 and 2025, we predict that half will live longer than age 66 and half will die before that age. This prediction assumes that currently available CF treatments do not change within those babies’ lifetimes.",
+              "word_count": 203,
+              "retrieval_score": 0.03921
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0004",
+              "heading": "What Does Survival Age Data Mean for Me?",
+              "text": "Although median age of survival and median age of death are used to track the progress made for the entire population with CF followed by the Registry, these numbers do not predict how long you, as an individual, will live. As statistical calculations for the entire population of people with CF, neither of these figures take into consideration your personal characteristics, such as your mutations, how severe your disease is, or how you respond to different CF treatments as part of your daily CF care. > “Statistics are impersonal. They are about 'people with CF,' but not necessarily me.” — Linda Bowman, adult with CF These calculations also don't reflect continuous improvements in specialized CF care. And because CF is a rare disease, small changes in the population can have a noticeable impact on survival calculations. For these reasons, you should talk to [your CF care team](http://www.cff.org/managing-cf/your-cf-care-team \"Your CF Care Team\") if you have questions specific to your personal health.",
+              "word_count": 160,
+              "retrieval_score": 0.027385
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0002",
+              "heading": "CF Foundation Patient Registry",
+              "text": "Sometimes the term “life expectancy” is used instead of median age of survival. But life expectancy is calculated in a different way. Life expectancy refers to an average rather than a median, which means it can be influenced by extreme outliers in a number set. For this reason, the CF Foundation focuses on median age of survival.",
+              "word_count": 57,
+              "retrieval_score": 0.017206
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dataset_id": "HSQA_2782",
+      "run": 1,
+      "question": "What is the most common cause of septic shock?",
+      "claim_count": 9,
+      "claims_with_local_citation": 4,
+      "pages": [
+        {
+          "citation_id": "src_001",
+          "citation_title": "Cleveland Clinic",
+          "url": "https://my.clevelandclinic.org/health/diseases/23255-septic-shock",
+          "final_url": "https://my.clevelandclinic.org/health/diseases/23255-septic-shock",
+          "retrieval_status": "success",
+          "http_status": 200,
+          "content_type": "text/html",
+          "page_title": "Septic Shock: Symptoms, Causes & Treatment",
+          "access_method": "direct_html",
+          "direct_error": null,
+          "cache_key": "122c375f870e126673f7",
+          "chunk_count": 14,
+          "error": null
+        },
+        {
+          "citation_id": "src_002",
+          "citation_title": "Michigan Medicine",
+          "url": "https://www.michiganmedicine.org/health-lab/what-are-septic-shock-and-sepsis-facts-behind-these-deadly-conditions",
+          "final_url": "https://www.michiganmedicine.org/health-lab/what-are-septic-shock-and-sepsis-facts-behind-these-deadly-conditions",
+          "retrieval_status": "success",
+          "http_status": null,
+          "content_type": "text/html",
+          "page_title": "Is Sepsis Fatal? Septic Shock Treatment & Diagnosis",
+          "access_method": "manual_browser",
+          "direct_error": null,
+          "cache_key": "480d231573c0cb22b004",
+          "chunk_count": 11,
+          "error": null
+        },
+        {
+          "citation_id": "src_003",
+          "citation_title": "NEJM",
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMra1208623",
+          "final_url": "https://www.nejm.org/doi/full/10.1056/NEJMra1208623",
+          "retrieval_status": "success",
+          "http_status": null,
+          "content_type": "text/html",
+          "page_title": "Severe Sepsis and Septic Shock | New England Journal of Medicine",
+          "access_method": "manual_browser",
+          "direct_error": null,
+          "cache_key": "84c581f19019cf1a1d62",
+          "chunk_count": 27,
+          "error": null
+        }
+      ],
+      "claim_citation_pairs": [
+        {
+          "pair_id": "HSQA_2782::c001::src_001",
+          "claim_id": "c001",
+          "claim_text": "Bacterial infections are the most common cause of septic shock.",
+          "citation_id": "src_001",
+          "citation_url": "https://my.clevelandclinic.org/health/diseases/23255-septic-shock",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0005",
+              "heading": "What causes septic shock?",
+              "text": "Septic shock happens when an infection triggers such an extreme immune response that it causes a chain reaction of harmful effects throughout your body. The steps involved in developing septic shock are: Infection: Bacterial infections are the most common cause of sepsis. Fungi and viruses are also potential causes. Infections can start anywhere in your body, but most often develop in your lungs, belly or urinary tract. Immune system overreaction: Instead of just fighting the germs, your immune system releases massive amounts of inflammatory substances ( cytokines ) into your bloodstream. Widespread inflammation: The cytokines make your blood vessels leaky. The blood vessels also widen too much, which causes a drop in blood pressure. Poor blood flow: When you have low blood pressure, less oxygen and nutrients can reach your organs. Organ damage: Without oxygen, organs like your kidneys, liver, heart and brain start to fail. Metabolic breakdown: Your cells can’t make or use energy properly, making organ failure worse. Your chances for developing septic shock increase if: You developed pneumonia outside the hospital You’re age 65 or older You have a weakened immune system You’re taking immunosuppressants You have certain health conditions, like diabetes, obesity or cancer You’re admitted to the intensive care unit (ICU) You’ve had previous hospitalizations You have a biological family history of sepsis",
+              "word_count": 218,
+              "retrieval_score": 0.177011
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0009",
+              "heading": "What is the life expectancy of someone with sepsis shock?",
+              "text": "Septic shock is a severe, life-threatening condition. People do survive, but the survival rate is low. Survival depends on several factors, including: The cause of the condition Whether you’ve had organ failure How quickly you received treatment Without immediate treatment, most people die if they develop septic shock. According to studies, rates of death — even with treatment — range from 10% to 52% . Early recognition and fast treatment can make a lifesaving difference.",
+              "word_count": 75,
+              "retrieval_score": 0.13931
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0002",
+              "heading": "Septic Shock",
+              "text": "Septic shock is the most dangerous stage of sepsis, when an infection triggers a harmful chain reaction in your body. Septic shock can cause dangerously low blood pressure, organ failure and even death. Knowing the warning signs, acting quickly and getting immediate treatment can help save your life. Cleveland Clinic is a non-profit academic medical center. Advertising on our site helps support our mission. We do not endorse non-Cleveland Clinic products or services. Policy",
+              "word_count": 74,
+              "retrieval_score": 0.122547
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0003",
+              "heading": "What Is Septic Shock?",
+              "text": "Image content: This image is available to view online. View image online ( https://my.clevelandclinic.org/-/scassets/images/org/health/articles/23255-septic-shock ) Septic shock is the most severe, dangerous stage of sepsis . Sepsis is a serious condition that occurs when your immune system overreacts to an infection and starts harming your body. Cleveland Clinic is a non-profit academic medical center. Advertising on our site helps support our mission. We do not endorse non-Cleveland Clinic products or services. Policy Septic shock can cause extremely low blood pressure and organ failure even with fluid treatment. With septic shock, your cells aren’t using oxygen properly, and the way your body uses energy is disrupted. Septic shock is life-threatening and requires immediate medical treatment. Sepsis exists on a scale of severity. It may start with an infection and bacteria in your blood ( bacteremia ). It can then progress to septic shock. This can lead to multiple organ failure and death. In other words, sepsis is like your house is on fire and it’s spreading quickly. Septic shock is like the fire is so intense that the walls are falling in — the structure is collapsing.",
+              "word_count": 186,
+              "retrieval_score": 0.108628
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0011",
+              "heading": "A note from Cleveland Clinic",
+              "text": "Septic shock is a medical emergency. Knowing the signs, acting fast and getting immediate treatment can save your life. If you have a bacterial infection, see your healthcare provider right away. Septic shock can feel overwhelming to think about — but knowing what it is, how it happens and when to act can make all the difference.",
+              "word_count": 57,
+              "retrieval_score": 0.077251
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2782::c002::src_001",
+          "claim_id": "c002",
+          "claim_text": "Septic shock usually starts as infections in the lungs (like pneumonia), the abdomen, or the urinary tract.",
+          "citation_id": "src_001",
+          "citation_url": "https://my.clevelandclinic.org/health/diseases/23255-septic-shock",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0005",
+              "heading": "What causes septic shock?",
+              "text": "Septic shock happens when an infection triggers such an extreme immune response that it causes a chain reaction of harmful effects throughout your body. The steps involved in developing septic shock are: Infection: Bacterial infections are the most common cause of sepsis. Fungi and viruses are also potential causes. Infections can start anywhere in your body, but most often develop in your lungs, belly or urinary tract. Immune system overreaction: Instead of just fighting the germs, your immune system releases massive amounts of inflammatory substances ( cytokines ) into your bloodstream. Widespread inflammation: The cytokines make your blood vessels leaky. The blood vessels also widen too much, which causes a drop in blood pressure. Poor blood flow: When you have low blood pressure, less oxygen and nutrients can reach your organs. Organ damage: Without oxygen, organs like your kidneys, liver, heart and brain start to fail. Metabolic breakdown: Your cells can’t make or use energy properly, making organ failure worse. Your chances for developing septic shock increase if: You developed pneumonia outside the hospital You’re age 65 or older You have a weakened immune system You’re taking immunosuppressants You have certain health conditions, like diabetes, obesity or cancer You’re admitted to the intensive care unit (ICU) You’ve had previous hospitalizations You have a biological family history of sepsis",
+              "word_count": 218,
+              "retrieval_score": 0.15097
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0003",
+              "heading": "What Is Septic Shock?",
+              "text": "Image content: This image is available to view online. View image online ( https://my.clevelandclinic.org/-/scassets/images/org/health/articles/23255-septic-shock ) Septic shock is the most severe, dangerous stage of sepsis . Sepsis is a serious condition that occurs when your immune system overreacts to an infection and starts harming your body. Cleveland Clinic is a non-profit academic medical center. Advertising on our site helps support our mission. We do not endorse non-Cleveland Clinic products or services. Policy Septic shock can cause extremely low blood pressure and organ failure even with fluid treatment. With septic shock, your cells aren’t using oxygen properly, and the way your body uses energy is disrupted. Septic shock is life-threatening and requires immediate medical treatment. Sepsis exists on a scale of severity. It may start with an infection and bacteria in your blood ( bacteremia ). It can then progress to septic shock. This can lead to multiple organ failure and death. In other words, sepsis is like your house is on fire and it’s spreading quickly. Septic shock is like the fire is so intense that the walls are falling in — the structure is collapsing.",
+              "word_count": 186,
+              "retrieval_score": 0.120838
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0002",
+              "heading": "Septic Shock",
+              "text": "Septic shock is the most dangerous stage of sepsis, when an infection triggers a harmful chain reaction in your body. Septic shock can cause dangerously low blood pressure, organ failure and even death. Knowing the warning signs, acting quickly and getting immediate treatment can help save your life. Cleveland Clinic is a non-profit academic medical center. Advertising on our site helps support our mission. We do not endorse non-Cleveland Clinic products or services. Policy",
+              "word_count": 74,
+              "retrieval_score": 0.108376
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0009",
+              "heading": "What is the life expectancy of someone with sepsis shock?",
+              "text": "Septic shock is a severe, life-threatening condition. People do survive, but the survival rate is low. Survival depends on several factors, including: The cause of the condition Whether you’ve had organ failure How quickly you received treatment Without immediate treatment, most people die if they develop septic shock. According to studies, rates of death — even with treatment — range from 10% to 52% . Early recognition and fast treatment can make a lifesaving difference.",
+              "word_count": 75,
+              "retrieval_score": 0.108345
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0010",
+              "heading": "How can septic shock be prevented?",
+              "text": "To prevent septic shock, you need to prevent sepsis. The best way to do that is to avoid getting infections. If you do get an infection, get treatment right away. It’s also important to keep up to date on your vaccines. Vaccines can help prevent some infections, and they greatly lessen the severity of others.",
+              "word_count": 55,
+              "retrieval_score": 0.06315
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2782::c006::src_002",
+          "claim_id": "c006",
+          "claim_text": "Wounds, burns, or cellulitis are skin and soft tissue sources of infection that can lead to septic shock.",
+          "citation_id": "src_002",
+          "citation_url": "https://www.michiganmedicine.org/health-lab/what-are-septic-shock-and-sepsis-facts-behind-these-deadly-conditions",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0001",
+              "heading": "What Are Septic Shock and Sepsis? The Facts Behind These Deadly Conditions",
+              "text": "When sepsis strikes, it can be fatal, with estimates suggesting it contributes to one-third to one-half of all in-hospital deaths. June 7, 2016 12:00 PM Author | Hallie Prescott, M.D., M.Sc. Most Americans have never heard of it, but according to recent federal data, sepsis is the most expensive cause of hospitalization in the U.S., and is now the most common cause of ICU admission among older Americans. Sepsis is a complication of infection that leads to organ failure. More than one million patients are hospitalized for sepsis each year. This is more than the number of hospitalizations for heart attack and stroke combined. People with chronic medical conditions, such as neurological disease, cancer, chronic lung disease and kidney disease, are at particular risk for developing sepsis. And it is fatal. Between one in eight and one in four patients with sepsis will die during hospitalization – as most notably Muhammad Ali did in June 2016. In fact sepsis contributes to one-third to one-half of all in-hospital deaths. Despite these grave consequences, fewer than half of Americans know what the word sepsis means.",
+              "word_count": 183,
+              "retrieval_score": 0.143631
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0002",
+              "heading": "What is sepsis and why is it so dangerous?",
+              "text": "Sepsis a severe health problem sparked by your body's reaction to infection. When you get an infection, your body fights back, releasing chemicals into the bloodstream to kill the harmful bacteria or viruses. When this process works the way it is supposed to, your body takes care of the infection and you get better. With sepsis, the chemicals from your body's own defenses trigger inflammatory responses, which can impair blood flow to organs, like the brain, heart or kidneys. This in turn can lead to organ failure and tissue damage. At its most severe, the body's response to infection can cause dangerously low blood pressure. This is called septic shock. Sepsis can result from any type of infection. Most commonly, it starts as a pneumonia, urinary tract infection or intra-abdominal infection such as appendicitis. It is sometimes referred to as \"blood poisoning,\" but this is an outdated term. Blood poisoning is an infection present in the blood, while sepsis refers to the body's response to any infection, wherever it is.",
+              "word_count": 170,
+              "retrieval_score": 0.12796
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0003",
+              "heading": "What is sepsis and why is it so dangerous?",
+              "text": "Once a person is diagnosed with sepsis , she will be treated with antibiotics, IV fluids and support for failing organs, such as dialysis or mechanical ventilation. This usually means a person needs to be hospitalized, often in an ICU. Sometimes the source of the infection must be removed, as with appendicitis or an infected medical device. It can be difficult to distinguish sepsis from other diseases that can make one very sick, and there is no lab test that can confirm sepsis. Many conditions can mimic sepsis, including severe allergic reactions, bleeding, heart attacks, blood clots and medication overdoses. Sepsis requires particular prompt treatments, so getting the diagnosis right matters.",
+              "word_count": 111,
+              "retrieval_score": 0.073232
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0005",
+              "heading": "The revolving door of sepsis care",
+              "text": "Unfortunately, progress in improving sepsis care has lagged behind improvements in cancer and heart care, as attention has shifted to the treatment of chronic diseases. However, sepsis remains a common cause of death in patients with chronic diseases. One way to help reduce the death toll of these chronic diseases may be to improve our treatment of sepsis.",
+              "word_count": 58,
+              "retrieval_score": 0.057389
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0004",
+              "heading": "The revolving door of sepsis care",
+              "text": "As recently as a decade ago, doctors believed that sepsis patients were out of the woods if they could just survive to hospital discharge. But that isn't the case – 40 percent of sepsis patients go back into the hospital within just three months of heading home, creating a \"revolving door\" that gets costlier and riskier each time, as patients get weaker and weaker with each hospital stay. Sepsis survivors also have an increased risk of dying for months to years after the acute infection is cured. If sepsis wasn't bad enough, it can lead to another health problem: Post-Intensive Care Syndrome (PICS) , a chronic health condition that arises from critical illness. Common symptoms include weakness, forgetfulness, anxiety and depression. Post-Intensive Care Syndrome and frequent hospital readmissions mean that we have dramatically underestimated how much sepsis care costs. On top of the US$5.5 billion we now spend on initial hospitalization for sepsis, we must add untold billions in rehospitalizations, nursing home and professional in-home care, and unpaid care provided by devoted spouses and families at home.",
+              "word_count": 177,
+              "retrieval_score": 0.053249
+            }
+          ]
+        },
+        {
+          "pair_id": "HSQA_2782::c009::src_003",
+          "claim_id": "c009",
+          "claim_text": "Less frequently, fungal infections (such as Candida) or viral infections can trigger septic shock.",
+          "citation_id": "src_003",
+          "citation_url": "https://www.nejm.org/doi/full/10.1056/NEJMra1208623",
+          "page_retrieval_status": "success",
+          "top_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "chunk_0004",
+              "heading": "Incidence and Causes",
+              "text": "Severe sepsis occurs as a result of both community-acquired and health care–associated infections. Pneumonia is the most common cause, accounting for about half of all cases, followed by intraabdominal and urinary tract infections. 7,8,11,12 Blood cultures are typically positive in only one third of cases, and in up to a third of cases, cultures from all sites are negative. 7,11,13,14 Staphylococcus aureus and Streptococcus pneumoniae are the most common gram-positive isolates, whereas Escherichia coli, klebsiella species, and Pseudomonas aeruginosa predominate among gram-negative isolates. 11,14 An epidemiologic study of sepsis showed that during the period from 1979 to 2000, gram-positive infections overtook gram-negative infections. 15 However, in a more recent study involving 14,000 ICU patients in 75 countries, gram-negative bacteria were isolated in 62% of patients with severe sepsis who had positive cultures, gram-positive bacteria in 47%, and fungi in 19%. 12",
+              "word_count": 141,
+              "retrieval_score": 0.097993
+            },
+            {
+              "rank": 2,
+              "chunk_id": "chunk_0005",
+              "heading": "Incidence and Causes",
+              "text": "Risk factors for severe sepsis are related both to a patient's predisposition for infection and to the likelihood of acute organ dysfunction if infection develops. There are many well-known risk factors for the infections that most commonly precipitate severe sepsis and septic shock, including chronic diseases (e.g., the acquired immunodeficiency syndrome, chronic obstructive pulmonary disease, and many cancers) and the use of immunosuppressive agents. 7 Among patients with such infections, however, the risk factors for organ dysfunction are less well studied but probably include the causative organism and the patient's genetic composition, underlying health status, and preexisting organ function, along with the timeliness of therapeutic intervention. 16 Age, sex, and race or ethnic group all influence the incidence of severe sepsis, which is higher in infants and elderly persons than in other age groups, higher in males than in females, and higher in blacks than in whites. 7,17",
+              "word_count": 148,
+              "retrieval_score": 0.063023
+            },
+            {
+              "rank": 3,
+              "chunk_id": "chunk_0015",
+              "heading": "Organ Dysfunction",
+              "text": "Although the mechanisms that underlie organ failure in sepsis have been only partially elucidated, impaired tissue oxygenation plays a key role ( Figure 2 ). Several factors — including hypotension, reduced red-cell deformability, and microvascular thrombosis — contribute to diminished oxygen delivery in septic shock. Inflammation can cause dysfunction of the vascular endothelium, accompanied by cell death and loss of barrier integrity, giving rise to subcutaneous and body-cavity edema. 43 In addition, mitochondrial damage caused by oxidative stress and other mechanisms impairs cellular oxygen use. 44 Moreover, injured mitochondria release alarmins into the extracellular environment, including mitochondrial DNA and formyl peptides, which can activate neutrophils and cause further tissue injury. 45",
+              "word_count": 111,
+              "retrieval_score": 0.047711
+            },
+            {
+              "rank": 4,
+              "chunk_id": "chunk_0016",
+              "heading": "Treatment",
+              "text": "The Surviving Sepsis Campaign, an international consortium of professional societies involved in critical care, treatment of infectious diseases, and emergency medicine, recently issued the third iteration of clinical guidelines for the management of severe sepsis and septic shock ( Table 2 ). 23 The most important elements of the guidelines are organized into two “bundles” of care: an initial management bundle to be accomplished within 6 hours after the patient's presentation and a management bundle to be accomplished in the ICU. 23 Implementation of the bundles is associated with an improved outcome. 46,47",
+              "word_count": 93,
+              "retrieval_score": 0.046961
+            },
+            {
+              "rank": 5,
+              "chunk_id": "chunk_0009",
+              "heading": "Outcome",
+              "text": "Before the introduction of modern intensive care with the ability to provide vital-organ support, severe sepsis and septic shock were typically lethal. Even with intensive care, rates of in-hospital death from septic shock were often in excess of 80% as recently as 30 years ago. 25 However, with advances in training, better surveillance and monitoring, and prompt initiation of therapy to treat the underlying infection and support failing organs, mortality is now closer to 20 to 30% in many series. 7,26 With decreasing death rates, attention has focused on the trajectory of recovery among survivors. Numerous studies have suggested that patients who survive to hospital discharge after sepsis remain at increased risk for death in the following months and years. Those who survive often have impaired physical or neurocognitive functioning, mood disorders, and a low quality of life. 27 In most studies, determining the causal role of sepsis in such subsequent disorders has been difficult. However, a recent analysis of the Health and Retirement Study, involving a large, longitudinal cohort of aging Americans, suggested that severe sepsis significantly accelerated physical and neurocognitive decline. 28",
+              "word_count": 184,
+              "retrieval_score": 0.046872
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updated_at": "2026-09-27T05:28:49.711149+00:00"
+}

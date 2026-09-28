@@ -37,7 +37,6 @@ No other semantic filtering was applied.
 - `healthsearchqa_official.xlsx`: unmodified official supplementary workbook.
 - `healthsearchqa_subset_n40_seed20260926.csv`: flat sample table.
 - `healthsearchqa_subset_n40_seed20260926.json`: sample plus provenance metadata.
-- `../../outputs/healthsearchqa_pilot/healthsearchqa_subset_n40_seed20260926.xlsx`: formatted review workbook with sample and metadata sheets.
 - `../../scripts/generate_healthsearchqa_subset.py`: standalone reproducible sampling script using only the Python standard library.
 - `../../scripts/healthsearchqa_aio_capture.user.js`: general Tampermonkey auto-capture and JSON export userscript for new question sets.
 - `../../scripts/README_healthsearchqa_aio_capture.md`: installation, capture protocol, output, and verification notes.

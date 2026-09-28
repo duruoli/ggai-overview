@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.1.0-preview",
+  "extraction_method": "Current assistant applying the same claim-extraction instructions and schema; no external API call",
+  "records": [
+    {
+      "dataset_id": "HSQA_2125",
+      "sample_order": 1,
+      "run": 1,
+      "question": "What does a vulvodynia flare up feel like?",
+      "claims": [
+        {
+          "block_id": "b001",
+          "source_quote": "A vulvodynia flare-up feels like intense, persistent burning, stinging, rawness, or sharp knife-like pain in the external female genital area.",
+          "claim_text": "A vulvodynia flare-up can cause intense, persistent burning, stinging, rawness, or sharp knife-like pain in the external female genital area."
+        },
+        {
+          "block_id": "b003",
+          "source_quote": "Burning or Scalding: Often described as feeling like the skin is on fire or rubbed raw.",
+          "claim_text": "Burning or scalding during a vulvodynia flare-up may feel like the skin is on fire or rubbed raw."
+        },
+        {
+          "block_id": "b004",
+          "source_quote": "Stinging or Stabbing: Sharp, electric, or knife-like jabs in the tissue.",
+          "claim_text": "Stinging or stabbing during a vulvodynia flare-up may feel like sharp, electric, or knife-like jabs in the tissue."
+        },
+        {
+          "block_id": "b005",
+          "source_quote": "Rawness and Soreness: A deep, sensitive tenderness, sometimes compared to feeling chafed or exposed to sandpaper.",
+          "claim_text": "Rawness and soreness during a vulvodynia flare-up may feel like deep tenderness, chafing, or exposure to sandpaper."
+        },
+        {
+          "block_id": "b006",
+          "source_quote": "Throbbing or Aching: Dull, heavy pressure or pulsing discomfort in the region.",
+          "claim_text": "Throbbing or aching during a vulvodynia flare-up may feel like dull pressure or pulsing discomfort in the vulvar region."
+        },
+        {
+          "block_id": "b008",
+          "source_quote": "Generalized vs. Localized: Pain can affect the entire vulva or concentrate strictly around the vaginal opening (the vestibule).",
+          "claim_text": "Vulvodynia pain can affect the entire vulva or be localized around the vaginal opening."
+        },
+        {
+          "block_id": "b009",
+          "source_quote": "Common Triggers: Flare-ups can happen spontaneously or get triggered by everyday pressure—such as:",
+          "claim_text": "Vulvodynia flare-ups can occur spontaneously or be triggered by everyday pressure."
+        },
+        {
+          "block_id": "b010",
+          "source_quote": "Sitting for long periods",
+          "claim_text": "Sitting for long periods can trigger a vulvodynia flare-up."
+        },
+        {
+          "block_id": "b011",
+          "source_quote": "Wearing tight clothing or pants",
+          "claim_text": "Wearing tight clothing or pants can trigger a vulvodynia flare-up."
+        },
+        {
+          "block_id": "b012",
+          "source_quote": "Exercising or biking",
+          "claim_text": "Exercising or biking can trigger a vulvodynia flare-up."
+        },
+        {
+          "block_id": "b013",
+          "source_quote": "Inserting a tampon or having sexual activity",
+          "claim_text": "Inserting a tampon or having sexual activity can trigger a vulvodynia flare-up."
+        },
+        {
+          "block_id": "b015",
+          "source_quote": "Normal Skin: During a flare-up, the tissue often looks entirely normal with no visible signs of infection, redness, or broken skin, which can make the invisible nature of the pain especially frustrating.",
+          "claim_text": "During a vulvodynia flare-up, the tissue may look normal without visible infection, redness, or broken skin."
+        }
+      ]
+    },
+    {
+      "dataset_id": "HSQA_2125",
+      "sample_order": 1,
+      "run": 2,
+      "question": "What does a vulvodynia flare up feel like?",
+      "claims": [
+        {
+          "block_id": "b001",
+          "source_quote": "A vulvodynia flare-up feels like intense burning, stinging, rawness, or sharp knife-like pain in the external female genital area (the vulva).",
+          "claim_text": "A vulvodynia flare-up can cause intense burning, stinging, rawness, or sharp knife-like pain in the vulva."
+        },
+        {
+          "block_id": "b003",
+          "source_quote": "Burning or Scalding: Often described as feeling like a severe sunburn or exposure to hot liquid.",
+          "claim_text": "Burning or scalding during a vulvodynia flare-up may feel like severe sunburn or exposure to hot liquid."
+        },
+        {
+          "block_id": "b004",
+          "source_quote": "Stinging or Stabbing: Quick, sharp, or knife-like electric jolts of pain.",
+          "claim_text": "Stinging or stabbing during a vulvodynia flare-up may feel like quick, sharp, knife-like electric jolts."
+        },
+        {
+          "block_id": "b005",
+          "source_quote": "Rawness and Soreness: Friction or tenderness, as if the skin is scraped or rubbed raw, even though the tissue usually looks normal.",
+          "claim_text": "Rawness and soreness during a vulvodynia flare-up may feel like friction or tenderness even when the tissue looks normal."
+        },
+        {
+          "block_id": "b006",
+          "source_quote": "Throbbing and Aching: Deep, heavy pressure or pulsing discomfort in the area.",
+          "claim_text": "Throbbing and aching during a vulvodynia flare-up may feel like deep pressure or pulsing discomfort."
+        },
+        {
+          "block_id": "b008",
+          "source_quote": "Localized or Generalized: The pain can affect the entire vulva or concentrate strictly on the vaginal opening (the vestibule).",
+          "claim_text": "Vulvodynia pain can affect the entire vulva or be localized around the vaginal opening."
+        },
+        {
+          "block_id": "b009",
+          "source_quote": "Common Triggers: Flares can start on their own or activate from minor contact like sitting, wearing tight pants, exercising, walking, or inserting a tampon.",
+          "claim_text": "Vulvodynia flare-ups can occur spontaneously or be triggered by sitting, tight pants, exercise, walking, or tampon insertion."
+        },
+        {
+          "block_id": "b010",
+          "source_quote": "Appearance: The skin and tissue of the vulva typically look completely normal with no visible signs of infection, redness, or injury.",
+          "claim_text": "During a vulvodynia flare-up, vulvar skin and tissue may look normal without visible infection, redness, or injury."
+        }
+      ]
+    },
+    {
+      "dataset_id": "HSQA_1045",
+      "sample_order": 2,
+      "run": 1,
+      "question": "Is cystic fibrosis usually fatal?",
+      "claims": [
+        {
+          "block_id": "b001",
+          "source_quote": "Yes, people can die from cystic fibrosis, as it is a serious, life-threatening genetic condition.",
+          "claim_text": "Cystic fibrosis is a serious, life-threatening genetic condition that can be fatal."
+        },
+        {
+          "block_id": "b003",
+          "source_quote": "Respiratory Failure: This is the most common cause of death.",
+          "claim_text": "Respiratory failure is the most common cause of death in people with cystic fibrosis."
+        },
+        {
+          "block_id": "b003",
+          "source_quote": "Thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue.",
+          "claim_text": "Thick, sticky mucus builds up in the lungs of people with cystic fibrosis."
+        },
+        {
+          "block_id": "b003",
+          "source_quote": "Thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue.",
+          "claim_text": "Mucus buildup in cystic fibrosis can lead to severe airway blockages and chronic lung infections."
+        },
+        {
+          "block_id": "b003",
+          "source_quote": "Thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue.",
+          "claim_text": "Chronic lung infections in cystic fibrosis can progressively destroy lung tissue."
+        },
+        {
+          "block_id": "b004",
+          "source_quote": "Complications: Other multi-system issues, such as end-stage lung disease, severe malnutrition from digestive problems, or organ failure, can also contribute to fatal outcomes.",
+          "claim_text": "End-stage lung disease, severe malnutrition from digestive problems, and organ failure can contribute to death from cystic fibrosis."
+        },
+        {
+          "block_id": "b006",
+          "source_quote": "Advancements in Care: Treatments have improved dramatically over the decades.",
+          "claim_text": "Treatments for cystic fibrosis have improved substantially over time."
+        },
+        {
+          "block_id": "b006",
+          "source_quote": "Modern therapies and modulator drugs help patients live much longer, healthier lives than in the past.",
+          "claim_text": "Modern therapies and modulator drugs help people with cystic fibrosis live longer and healthier lives."
+        },
+        {
+          "block_id": "b007",
+          "source_quote": "According to the Cystic Fibrosis Foundation, the median age of death has risen significantly over time, though severe cases and rapid disease progression still cut some lives short.",
+          "claim_text": "The median age of death among people with cystic fibrosis has increased over time."
+        },
+        {
+          "block_id": "b007",
+          "source_quote": "According to the Cystic Fibrosis Foundation, the median age of death has risen significantly over time, though severe cases and rapid disease progression still cut some lives short.",
+          "claim_text": "Severe cystic fibrosis and rapid disease progression can shorten a person's life."
+        }
+      ]
+    }
+  ]
+}

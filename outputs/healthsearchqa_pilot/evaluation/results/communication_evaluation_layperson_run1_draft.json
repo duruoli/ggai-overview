@@ -1,0 +1,884 @@
+{
+  "schema_version": "0.1.0",
+  "created_at": "2026-09-28T04:26:30.285503+00:00",
+  "completed_at": null,
+  "source_sha256": "6b4a19583272451825d2eddea7412e7d7028afb2abb486fb8fe0f6800fd97181",
+  "source_capture": "outputs/healthsearchqa_pilot/healthsearchqa_aio_capture_2026-09-26 (1).json",
+  "model": "openai/gpt-5-mini",
+  "provider": "openrouter",
+  "run_filter": 1,
+  "instructions_sha256": "c2b6a61bb296c161f0bb128a350ee87bd8caa001b4d4ed5ee262254479452d3d",
+  "method": "LLM item-level simplified PEMAT-informed text rubric; deterministic score calculation",
+  "records": [
+    {
+      "dataset_id": "HSQA_2125",
+      "sample_order": 1,
+      "run": 1,
+      "question": "What does a vulvodynia flare up feel like?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked for a description of symptoms (what a flare-up feels like); the question is informational and does not reasonably call for action.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly describes what a vulvodynia flare-up feels like and provides a clear main purpose.",
+            "quote": "A vulvodynia flare-up feels like intense, persistent burning, stinging, rawness, or sharp knife-like pain in the external female genital area."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording uses everyday descriptors (burning, stinging, rawness, throbbing) and avoids dense technical language.",
+            "quote": "Burning or Scalding: Often described as feeling like the skin is on fire or rubbed raw."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical words are explained or clarified in plain language (the answer locates the pain as the external female genital area and explains 'vestibule').",
+            "quote": "in the external female genital area"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized into clear sections (types of sensations, generalized vs. localized, triggers, appearance) that follow a logical sequence.",
+            "quote": "Common Triggers: Flare-ups can happen spontaneously or get triggered by everyday pressure—such as:"
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is focused and concise, listing distinct symptom types and common triggers without unnecessary repetition.",
+            "quote": "Rawness and Soreness: A deep, sensitive tenderness, sometimes compared to feeling chafed or exposed to sandpaper."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asks for a description rather than actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable because the question asks for a description rather than actions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable because the question asks for a description rather than actions.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569590-VbOOV7pg4cG0j7LlUFWb",
+      "usage": {
+        "completion_tokens": 1703,
+        "prompt_tokens": 1377,
+        "total_tokens": 3080,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1152,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00375025,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00375025,
+          "upstream_inference_prompt_cost": 0.00034425,
+          "upstream_inference_completions_cost": 0.003406
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1045",
+      "sample_order": 2,
+      "run": 1,
+      "question": "Is cystic fibrosis usually fatal?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked a definitional/prognostic question about whether the disease is usually fatal; it does not reasonably call for specific actions.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly addresses the question by stating that people can die from cystic fibrosis and framing it as life‑threatening.",
+            "quote": "Yes, people can die from cystic fibrosis, as it is a serious, life-threatening genetic condition."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is mostly everyday and explanations (e.g., how lung problems arise) make the content understandable to a general reader.",
+            "quote": "Thick, sticky mucus builds up in the lungs, leading to severe blockages and chronic, overwhelming infections that progressively destroy lung tissue."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Several medical terms are used without plain‑language definitions (for example 'modulator drugs', 'multi-system issues', 'end-stage lung disease'), which a lay reader may not understand.",
+            "quote": "modulator drugs help patients live much longer, healthier lives than in the past."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a logical sequence with short labeled sections (Respiratory Failure, Complications, Advancements, Median Age).",
+            "quote": "Respiratory Failure: This is the most common cause of death."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and stays focused on causes of death and improvements in care without unnecessary repetition.",
+            "quote": "If you'd like, I can share more details on:"
+          },
+          "a1": {
+            "label": "na",
+            "reason": "No action is reasonably called for by a definitional prognosis question.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "No action is reasonably called for by a definitional prognosis question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "No action or care-seeking guidance is reasonably called for by a definitional prognosis question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569609-3K2AdqTKITy0HBu9x7nN",
+      "usage": {
+        "completion_tokens": 2109,
+        "prompt_tokens": 1275,
+        "total_tokens": 3384,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1536,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00427755,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00427755,
+          "upstream_inference_prompt_cost": 5.955e-05,
+          "upstream_inference_completions_cost": 0.004218
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2782",
+      "sample_order": 3,
+      "run": 1,
+      "question": "What is the most common cause of septic shock?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked for the most common cause of a condition (a definitional/informational question), so no actions or care-seeking guidance are reasonably required.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly states the main point: what most commonly causes septic shock.",
+            "quote": "Bacterial infections are the most common cause of septic shock"
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is mostly plain and the main idea is expressed in everyday terms (locations of infections and common examples).",
+            "quote": "usually starting as infections in the lungs (like pneumonia), the abdomen, or the urinary tract."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Some technical microbiology terms (e.g., \"gram-negative\" and \"gram-positive\") are used without explanation, which an ordinary reader may not understand.",
+            "quote": "split between gram-negative bacteria (like E. coli and Pseudomonas ) and gram-positive bacteria (like Staphylococcus aureus and Streptococcus )."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a logical, segmented list (by source of infection and by organism type), making it easy to follow.",
+            "quote": "Lungs: Pneumonia is the single most frequent origin."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The response is concise and stays focused on causes, with minimal extraneous detail.",
+            "quote": "Bacterial infections are the most common cause of septic shock, usually starting as infections in the lungs (like pneumonia), the abdomen, or the urinary tract."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question is definitional and does not reasonably call for actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — the question is definitional and does not reasonably call for actions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — the question is definitional and does not reasonably call for care-seeking guidance.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569606-tgKD6dNYIC24HyuJxfC9",
+      "usage": {
+        "completion_tokens": 1728,
+        "prompt_tokens": 1308,
+        "total_tokens": 3036,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1152,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0035238,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0035238,
+          "upstream_inference_prompt_cost": 6.78e-05,
+          "upstream_inference_completions_cost": 0.003456
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1063",
+      "sample_order": 4,
+      "run": 1,
+      "question": "Is dyspraxia a developmental disability?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for a definitional/classification answer (whether dyspraxia is a developmental disability), so it does not reasonably call for user actions or care-seeking guidance.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a direct, clear response to the question and states the classification.",
+            "quote": "Yes, dyspraxia is classified as a neurodevelopmental condition, also known as developmental coordination disorder (DCD)."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is mostly plain and accessible; the answer explains the condition in simple terms (brain-based, affects coordination and motor skills).",
+            "quote": "It is a lifelong brain-based condition affecting fine and gross motor skills, physical coordination, and motor planning."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Relevant medical terminology ('neurodevelopmental condition') is explained in plain language immediately (as a brain-based condition affecting motor skills); the abbreviation DCD is expanded.",
+            "quote": "It is a lifelong brain-based condition affecting fine and gross motor skills, physical coordination, and motor planning."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a logical, labeled sequence (Definition, Lifespan Impact, Cognition, Classification, Legal Status), making it easy to follow.",
+            "quote": "Definition: It is a lifelong brain-based condition affecting fine and gross motor skills, physical coordination, and motor planning."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused, avoiding repetition or unnecessary detail while covering key points.",
+            "quote": "Yes, dyspraxia is classified as a neurodevelopmental condition, also known as developmental coordination disorder (DCD)."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable — the question is definitional and does not reasonably call for actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable — the question is definitional and does not reasonably call for actions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable — the question is definitional and does not reasonably call for care-seeking guidance.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569607-k2LuF7LIJ1zj39X7gUf4",
+      "usage": {
+        "completion_tokens": 1926,
+        "prompt_tokens": 1299,
+        "total_tokens": 3225,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1344,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 1152,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00391755,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00391755,
+          "upstream_inference_prompt_cost": 6.555e-05,
+          "upstream_inference_completions_cost": 0.003852
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2914",
+      "sample_order": 5,
+      "run": 1,
+      "question": "What qualifies someone as bulimic?",
+      "aio_present": false,
+      "status": "not_present",
+      "communication": null
+    },
+    {
+      "dataset_id": "HSQA_2446",
+      "sample_order": 6,
+      "run": 1,
+      "question": "What is distorted self-image?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked for a definition; no action or care-seeking guidance is reasonably called for.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly defines 'distorted self-image' and states its main point clearly.",
+            "quote": "A distorted self-image means perceiving yourself and your abilities inaccurately"
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is simple and uses everyday phrases that an ordinary reader can understand.",
+            "quote": "perceiving yourself and your abilities inaccurately"
+          },
+          "u3": {
+            "label": "na",
+            "reason": "The response contains no medical terms or abbreviations that require explanation for understanding.",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a short, logical sequence: a definition followed by a brief clarification.",
+            "quote": "Your mental picture of yourself is warped, focusing heavily on perceived flaws while ignoring strengths or objective facts."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "Concise and focused; avoids unnecessary detail or repetition that would obscure the definition.",
+            "quote": "focusing heavily on perceived flaws while ignoring strengths or objective facts"
+          },
+          "a1": {
+            "label": "na",
+            "reason": "No action is expected for a definitional question.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "No action is expected for a definitional question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "No action or care-seeking guidance is reasonably called for by a request for a definition.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569607-tLe1OPljtoqxr2T6H86R",
+      "usage": {
+        "completion_tokens": 1048,
+        "prompt_tokens": 1131,
+        "total_tokens": 2179,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 576,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00237875,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00237875,
+          "upstream_inference_prompt_cost": 0.00028275,
+          "upstream_inference_completions_cost": 0.002096
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0406",
+      "sample_order": 7,
+      "run": 1,
+      "question": "How can you tell if someone has borderline personality disorder?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked how to tell/recognize BPD, a descriptive question about signs and criteria rather than a request for actions or steps to take.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly addresses the question by stating how to tell and listing the key patterns/criteria associated with BPD.",
+            "quote": "You can tell if someone may have Borderline Personality Disorder (BPD) by looking for a consistent pattern of intense emotional instability, unstable relationships, and a shifting self-image."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is mostly plain language with concrete examples that an ordinary reader can understand; technical terms are limited and generally explained.",
+            "quote": "Impulsive Behavior: Engaging in reckless or dangerous activities, such as binge spending, unsafe sex, substance misuse, or reckless driving."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Medical terms and abbreviations that are important for understanding (e.g., 'DSM-5', 'BPD', 'dissociation') are explained or described in context.",
+            "quote": "According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-5)"
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a clear, logical order: brief summary, diagnostic note, then a labeled list of criteria, followed by resources and follow-up questions.",
+            "quote": "Fear of Abandonment: Making frantic efforts to avoid real or imagined abandonment, often reacting with extreme distress to minor separations."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on the diagnostic criteria without unnecessary repetition or distracting detail; it ends with brief, relevant follow-up prompts.",
+            "quote": "Only a trained mental health professional can officially diagnose BPD."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question is descriptive (how to recognize BPD) rather than requesting actions to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question is descriptive (how to recognize BPD) rather than requesting actionable instructions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Actionability not applicable because the question is descriptive (how to recognize BPD) rather than asking when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569617-diQXABWM6BMqExseVK8h",
+      "usage": {
+        "completion_tokens": 2007,
+        "prompt_tokens": 1481,
+        "total_tokens": 3488,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1408,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00438425,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00438425,
+          "upstream_inference_prompt_cost": 0.00037025,
+          "upstream_inference_completions_cost": 0.004014
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_2432",
+      "sample_order": 8,
+      "run": 1,
+      "question": "What is COPD life expectancy?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked for prognosis (life expectancy), a descriptive informational question that does not reasonably require stepwise actions.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly addresses life expectancy and gives staged estimates and key factors affecting prognosis.",
+            "quote": "Life expectancy with chronic obstructive pulmonary disease (COPD) varies widely and depends heavily on the stage of the disease, your smoking habits, and your overall health."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most sentences use plain language and straightforward statements about stages and outcomes that an ordinary reader can understand.",
+            "quote": "Stage 1 (Mild): Life expectancy is often close to normal."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Some medical terms and abbreviations are used without plain-language explanations (for example, 'spirometry' and 'FEV1'), which a non-medical reader may not understand.",
+            "quote": "Doctors measure COPD severity using stages 1 through 4 based on lung function tests like spirometry."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is organized logically by disease stage and then by factors (smoking, flare-ups, overall health, treatment), making it easy to follow.",
+            "quote": "Stage 2 and 3 (Moderate to Severe): Lifespan can be reduced by about 2 to 6 years on average."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise, stays on topic, and avoids unnecessary repetition or distracting detail.",
+            "quote": "Stage 4 (Very Severe / End-Stage): Average life expectancy ranges from 1 to 5 years, though some individuals live longer depending on treatments and other medical conditions."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable because the question asked for descriptive prognosis information rather than an action to take.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable for the same reason; the question did not reasonably call for stepwise actionable instructions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable; the question sought life expectancy information rather than guidance on when to seek care.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569619-Ckz996lDqLYQRxg5iQvT",
+      "usage": {
+        "completion_tokens": 1557,
+        "prompt_tokens": 1384,
+        "total_tokens": 2941,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 960,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00346,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00346,
+          "upstream_inference_prompt_cost": 0.000346,
+          "upstream_inference_completions_cost": 0.003114
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_3069",
+      "sample_order": 9,
+      "run": 1,
+      "question": "Who is at high risk for nasopharyngeal cancer?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 80.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The user asked who is at high risk (a descriptive question). It is informational and does not reasonably call for specific actions.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a clear statement identifying groups at higher risk and then lists those groups.",
+            "quote": "Individuals with specific geographic ancestry, a history of Epstein-Barr virus infection, or a diet high in salt-cured foods face a high risk of nasopharyngeal cancer."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Most wording is everyday language (geographic regions, diet, family history, tobacco, alcohol); a few medical terms are used but at least EBV is explained in plain language.",
+            "quote": "Epstein-Barr Virus (EBV): People who have had EBV (the virus that causes mono) are at risk because the virus can mix with cells in the nose and throat."
+          },
+          "u3": {
+            "label": "no",
+            "reason": "Key medical terms are not explained for a lay reader: 'nasopharyngeal' (what part of the body this refers to) is not defined, and HPV is named but not explained in plain language.",
+            "quote": "Individuals with specific geographic ancestry, a history of Epstein-Barr virus infection, or a diet high in salt-cured foods face a high risk of nasopharyngeal cancer."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a logical, list-style format with brief headings for each risk factor, making it easy to follow.",
+            "quote": "Specific regions: People living in or with ancestry from southern China, Southeast Asia, northern Africa, and the Arctic."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on relevant risk factors without excessive detail or repetition; brief offers to provide more information are appropriate.",
+            "quote": "Salt-cured foods: People who regularly ate diets rich in salt-preserved fish and meat from an early age have a higher chance of developing this cancer."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable—question asks for descriptive risk information rather than actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable—no action is reasonably called for by the user's question.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable—care-seeking guidance is not reasonably required by this descriptive question.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569622-tz7OgGUS3CU2FkXf1dGq",
+      "usage": {
+        "completion_tokens": 2089,
+        "prompt_tokens": 1452,
+        "total_tokens": 3541,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1472,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.004541,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.004541,
+          "upstream_inference_prompt_cost": 0.000363,
+          "upstream_inference_completions_cost": 0.004178
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_0484",
+      "sample_order": 10,
+      "run": 1,
+      "question": "How do I know if I have pulled or torn my hamstring?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": true,
+        "actionability_applicability_reason": "The user asks how to tell if the hamstring is pulled or torn, which reasonably calls for actions (providing symptoms and guidance and potentially seeking care).",
+        "actionability_score": 66.67,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer directly compares a pulled versus torn hamstring and lists distinguishing signs and symptoms.",
+            "quote": "A pulled hamstring involves mild stretching or micro-tears of the muscle fibers, while a torn hamstring represents a partial or complete rupture of the tissue."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is mainly everyday language and uses simple symptom descriptions that a lay reader can understand.",
+            "quote": "Pain Type: Sudden mild twinge, tightness, or dull ache during activity."
+          },
+          "u3": {
+            "label": "yes",
+            "reason": "Key medical terms (e.g., 'micro-tears' and 'rupture') are explained in plain language when first used, so a nonmedical reader can grasp their meaning.",
+            "quote": "A pulled hamstring involves mild stretching or micro-tears of the muscle fibers, while a torn hamstring represents a partial or complete rupture of the tissue."
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented in a logical sequence with separate symptom lists for the less severe (pulled) and more severe (torn) injury, making it easy to scan.",
+            "quote": "Pain Type: Sudden, sharp, and severe pain—often described as a stabbing sensation or feeling like you were shot or hit in the back of the leg."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The answer is concise and focused on distinguishing features without unnecessary detail or repetition that would confuse the reader.",
+            "quote": "Signs: Rapid swelling within hours, deep bruising that tracks down the leg, and sometimes a visible dent, gap, or knot in the muscle."
+          },
+          "a1": {
+            "label": "yes",
+            "reason": "The answer gives a clear, identifiable next action: ask the user to provide specific details about how the injury happened and whether they can bear weight.",
+            "quote": "If you want to share more, tell me:\nHow did the injury happen (sprinting, stretching, a direct hit)?\nCan you bear weight or walk on the leg right now?"
+          },
+          "a2": {
+            "label": "yes",
+            "reason": "The requested actions are concrete and manageable for an ordinary reader: answer the two simple questions about mechanism and current ability to walk or bear weight.",
+            "quote": "How did the injury happen (sprinting, stretching, a direct hit)?\nCan you bear weight or walk on the leg right now?"
+          },
+          "a3": {
+            "label": "no",
+            "reason": "The answer does not give clear guidance on when or why to seek medical care (for example, it does not state that inability to bear weight, severe pain, or visible gap warrant prompt evaluation). It only offers to help determine needed care after the user provides more details.",
+            "quote": "I can help you understand what kind of care or professional evaluation you might need."
+          }
+        }
+      },
+      "model_response_id": "gen-1790569625-rmW3p0keDYIT4C9jB62W",
+      "usage": {
+        "completion_tokens": 2354,
+        "prompt_tokens": 1397,
+        "total_tokens": 3751,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 1600,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.00505725,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.00505725,
+          "upstream_inference_prompt_cost": 0.00034925,
+          "upstream_inference_completions_cost": 0.004708
+        }
+      },
+      "warnings": []
+    },
+    {
+      "dataset_id": "HSQA_1390",
+      "sample_order": 12,
+      "run": 1,
+      "question": "What are 5 factors that affect body image?",
+      "aio_present": true,
+      "status": "scored",
+      "communication": {
+        "understandability_score": 100.0,
+        "actionability_applicable": false,
+        "actionability_applicability_reason": "The question asks for descriptive factors affecting body image (informational), so no actions are reasonably called for.",
+        "actionability_score": null,
+        "items": {
+          "u1": {
+            "label": "yes",
+            "reason": "The answer begins with a clear statement listing five factors, directly addressing the question.",
+            "quote": "Five major factors that affect body image include media exposure, cultural standards, family attitudes, peer influence, and psychological well-being."
+          },
+          "u2": {
+            "label": "yes",
+            "reason": "Wording is plain and uses everyday language with short explanations.",
+            "quote": "Viewing idealized or edited photos online and in advertisements creates unrealistic physical standards."
+          },
+          "u3": {
+            "label": "na",
+            "reason": "No medical terms or abbreviations that require explanation are used.",
+            "quote": ""
+          },
+          "u4": {
+            "label": "yes",
+            "reason": "Information is presented as a brief list with a short explanatory sentence for each factor, in a logical sequence.",
+            "quote": "Media and Social Media: Viewing idealized or edited photos online and in advertisements creates unrealistic physical standards."
+          },
+          "u5": {
+            "label": "yes",
+            "reason": "The response is concise, focused on the question, and avoids repetition or distracting detail.",
+            "quote": "Five major factors that affect body image include media exposure, cultural standards, family attitudes, peer influence, and psychological well-being."
+          },
+          "a1": {
+            "label": "na",
+            "reason": "Not applicable; the question requests descriptive information rather than actions.",
+            "quote": ""
+          },
+          "a2": {
+            "label": "na",
+            "reason": "Not applicable; the question requests descriptive information rather than actions.",
+            "quote": ""
+          },
+          "a3": {
+            "label": "na",
+            "reason": "Not applicable; the question requests descriptive information rather than actions.",
+            "quote": ""
+          }
+        }
+      },
+      "model_response_id": "gen-1790569630-qRnTWrOgop6kzrEPIqu3",
+      "usage": {
+        "completion_tokens": 1420,
+        "prompt_tokens": 1266,
+        "total_tokens": 2686,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": 0,
+          "reasoning_tokens": 960,
+          "rejected_prediction_tokens": null,
+          "image_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost": 0.0031565,
+        "is_byok": false,
+        "cost_details": {
+          "upstream_inference_cost": 0.0031565,
+          "upstream_inference_prompt_cost": 0.0003165,
+          "upstream_inference_completions_cost": 0.00284
+        }
+      },
+      "warnings": []
+    }
+  ],
+  "summary": {
+    "record_count": 11,
+    "aio_present_count": 10,
+    "scored_count": 10,
+    "error_count": 0,
+    "actionability_na_count": 9,
+    "understandability": {
+      "n": 10,
+      "mean": 92.0,
+      "standard_deviation": 10.33,
+      "median": 100.0,
+      "q1": 80.0,
+      "q3": 100.0,
+      "minimum": 80.0,
+      "maximum": 100.0
+    },
+    "actionability": {
+      "n": 1,
+      "mean": 66.67,
+      "standard_deviation": null,
+      "median": 66.67,
+      "q1": 66.67,
+      "q3": 66.67,
+      "minimum": 66.67,
+      "maximum": 66.67
+    },
+    "warning_count": 0,
+    "prompt_tokens": 13370,
+    "completion_tokens": 17941,
+    "cost_usd": 0.038447
+  }
+}
